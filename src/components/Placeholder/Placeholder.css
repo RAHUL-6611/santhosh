@@ -1,0 +1,25 @@
+.placeholder {
+	position: relative;
+	background-color: rgb(225, 225, 225);
+	overflow: hidden;
+	/* width: 200px;
+  height: 200px; */
+}
+
+.placeholder::after {
+	content: "";
+	position: absolute;
+	width: 20%;
+	height: 100%;
+	background-color: white;
+	top: 0;
+	left: 0;
+	filter: blur(25px);
+	animation: placeholder-animation 1s linear infinite;
+}
+
+@keyframes placeholder-animation {
+	to {
+		left: 100%;
+	}
+}

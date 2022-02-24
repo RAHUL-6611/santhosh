@@ -1,0 +1,85 @@
+.parent-container {
+	margin-top: 1em;
+	padding: 17px 20px 0px 20px;
+}
+
+.parent-container h1 {
+	color: rgb(42, 43, 44);
+	text-transform: uppercase;
+	font-size: 22px;
+}
+.campus-container {
+	margin: 1em auto;
+}
+.campus-container__titles {
+	text-transform: uppercase;
+	background-color: #8d2b1e;
+	color: white;
+}
+
+@media only screen and (min-width: 750px) {
+	.campus-container {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		column-gap: 1rem;
+		width: 90%;
+	}
+}
+
+/* campus-life-titles Component */
+
+.campus-life-titles__item {
+	cursor: pointer;
+	transition: background-color 200ms, color 200ms;
+	padding: 0.5em;
+	border-bottom: 2px solid lightgrey;
+}
+
+.campus-life-titles__item:last-child {
+	border-bottom: none;
+}
+
+.campus-life-titles__item:hover,
+.campus-life-titles__item--selected {
+	color: black;
+	background-color: white;
+}
+
+/* CampusLifePhotos Component */
+
+.campus-life-photos__header {
+	position: sticky;
+	top: 0;
+	background-color: lightgrey;
+	padding: 0.5em 0.3em;
+	font-size: 1.4rem;
+}
+
+.campus-life-photos__heading {
+	font-size: large;
+	text-transform: uppercase;
+	margin: 0.5em 0;
+}
+
+.campus-life-photos__link {
+	color: white;
+	background-color: #8d2b1e;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 0.5em;
+	padding: 0.5em;
+}
+
+.campus-life-photos__list {
+	margin: 1em;
+	gap: 0.5em;
+}
+
+@media only screen and (min-width: 601px) {
+	.campus-life-photos__img {
+		max-width: 400px;
+	}
+}
+
+@media only screen and (min-width: 901px) {
+}

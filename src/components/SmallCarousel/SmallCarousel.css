@@ -1,0 +1,138 @@
+.chancellor-part-top{
+	position: relative;
+    height: 265px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.chancellor-card__container {
+	display: flex;
+    width: 460px;
+    color: #f1eded;
+    background-color: #ba0b0b;
+    padding: 1.4em;
+    margin: 10px 10px 16px 10px;
+    text-align: left;
+    border-radius: 1px;
+    box-shadow: 0 0 20px 2px #00000040;
+}
+
+.chancellor-card__container img {
+	height: 150px;
+	width: 150px;
+	margin-right: 0.7em;
+	border-radius: 1rem;
+}
+
+.chancellor-card__parts {
+	display: flex;
+	flex-direction: column;
+}
+
+.chancellor-card__parts--fill {
+	flex: 1;
+}
+.chancellor-card__name {
+	font-size: 1.35rem;
+	font-weight: 600;
+}
+.chancellor-card__desig {
+	font-size: 1rem;
+	margin-top: 0.5em;
+}
+.chancellor-card__title {
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-shadow: 1px 1px 2px white;
+	margin-top: auto;
+}
+.chancellor-card__parts p:last-child {
+	margin-top: auto;
+	text-align: right;
+}
+.chancellor-card__parts a {
+	text-decoration: none;
+    border: 5px;
+    background-color: rgb(5 30 84 / 40%);
+    color: white;
+    padding: 0.3em 0.7em;
+    border-radius: 30px;
+    margin: 8px;
+}
+
+.chancellor-card-cont {
+	display: flex;
+	/* overflow-x: auto; */
+	flex-wrap: nowrap;
+	align-items: center;
+	scroll-behavior: smooth;
+	/* Hide scrollbar for IE, Edge and Firefox */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	background-color: white;
+	margin: 20px 0px;
+	transform: translateX(-50%);
+    position: absolute;
+    left: 50%;
+}
+.slide-hold {
+	position: relative;
+}
+.font::-webkit-scrollbar {
+	display: none;
+}
+
+.slide-hold {
+	flex: 1;
+}
+
+.slide {
+	/* padding: 0 2rem; */
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	position: absolute;
+	display: flex;
+	font-size: 1.2rem;
+	z-index: 1;
+}
+
+.btn button {
+	font-size: 1.5rem;
+	border: 0;
+	line-height: 0;
+	padding: 1em 0.2em;
+}
+
+.btn--left {
+	left: 0;
+}
+
+.btn--right {
+	right: 0;
+}
+
+@media only screen and (min-width: 1341px) {
+	.btn {
+		display: none;
+	}
+}
+
+@media (max-width: 500px){
+	.chancellor-card__container {
+		width: 340px;
+	}
+	.chancellor-part-top {
+		height: 396px;
+	}
+	.chancellor-card__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.chancellor-card__container img {
+		margin-bottom: 16px;
+	}
+}

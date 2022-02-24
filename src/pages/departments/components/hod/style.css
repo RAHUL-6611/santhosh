@@ -1,0 +1,79 @@
+.hod-card-cont{
+	position: relative;
+}
+
+.hod-card__container {
+	position: absolute;
+    top: -20rem;
+    right: 1em;
+    display: flex;
+    width: 460px;
+    color: black;
+    background-color: #cbcbcbcc;
+    margin: 10px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #0000003d;
+    padding: 1em;
+    z-index: 8;
+}
+
+.hod-card__container img {
+	height: 150px;
+	width: 150px;
+	margin-right: 0.7em;
+	border-radius: 5px;
+}
+
+.hod-card__parts {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.hod-card__parts--fill {
+	flex: 1;
+	margin-top: 18px;
+    margin-left: 7px;
+}
+.hod-card__name {
+	font-size: 1.35rem;
+	font-weight: 600;
+}
+.hod-card__desig {
+	font-size: 1rem;
+	margin-top: 0.5em;
+}
+.hod-card__title {
+	font-size: 1rem;
+	font-weight: 400;
+	text-shadow: 1px 1px 2px white;
+	margin-top: auto;
+}
+.hod-card__parts p:last-child {
+	margin-top: auto;
+	text-align: left;
+}
+.hod-card__parts a {
+	text-decoration: none;
+	border: 5px;
+	background-color: rgb(5, 30, 84);
+	color: white;
+	padding: 0.2em 0.5em;
+	border-radius: 5px;
+}
+
+.hod-card-title{
+	font-size: 17px;
+    padding: 7px 0px;
+    font-weight: 600;
+}
+
+.Hod-message{
+	border-radius: 50px;
+    background: #ff000085;
+    width: max-content;
+    padding: 4px 15px;
+    margin: 10px 0px;
+    color: white;
+}

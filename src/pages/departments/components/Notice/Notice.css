@@ -1,0 +1,29 @@
+.notices-msg {
+	font-size: 19px;
+}
+
+.not-text {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.not-ol {
+	margin: 0px 0px;
+}
+
+.not-li {
+	background-color: rgb(226 186 186);
+    padding: 5px 25px;
+}
+
+.news-in-part {
+	align-items: center;
+}
+
+.notice-head-heading{
+	background-color: #a90909;
+    padding: 8px 26px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
