@@ -10,6 +10,11 @@ import Research from "../components/ReasearchPart";
 import Notices from "../components/Notice";
 import Footer from "../../../components/Footer";
 import Alumini from "../components/Alumini";
+import RetiredFaculty from "../components/RetiredFaculty";
+import MedalAwards from "../components/MedalAwards";
+import UpcomingEvents from "../components/UpcomingEvents";
+import DepartmentCommittees from "../components/DepartmentCommittees"
+
 
 import "../components/LandingPage/style.css";
 
@@ -26,7 +31,11 @@ export default function Department({ department }) {
 				<Route path="/notices" element={<Notices />} value={department} />
 				<Route path="/syllabus" element={<Courses />} value={department} />
 				<Route path="/alumini" element={<Alumini />} value={department} />
-				<Route path="/research" element={<Research />} value={department} />
+				<Route path="/department-committees" element={<DepartmentCommittees />} value={department} />
+				<Route path="/upcoming-events" element={<UpcomingEvents />} value={department} />
+				<Route path="/students" element={<Alumini />} value={department} />
+				<Route path="/retired-faculty" element={<RetiredFaculty />} value={department} />
+				<Route path="/medal-awards" element={<MedalAwards />} value={department} />
 			</Routes>
 			<Footer />
 		</>

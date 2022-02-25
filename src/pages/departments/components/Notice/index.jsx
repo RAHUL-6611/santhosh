@@ -68,15 +68,27 @@ export default function Notices() {
 					<br />
 					<ol className="not-ol text-left">
 						<br />
+						<Link to="/cse/department-committees">
 						<li className="not-li my-5">Departmental Committies</li>
+						</Link>
 						<Link to="/cse/alumini">
 							<li className="not-li my-5">Notable Alumni</li>
 						</Link>
+						<Link to="/cse/placements">
 						<li className="not-li my-5">Placement Details</li>
+						</Link>
+						<Link to="/cse/medal-awards">
 						<li className="not-li my-5">Medals & Awards</li>
+						</Link>
+						<Link to="/cse/retired-faculty">
 						<li className="not-li my-5">Retired Faculty</li>
+						</Link>
+						<Link to="/cse/students">
 						<li className="not-li my-5">Students</li>
+						</Link>
+						<Link to="/cse/upcoming-events">
 						<li className="not-li my-5">Upcoming Events</li>
+						</Link>
 					</ol>
 				</div>
 			</div>
