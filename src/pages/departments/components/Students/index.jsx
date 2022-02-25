@@ -2,7 +2,10 @@ import React from "react";
 
 import articleImg from "../../../../components/assets/college_img.jpg";
 import articleImg2 from "../../../../components/assets/college_img.jpg";
+import DevWorkshops from "./devWorkshops";
 import "./style.css";
+import TalentShowcase from "./talent-showcase";
+
 
 const Articles = [
 	{
@@ -15,13 +18,14 @@ export default function index() {
 	return (
 		<>
 			<div className="p-3">
+				<Title name="Students Articles" />
 				<div className="student-articles flex cols-span-5 row-span-4 gap-3">
 					<div className="grid col-3">
 						<div className="flex ">
 							<div className="students-box-1 col-2 student-color m-2 p-4 flex-1">
-								<div className="">
+								{/* <div className="">
 									<img src={articleImg2} alt="" />
-								</div>
+								</div> */}
 								<h3 className="text-2xl py-4">Articles</h3>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
 								nihil?
@@ -75,10 +79,30 @@ export default function index() {
 						})}
 					</div>
 				</div>
-				<div className="student-talent-showcase"></div>
-				<div className="professional-dev-workshops"></div>
+
+				<Title name="Talent Showcase" />
+				<div className="student-talent-showcase">
+			    	<DevWorkshops /> 
+				</div>
+
+				<Title name="Dev Workshops" />
+				<div className="professional-dev-workshops">
+					<TalentShowcase />
+				</div>
+
+				<Title name="Industry Exploration" />
 				<div className="industry-Exploration"></div>
 			</div>
 		</>
 	);
+}
+
+let Title = ({ name }) => {
+	return(
+		<div className="talentTitle">
+			<div className="titleUp my-10 mt-20 px-20">
+		    	<div className="titleDown py-2 px-10 text-3xl">{name}</div>
+		    </div>
+		</div>
+	)
 }

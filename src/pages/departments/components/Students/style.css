@@ -7,3 +7,68 @@
     background: white;
     box-shadow: 0 0 8px 0px #8d8c9385;
 }
+
+.devback{
+    position: relative;
+}
+
+.innerdev{
+    border: 2px solid #fbfbfb;
+    padding: 15px;
+    height: 362px;
+    text-align: center;
+}
+
+.DevCard{
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.innerdev2{
+    display: none;
+}
+
+.innerdev:hover ~ .innerdev2{
+    display: block;
+}
+
+.devback{
+    background: #ff000033;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+}
+
+.devcardHold{
+   display: grid;    
+   grid-template-columns: repeat(4, 320px);
+   gap: 30px 15px;
+   justify-content: center;
+   justify-items: center;
+}
+
+.talentTitle{
+    display: flex;
+    justify-content: center;
+}
+
+.titleUp{
+    border-top: 3px solid rgb(230, 199, 29);
+    text-align: center;
+    width: max-content;
+}
+
+.titleDown{
+    border-bottom: 3px solid rgb(109, 0, 0);
+    /* font-size: larger; */
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+
+
+

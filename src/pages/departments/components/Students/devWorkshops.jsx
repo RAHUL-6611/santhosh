@@ -1,13 +1,26 @@
 import React from "react";
 
+import "./style.css";
+
+import img from "../../../../components/assets/college_img.jpg";
+
 export default function DevWorkshops() {
 	return (
-		<div>
-			{[1, 2, 3, 4, 5].map(() => {
+		<div className="devcardHold my-10">
+			{[1, 2, 3, 5].map((e) => {
 				return (
-					<div className="flex">
-						<div className="DevCard"></div>
-					</div>
+						<div className="DevCard col-2" key={e} style={{"background" : `url(${img})`}}>
+							<div className="devback bg-red-100">
+								<div className="innerdev">
+									<div className="innerdev1">
+									     Ruby cube solver
+									</div>
+									<div className="innerdev2">
+										Ankath
+									</div>
+								</div>
+							</div>
+						</div>
 				);
 			})}
 		</div>
