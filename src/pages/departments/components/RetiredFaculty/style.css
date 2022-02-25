@@ -1,0 +1,166 @@
+/* @import url("../public/assets/images/water-logo.jpeg"); */
+
+.single-faculty__container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.single-faculty__profile{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+.single-faculty__profile .profile__left{
+    display: flex;
+    flex: 2;
+}
+
+.single-faculty__profile .profile__left .profile__image img{
+     width: 150px;
+     height: 180px;
+}
+
+.single-faculty__profile .profile__left .profile__name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.single-faculty__profile .profile__left .profile__name h4{
+  border-bottom: 1px solid black;
+  margin-top: 0.4rem;
+}
+
+.single-faculty__profile .profile__left .profile__name h3{
+   margin-top: 0.7rem;
+}
+
+.single-faculty__profile .profile__right{
+    display: flex;
+    flex-direction: column;
+   flex: 1;
+   justify-content: center;
+}
+
+.single-faculty__profile .profile__right .contact .phone li{
+    list-style: none;
+    margin-top: 0.4rem;
+}
+
+.single-faculty__profile .profile__right .social-media a img{
+    width: 24px;
+    height: 24px;
+    margin-top:1rem;
+    margin-right: 0.4rem;
+}
+
+.single-faculty__container .single-faculty__intro{
+    position: relative;
+}
+
+.single-faculty__container .single-faculty__intro::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.single-faculty__container .single-faculty__intro .grid-container span{
+    font-size: 1.4rem;
+    color: black;
+}
+
+.single-faculty__container .single-faculty__intro .grid-container p{
+    margin-top: 0.4rem;
+}
+
+
+.single-faculty__container .single-faculty__intro .grid-container .first,
+.single-faculty__container .single-faculty__intro .grid-container .second{
+    display: grid;
+    width: 45%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    border: 1px solid black;
+}
+
+.single-faculty__container .single-faculty__intro .grid-container .first{
+    background-color: powderblue;
+}
+
+.single-faculty__container .single-faculty__intro .grid-container .third,
+.single-faculty__container .single-faculty__intro .grid-container .fourth{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    border: 1px solid black;
+}
+
+.single-faculty__container .single-faculty__intro .grid-container .fifth{
+    margin-top: 1rem;
+    border: 1px solid black;
+}
+
+.single-faculty__container .single-faculty__intro .grid-container .fifth .pub{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 0.4rem;
+    color: black;
+}
+
+.single-faculty__container .single-faculty__intro .grid-container .publication{
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.single-faculty__container .single-faculty__intro .grid-container .publication .journals{
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+.single-faculty__container .single-faculty__intro .grid-container .publication .journals ul li{
+    margin-top: 0.5rem;
+}
+
+.single-faculty__container .single-faculty__intro .grid-container .publication .conference{
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+.single-faculty__container .single-faculty__intro .grid-container .publication .conference ul li{
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+    .single-faculty__profile{
+        flex-direction: column;
+    }
+    .single-faculty__profile .profile__left{
+        justify-content: center;
+    }
+    .single-faculty__profile .profile__right{
+        align-items: center;
+        margin-top: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .single-faculty__container .single-faculty__intro .grid-container .first,
+    .single-faculty__container .single-faculty__intro .grid-container .second{
+         width: 100%;
+}
+  }
+
+
+
+
+

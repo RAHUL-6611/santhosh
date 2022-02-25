@@ -1,0 +1,9 @@
+.side-row{
+    height: 810px;
+    overflow-y: scroll;
+}
+
+.student-color{
+    background: white;
+    box-shadow: 0 0 8px 0px #8d8c9385;
+}

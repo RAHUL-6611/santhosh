@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import Table from "./Table";
 const index = () => {
-  return (
-    <div>index</div>
-  )
-}
+	return (
+		<div>
+			<Table />
+		</div>
+	);
+};
 
-export default index
+export default index;
