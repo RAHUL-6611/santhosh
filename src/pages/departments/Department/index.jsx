@@ -13,6 +13,7 @@ import Alumini from "../components/Alumini";
 import Students from "../components/Students";
 import RetiredFaculty from "../components/RetiredFaculty";
 import MedalAwards from "../components/MedalAwards";
+import Placements from "../components/Placements";
 import UpcomingEvents from "../components/UpcomingEvents";
 import DepartmentCommittees from "../components/DepartmentCommittees"
 
@@ -37,6 +38,7 @@ export default function Department({ department }) {
 				<Route path="/students" element={<Students />} value={department} />
 				<Route path="/retired-faculty" element={<RetiredFaculty />} value={department} />
 				<Route path="/medal-awards" element={<MedalAwards />} value={department} />
+				<Route path="/placements" element={<Placements />} value={department} />
 			</Routes>
 			<Footer />
 		</>
