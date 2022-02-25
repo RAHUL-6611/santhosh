@@ -19,9 +19,9 @@ export default function index() {
 					<div className="grid col-3">
 						<div className="flex ">
 							<div className="students-box-1 col-2 student-color m-2 p-4 flex-1">
-                                <div className="">
-                                   <img alt="" />
-                                </div>
+								<div className="">
+									<img src={articleImg2} alt="" />
+								</div>
 								<h3 className="text-2xl py-4">Articles</h3>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo,
 								nihil?
@@ -58,7 +58,7 @@ export default function index() {
 										<div className="article-title-students text-2xl">
 											PTU Developers
 										</div>
-										<div className="article-by-whom mb-2">Dr. Sathyamurthi</div>
+										<div className="article-by-whom mb-2">Najmu sehar</div>
 										<div className="article-img-pic">
 											<img
 												src={articleImg}

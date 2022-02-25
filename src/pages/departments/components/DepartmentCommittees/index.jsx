@@ -11,21 +11,29 @@ const index = () => {
 				</p>
 			</div>
 
-			<div className="big-four-committess flex">
-				<div className="committee flex-0.25 mx-4 my-2 mb-10 p-8 shadow-2xl">
-					<div className="committee name py-4 ml-4">Google developer Club</div>
+			<div className="big-four-committess flex flex-wrap">
+				<div className="committee flex-0.5 mx-4 my-2 mb-10 p-8 shadow-2xl">
+					<div className="committee name py-4 ml-4 text-2xl">
+						Google developer Club
+					</div>
 					<img src={img1} alt="" />
 				</div>
-				<div className="committee flex-0.25 mx-4 my-2 mb-10 p-8 shadow-2xl">
-					<div className="committee name py-4 ml-4">Google developer Club</div>
+				<div className="committee flex-0.5 mx-4 my-2 mb-10 p-8 shadow-2xl">
+					<div className="committee name py-4 ml-4 text-2xl">
+						Google developer Club
+					</div>
 					<img src={img1} alt="" />
 				</div>
-				<div className="committee flex-0.25 mx-4 my-2 mb-10 p-8 shadow-2xl">
-					<div className="committee name py-4 ml-4">Google developer Club</div>
+				<div className="committee flex-0.5 mx-4 my-2 mb-10 p-8 shadow-2xl">
+					<div className="committee name py-4 ml-4 text-2xl">
+						Google developer Club
+					</div>
 					<img src={img1} alt="" />
 				</div>
-				<div className="committee flex-0.25 mx-4 my-2 mb-10 p-8 shadow-2xl">
-					<div className="committee name py-4 ml-4">Google developer Club</div>
+				<div className="committee flex-0.5 mx-4 my-2 mb-10 p-8 shadow-2xl">
+					<div className="committee name py-4 ml-4 text-2xl">
+						Google developer Club
+					</div>
 					<img src={img1} alt="" />
 				</div>
 			</div>
