@@ -2,6 +2,7 @@ import React from "react";
 
 import articleImg from "../../../../components/assets/college_img.jpg";
 import articleImg2 from "../../../../components/assets/college_img.jpg";
+
 import DevWorkshops from "./devWorkshops";
 import "./style.css";
 import TalentShowcase from "./talent-showcase";
@@ -80,18 +81,19 @@ export default function index() {
 					</div>
 				</div>
 
-				<Title name="Talent Showcase" />
+				<Title name="Dev Workshops" />
 				<div className="student-talent-showcase">
 			    	<DevWorkshops /> 
 				</div>
 
-				<Title name="Dev Workshops" />
+				<Title name="Industry Exploration" />
+				<div className="industry-Exploration"></div>
+
+				
+				<Title name="Talent Showcase" />
 				<div className="professional-dev-workshops">
 					<TalentShowcase />
 				</div>
-
-				<Title name="Industry Exploration" />
-				<div className="industry-Exploration"></div>
 			</div>
 		</>
 	);

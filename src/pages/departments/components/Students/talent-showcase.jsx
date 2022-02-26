@@ -3,64 +3,101 @@ import React from "react";
 import "./talent.css";
 
 import img from "../../../../components/assets/college_img.jpg";
+import img1 from "../../../../components/assets/college_img.jpg";
+import img2 from "../../../../components/assets/college_img.jpg";
+import img3 from "../../../../components/assets/college_img.jpg";
+import img4 from "../../../../components/assets/college_img.jpg";
+import img5 from "../../../../components/assets/college_img.jpg";
+import img6 from "../../../../components/assets/college_img.jpg";
+import img7 from "../../../../components/assets/college_img.jpg";
+
 
 export default function TalentShowcase(){
     
 
     return (
         <div>
-            <div class="container">
-    <input type="radio" name="slider" id="item-1" checked />
-    <input type="radio" name="slider" id="item-2" />
-    <input type="radio" name="slider" id="item-3" />
-  <div class="cards">
-    <label class="card" for="item-1" id="song-1">
-      <img src={img} alt="song" />
-    </label>
-    <label class="card" for="item-2" id="song-2">
-      <img src={img} alt="song" />
-    </label>
-    <label class="card" for="item-3" id="song-3">
-      <img src={img} alt="song" />
-    </label>
-  </div>
-  <div class="player">
-    <div class="upper-part">
-      <div class="play-icon">
-        <svg width="20" height="20" fill="#2992dc" stroke="#2992dc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="feather feather-play" viewBox="0 0 24 24">
-          <defs/>
-          <path d="M5 3l14 9-14 9V3z"/>
-        </svg>
-      </div>
-      <div class="info-area" id="test">
-        <label class="song-info" id="song-info-1">
-          <div class="title">Bunker</div>
-          <div class="sub-line">
-            <div class="subtitle">Balthazar</div>
-            <div class="time">4.05</div>
-          </div>
-        </label>
-        <label class="song-info" id="song-info-2">
-          <div class="title">Words Remain</div>
-          <div class="sub-line">
-            <div class="subtitle">Moderator</div>
-            <div class="time">4.05</div>
-          </div>
-        </label>
-        <label class="song-info" id="song-info-3">
-          <div class="title">Falling Out</div>
-          <div class="sub-line">
-            <div class="subtitle">Otzeki</div>
-            <div class="time">4.05</div>
-          </div>
-        </label>
+            <section className="section">
+  
+  <div className="grid">
+    <div className="item">
+      <div className="item__details">
+        jelly-o brownie sweet
       </div>
     </div>
-    <div class="progress-bar">
-      <span class="progress"></span>
+    <div className="item item--large">
+      <div className="item__details">
+        Muffin jelly gingerbread 
+      </div>
+    </div>
+    <div className="item item--medium">
+      <div className="item__details">
+        sesame snaps chocolate
+      </div>
+    </div>
+    <div className="item item--large">
+      <div className="item__details">
+        Oat cake
+      </div>
+    </div>
+    <div className="item item--full">
+      <div className="item__details">
+         jujubes cheesecake
+      </div>
+    </div>
+    <div className="item item--medium">
+      <div className="item__details">
+        Dragée pudding brownie
+      </div>
+    </div>
+    <div className="item item--large">
+      <div className="item__details">
+        Oat cake
+      </div>
+    </div>
+    <div className="item">
+      <div className="item__details">
+        powder toffee
+      </div>
+    </div>
+    <div className="item item--medium">
+      <div className="item__details">
+        pudding cheesecake
+      </div>
+    </div>
+    <div className="item item--large">
+      <div className="item__details">
+        toffee bear claw 
+      </div>
+    </div>
+    <div className="item">
+      <div className="item__details">
+        cake cookie croissant
+      </div>
+    </div>
+    <div className="item item--medium">
+      <div className="item__details">
+        liquorice sweet roll
+      </div>
+    </div>
+    <div className="item item--medium">
+      <div className="item__details">
+        chocolate marzipan
+      </div>
+    </div>
+    <div className="item item--large">
+      <div className="item__details">
+        danish dessert lollipop
+      </div>
+    </div>
+    <div className="item">
+      <div className="item__details">
+        sugar plum dragée
+      </div>
     </div>
   </div>
+  </section>
 </div>
-        </div>
+        
     )
 }
