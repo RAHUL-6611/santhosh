@@ -40,7 +40,7 @@ export const CSE = {
 		],
 
 		about:
-			"The Department of Computer Science and engineering has well experienced faculty, skilled technical staff and well equipped laboratories. It offers one undergraduate program B.Tech. (Information Technology). It aims at providing high quality training to students through the latest in Information Technology. <Br /> In order to maintain the standard of education, it constantly upgrades the academic syllabi so as to keep the students well to deal with changing trends in the field of Information Technology. It also emphasizes on Information Security, Image Processing, Software Engineering, Optical and Mobile Networks, Soft Computing, Complex Event Processing, Data Mining, Web Technology and several other recent topics. The Department of Information Technology is accredited by NBA (National Board of Accreditation). So far, eight batches of students have successfully completed the degree course with flying colours.",
+			"The Department of Computer Science and Engineering was established in the year 1987 with the objective of imparting high quality education in the field of Computer Science. It provides a comprehensive program that emphasizes on Advanced Data Structures and Algorithms, Advanced Software Design, Artificial Intelligence, Parallel and Distributed Systems, Graphics and Image Processing, Machine Learning, Internet of Things, Information Security, Digital Forensics and Big Data Mining. The department has competent and committed faculty which encourages students' involvement in various academic and co-curricular activities. The department has well equipped computer laboratories with more than 400 computers and a Research Laboratory to carry out research and project activities.  The department has the latest infrastructure facilities with high speed Internet, advanced software labs, hardware labs, seminar halls and class rooms equipped with LCD projectors.",
 
 			vision: [
 				{
@@ -401,56 +401,36 @@ export const CSE = {
 			syllabusPdf: "",
 		},
 	},
-	facilities: {
-		lab1: {
-			name: "",
+	facilities: [
+		{
+			name: "Electronic Devices and Circuits Lab",
 			img: "",
-			content: "",
+			content: " practical oriented electronic circuits that are very essential for the students to solidify their theoretical concepts. This Manual provides a communication bridge between the theory and practical world of the electronic circuits.",
 		},
-		lab2: {
-			name: "",
+		{
+			name: "Microprocessor Lab",
 			img: "",
-			content: "",
+			content: "The purpose of this laboratory is to train the students to be familiar with the software and hardware of microprocessors so that they can gain enough experiences to meet the demand of the microprocessor era. The facilities in the laboratory enable students to build a firm background in microprocessor hardware as well as software .",
 		},
-		lab3: {
-			name: "",
+		{
+			name: "Embedded System Design Lab",
 			img: "",
-			content: "",
+			content: "Embedded Systems Design Lab The ESD Lab is used to teach students to design and simulate digital circuits. The lab includes Oscilloscopes, Arbitrary Function Generators, Power Supplies and Multimeters. Many high tech software packages are installed to allow students to create embedded systems.",
 		},
-		lab4: {
-			name: "",
+		{
+			name: "Sensors & Transducers Lab",
 			img: "",
-			content: "",
+			content: "The word “Transducer” is the collective term used for both Sensors which can be used to sense a wide range of different energy forms such as movement, electrical signals, radiant energy, thermal or magnetic energy, etc., and Actuators which can be used to switch voltages or currents.",
 		},
-		lab5: {
-			name: "",
+		{
+			name: "Process Control Lab",
 			img: "",
-			content: "",
+			content: "Multi Process trainer, Multi variable Laboratory type Level Process, Calibration test bench, PLC trainer, Distributed Control system, Control Valve Characteristics Setup,",
 		},
-		lab6: {
-			name: "",
+		{
+			name: "Virtual Instrumentation Lab",
 			img: "",
-			content: "",
+			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
 		},
-		lab7: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab8: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab9: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab10: {
-			name: "",
-			img: "",
-			content: "",
-		},
-	},
+	],
 };

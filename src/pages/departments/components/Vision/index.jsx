@@ -17,7 +17,7 @@ const Vision = ({ value }) => {
 			</div>
 			
 			<div className="vision-content my-10 md:mx-20 mx-5 p-5">
-				<h2 className="text-2xl px-20 py-5 text-500">Vission</h2>
+				<h2 className="vision-heading text-2xl px-20 py-5 text-500">Vision</h2>
 				{
 					value.map((e)=>{
 				             return (
@@ -30,7 +30,7 @@ const Vision = ({ value }) => {
 							 )
 					})
 				}
-				<h2 className="text-2xl px-20 py-5 text-500">Mission</h2>
+				<h2 className="vision-heading text-2xl px-20 py-5 text-500">Mission</h2>
 				{
 					value.map((e)=>{
 				             return (

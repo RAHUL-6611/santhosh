@@ -9,59 +9,46 @@ export const EIE = {
 	About: {
 		DeptName: "Electronics and Instrumentation Engineering",
 		ShortName: "EIE",
-		LongName: "DEPARTMENT OF Electronics and instrumentation engineering",
+		LongName: "DEPARTMENT OF Electronics and Instrumentation Engineering",
 
         DeptImg: Dimg,
 
 		count : [
 			{
 				name: "B.Tech Students",
-				count : 23
+				count : 213
 			},
 			{
 				name: "M.Tech Students",
-				count : 23
-			},
-			{
-				name: "MCA Students",
-				count : 23
-			},
-			{
-				name: "Ph.d Scholars",
-				count : 23
-			},
-			{
-				name: "Faculty",
-				count : 23
-			},
-			{
-				name: "Staff",
-				count : 23
+				count : 5
 			},
 		],
 
 		about:
-			"The Department of Electronic and instrumentation engineering has well experienced faculty, skilled technical staff and well equipped laboratories. It offers one undergraduate program B.Tech. (Electronic and instrumentation engineering). It aims at providing high quality training to students through the latest in Electronic and instrumentation engineering. <Br /> In order to maintain the standard of education, it constantly upgrades the academic syllabi so as to keep the students well to deal with changing trends in the field of Electronic and instrumentation engineering. It also emphasizes on Information Security, Image Processing, Software Engineering, Optical and Mobile Networks, Soft Computing, Complex Event Processing, Data Mining, Web Technology and several other recent topics. The Department of Electronic and instrumentation engineering is accredited by NBA (National Board of Accreditation). So far, eight batches of students have successfully completed the degree course with flying colours.",
+			"Instrumentation is the branch of engineering that deals with measurement, control and automation. In this fully automated world, this course which is a complete blend of technical subjects involving both Electronics and instrumentation areas seems to find its own place in providing the students with adequate knowledge and expertise. Electronics being the order of the day, it is very much necessary for the young minds to get accustomed with the latest developments in Electronics field. Moreover, a combination of Electronics and Instrumentation would fetch high dividends   for the students who take up Electronics and Instrumentation as their career course. With the increasing demand for instrumentation engineers, the Department of Electronics and Instrumentation Engineering was started in 1998 and has been producing resourceful engineers for the past twenty years. The department has been accredited by AICTE, New Delhi. The department has well experienced and highly-motivated faculty members who are specialised in different fields. The department offers UG (B.Tech in EIE), PG (M.Tech in Instrumentation Engineering) and Ph.D. in different areas of Instrumentation such as Biomedical, MEMS, Virtual Instruments and Embedded systems.",
 
 			vision: [
 				{
-					point : "To explore innovative approaches to enhance and expand learning opportunities through the integration of various technologies."
+					point : "To produce world class industry ready Instrumentation Engineers and to establish state of art Instrumentation facilities to cater to the needs of the society"
 				},
-				{
-					point : "To build a strong research and teaching environment that responds to the real-time challenges of the industry.",
-				},
-				
+							
 			 ],
 
 			 Mission: [
 				{
-					point : "To inculcate the blend of competence, aptitude of knowledge and investigate flair through devising an ambient environment for sustainable learning.",
+					point : "To produce world class industry ready Instrumentation Engineers and to establish state of art Instrumentation facilities to cater to the needs of the society",
 				},
 				{
-					point : "To transform attitude, values, priorities by changing mindset and instill positive outlook for socially conscious intellectual development.",
+					point : "To increase the visibility of academic programs globally and attract talent at all levels.",
 				},
 				{
-					point : "Incubate, apply and spread innovative ideas to evolve the department as a centre of excellence in thrust areas.",
+					point : "To undertake collaborative research / industrial projects through internship which offer opportunities for long term interaction with academia and industry.",
+				},
+				{
+					point : "Sustained interaction with the alumni, students, parents, faculty and other stake holders to stay relevant in the globalized environment.",
+				},
+				{
+					point : "To develop human potential to its fullest extent so that intellectually capable and imaginative gifted leaders can emerge in a range of professions ",
 				},
 			 ],
 		Hod: {
@@ -399,56 +386,36 @@ export const EIE = {
 			syllabusPdf: "",
 		},
 	},
-	facilities: {
-		lab1: {
-			name: "",
+	facilities: [
+		{
+			name: "Electronic Devices and Circuits Lab",
 			img: "",
-			content: "",
+			content: " practical oriented electronic circuits that are very essential for the students to solidify their theoretical concepts. This Manual provides a communication bridge between the theory and practical world of the electronic circuits.",
 		},
-		lab2: {
-			name: "",
+		{
+			name: "Microprocessor Lab",
 			img: "",
-			content: "",
+			content: "The purpose of this laboratory is to train the students to be familiar with the software and hardware of microprocessors so that they can gain enough experiences to meet the demand of the microprocessor era. The facilities in the laboratory enable students to build a firm background in microprocessor hardware as well as software .",
 		},
-		lab3: {
-			name: "",
+		{
+			name: "Embedded System Design Lab",
 			img: "",
-			content: "",
+			content: "Embedded Systems Design Lab The ESD Lab is used to teach students to design and simulate digital circuits. The lab includes Oscilloscopes, Arbitrary Function Generators, Power Supplies and Multimeters. Many high tech software packages are installed to allow students to create embedded systems.",
 		},
-		lab4: {
-			name: "",
+		{
+			name: "Sensors & Transducers Lab",
 			img: "",
-			content: "",
+			content: "The word “Transducer” is the collective term used for both Sensors which can be used to sense a wide range of different energy forms such as movement, electrical signals, radiant energy, thermal or magnetic energy, etc., and Actuators which can be used to switch voltages or currents.",
 		},
-		lab5: {
-			name: "",
+		{
+			name: "Process Control Lab",
 			img: "",
-			content: "",
+			content: "Multi Process trainer, Multi variable Laboratory type Level Process, Calibration test bench, PLC trainer, Distributed Control system, Control Valve Characteristics Setup,",
 		},
-		lab6: {
-			name: "",
+		{
+			name: "Virtual Instrumentation Lab",
 			img: "",
-			content: "",
+			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
 		},
-		lab7: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab8: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab9: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab10: {
-			name: "",
-			img: "",
-			content: "",
-		},
-	},
+	],
 };

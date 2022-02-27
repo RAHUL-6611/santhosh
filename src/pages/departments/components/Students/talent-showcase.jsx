@@ -2,8 +2,7 @@ import React from "react";
 
 import "./talent.css";
 
-
-
+import articleImg from "../../../../components/assets/college_img.jpg";
 
 export default function TalentShowcase(){
     
@@ -12,82 +11,77 @@ export default function TalentShowcase(){
         <div>
             <section className="section">
   
-  <div className="grid">
-    <div className="item">
+  <div className="talent-grid">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item">
       <div className="item__details">
-        jelly-o brownie sweet
+      National Cadet Corps
       </div>
     </div>
-    <div className="item item--large">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item item--large">
       <div className="item__details">
-        Muffin jelly gingerbread 
+      Girl Scouts and Girl Guides 
       </div>
     </div>
-    <div className="item item--medium">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item item--medium">
       <div className="item__details">
-        sesame snaps chocolate
+      Amateur Radio
       </div>
     </div>
-    <div className="item item--large">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item item--large">
       <div className="item__details">
-        Oat cake
+      Chess champion
       </div>
     </div>
-    <div className="item item--full">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item item--full">
       <div className="item__details">
-         jujubes cheesecake
+        PTU cricket team
       </div>
     </div>
-    <div className="item item--medium">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item item--medium">
       <div className="item__details">
-        Dragée pudding brownie
+      Yoga and Meditation
       </div>
     </div>
-    <div className="item item--large">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item item--large">
       <div className="item__details">
-        Oat cake
+        Ruby cube solver
       </div>
     </div>
-    <div className="item">
+    <div style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item">
       <div className="item__details">
-        powder toffee
+        programmer
       </div>
     </div>
-    <div className="item item--medium">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item item--medium">
       <div className="item__details">
-        pudding cheesecake
+        gammer
       </div>
     </div>
-    <div className="item item--large">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item item--large">
       <div className="item__details">
-        toffee bear claw 
+        cook
       </div>
     </div>
-    <div className="item">
+    <div style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item">
       <div className="item__details">
-        cake cookie croissant
+        athelet
       </div>
     </div>
-    <div className="item item--medium">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item item--medium">
       <div className="item__details">
-        liquorice sweet roll
+        public speaker
       </div>
     </div>
-    <div className="item item--medium">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item item--large">
       <div className="item__details">
-        chocolate marzipan
+        public speaker
       </div>
     </div>
-    <div className="item item--large">
+    <div  style={{"background" : `url("${articleImg}")`, "background-size" : "cover"}} className="item item--medium">
       <div className="item__details">
-        danish dessert lollipop
+        public speaker
       </div>
-    </div>
-    <div className="item">
-      <div className="item__details">
-        sugar plum dragée
-      </div>
-    </div>
+    </div>     
   </div>
   </section>
 </div>

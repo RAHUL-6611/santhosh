@@ -16,31 +16,41 @@ export const ME = {
 		count : [
 			{
 				name: "B.Tech Mechanical Students",
-				count : 23
+				count : 230
 			},
 			{
 				name: "B.Tech Mechtronics Students",
-				count : 23
+				count : 223
 			},
 			{
-				name: "M.Tech Mechanical Students",
-				count : 23
+				name: "M.Tech Energy Technology",
+				count : 30
+			},
+			{
+				name: "M.Tech PDM",
+				count : 14
 			},
 			
 		],
 
 		about:
-			"The Department of Mechanical Engineering offers B. Tech., M. Tech., and Ph. D Programmes. The Department of Mechanical Engineering has become the QIP centre in the year 2013. Highly qualified, experienced and committed faculty members significantly contribute to the growth of the college in general and the Department in particular. The UG course of the department is accreted by NBA for a period of 5 years. The Department has excellent laboratory facilities along with state-of-the-art computing facilities and library. The Department offers world class training both in theory and practice to the students apart from providing consultancy services to the local industries.",
+			"The Department of Mechanical Engineering offers B. Tech., M. Tech., and Ph. D Programmes. The Department of Mechanical Engineering has become the QIP centre in the year 2013. Highly qualified, experienced and committed faculty members significantly contribute to the growth of the college in general and the Department in particular. The UG course of the department is accreted by NBA for a period of 5 years. The Department has excellent laboratory facilities along with state-of-the-art computing facilities and library. The Department offers world class training both in theory and practice to the students apart from providing consultancy services to the local industries.			",
 
 			vision: [
 				{
-					point : "To Produce Competent Professionals in Information Technology so as to Achieve the Global Innovation of Engineering and Technology"
+					point : "To produce dynamic, vibrant, demand driven and quality conscious human resource through consistent and sustained development ensuring highest standards of technological ethics."
 				},
 			 ],
 
 			 Mission: [
 				{
-					point : "To Provide High Quality Education and Training in Information Technology Through Advanced Learning Environment with State-of-the Art Facilities, Teaching Methodologies, Contemporary Curriculum and Research",
+					point : "Strengthening the department to produce high quality engineers.",
+				},
+				{
+					point : "Scaling up education, research and development.",
+				},
+				{
+					point : "Evincing expertise through centers of excellence in focused areas of Mechanical Engineering.",
 				},
 			 ],
 
@@ -380,56 +390,36 @@ export const ME = {
 			syllabusPdf: "",
 		},
 	},
-	facilities: {
-		lab1: {
-			name: "",
+	facilities: [
+		{
+			name: "Electronic Devices and Circuits Lab",
 			img: "",
-			content: "",
+			content: " practical oriented electronic circuits that are very essential for the students to solidify their theoretical concepts. This Manual provides a communication bridge between the theory and practical world of the electronic circuits.",
 		},
-		lab2: {
-			name: "",
+		{
+			name: "Microprocessor Lab",
 			img: "",
-			content: "",
+			content: "The purpose of this laboratory is to train the students to be familiar with the software and hardware of microprocessors so that they can gain enough experiences to meet the demand of the microprocessor era. The facilities in the laboratory enable students to build a firm background in microprocessor hardware as well as software .",
 		},
-		lab3: {
-			name: "",
+		{
+			name: "Embedded System Design Lab",
 			img: "",
-			content: "",
+			content: "Embedded Systems Design Lab The ESD Lab is used to teach students to design and simulate digital circuits. The lab includes Oscilloscopes, Arbitrary Function Generators, Power Supplies and Multimeters. Many high tech software packages are installed to allow students to create embedded systems.",
 		},
-		lab4: {
-			name: "",
+		{
+			name: "Sensors & Transducers Lab",
 			img: "",
-			content: "",
+			content: "The word “Transducer” is the collective term used for both Sensors which can be used to sense a wide range of different energy forms such as movement, electrical signals, radiant energy, thermal or magnetic energy, etc., and Actuators which can be used to switch voltages or currents.",
 		},
-		lab5: {
-			name: "",
+		{
+			name: "Process Control Lab",
 			img: "",
-			content: "",
+			content: "Multi Process trainer, Multi variable Laboratory type Level Process, Calibration test bench, PLC trainer, Distributed Control system, Control Valve Characteristics Setup,",
 		},
-		lab6: {
-			name: "",
+		{
+			name: "Virtual Instrumentation Lab",
 			img: "",
-			content: "",
+			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
 		},
-		lab7: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab8: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab9: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab10: {
-			name: "",
-			img: "",
-			content: "",
-		},
-	},
+	],
 };

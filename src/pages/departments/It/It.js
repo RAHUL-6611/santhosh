@@ -16,28 +16,13 @@ export const IT = {
 		count : [
 			{
 				name: "B.Tech Students",
-				count : 23
+				count : 185
 			},
 			{
-				name: "M.Tech Students",
-				count : 23
+				name: "M.Tech IOT Students",
+				count : 12
 			},
-			{
-				name: "MCA Students",
-				count : 23
-			},
-			{
-				name: "Ph.d Scholars",
-				count : 23
-			},
-			{
-				name: "Faculty",
-				count : 23
-			},
-			{
-				name: "Staff",
-				count : 23
-			},
+			
 		],
 
 		about:
@@ -391,56 +376,32 @@ export const IT = {
 			syllabusPdf: "",
 		},
 	},
-	facilities: {
-		lab1: {
-			name: "",
+	facilities: [
+		 {
+			name: "CASIT Laboratory ",
 			img: "",
-			content: "",
+			content: "Equipped with 35 Desktop computers with the configuration of Core 2 Duo, Core i3 and Core i5 processors",
 		},
-		lab2: {
-			name: "",
+		 {
+			name: "Software Lab I ",
 			img: "",
-			content: "",
+			content: "Equipped with 35 Desktop computers with the configuration of Core i3 and Core i5 processors",
 		},
-		lab3: {
-			name: "",
+		{
+			name: "Software Lab II ",
 			img: "",
-			content: "",
+			content: "Equipped with 35 systems with Core i5 processors ",
 		},
-		lab4: {
-			name: "",
+		{
+			name: "IoT Lab ",
 			img: "",
-			content: "",
+			content: "Equipped with 20 numbers of Intel Core i5 systems,  Rasperry Pi and Arduino Uno Boards",
 		},
-		lab5: {
-			name: "",
+		{
+			name: "Hardware Lab ",
 			img: "",
-			content: "",
+			content: "Equipped with Digital Trainer kits, FPGA kits, 8085 and 8086 Microprocessor and 8051 Microcontroller kits",
 		},
-		lab6: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab7: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab8: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab9: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab10: {
-			name: "",
-			img: "",
-			content: "",
-		},
-	},
+		
+	],
 };

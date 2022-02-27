@@ -1,0 +1,90 @@
+.place_data_body{
+    overflow-x: hidden;
+}
+.place_data_container table{
+    width: 80%;   
+    margin: auto; 
+    border: 1px solid brown;
+    /* position: relative; */
+}
+.place_data_container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 72%;
+    /* background: url("water-logo.jpeg") no-repeat ; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    background-size: 30%;
+
+}
+
+.ug-zero-name{
+    width: 57%;
+}
+.place_data_container .pg{
+    width: max-content;
+}
+.place_data_container td,th{
+    
+    border: 1px solid brown;
+    padding: 8px;
+}
+
+.place_data_container td:nth-child(1){
+    width: 20%;
+}
+.place_data_container td:nth-child(2){
+    width: 60%;
+}
+
+.place_data_container td:nth-child(3){
+    width: 50%;
+    text-align: center;
+}
+
+.place_data_container th{
+    /* width: 90%; */
+    font-size: 20px;
+    background-color: brown;
+    color: white;
+    text-align: left;
+}
+.place_data_container h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px solid brown;
+}
+.place_data_container h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    color: brown;
+}
+
+@media screen and (max-width: 550px) {
+    .place_data_container h1{
+        width: 70%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .place_data_container .pg{
+        width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .place_data_container h1{
+        width: 90%;
+    }
+  }

@@ -1,15 +1,18 @@
 import React from "react";
 
-import articleImg from "./college_img.jpg";
+import articleImg from "../../../../components/assets/college_img.jpg";
 
 import DevWorkshops from "./devWorkshops";
 import "./style.css";
 import TalentShowcase from "./talent-showcase";
 
 
-export default function index() {
+export default function Students() {
 	return (
 		<>
+		{
+			console.log("students")
+		}
 			<div className="p-3">
 				<Title name="Students Articles" />
 				<div className="student-articles flex cols-span-5 row-span-4 gap-3">

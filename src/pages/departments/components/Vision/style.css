@@ -41,6 +41,7 @@
     transform: translate(-46px, 5px);
 }
 
-.vision-title::before{
-
+.vision-heading{
+	font-weight: bolder;
+    text-transform: uppercase;
 }

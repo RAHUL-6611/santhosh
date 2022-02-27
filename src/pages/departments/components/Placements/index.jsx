@@ -3,6 +3,7 @@ import "./index.css"
 import doct from "./doctoral.png"
 import master from "./masters.png"
 import bach from "./bachelors.png"
+import Table from './table'
 
 const index = () => {
   return (
@@ -56,6 +57,8 @@ const index = () => {
                 percentage
                 in the university campus </strong><span>*******</span>
         </p>
+
+        <Table />
     </div>
     </div>
    

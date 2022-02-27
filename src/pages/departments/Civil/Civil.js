@@ -41,16 +41,22 @@ export const Civil = {
 		],
 
 		about:
-			"The Department of Electrical and electronic engineering has well experienced faculty, skilled technical staff and well equipped laboratories. It offers one undergraduate program B.Tech. (Electrical and electronic engineering). It aims at providing high quality training to students through the latest in Electrical and electronic engineering. <Br /> In order to maintain the standard of education, it constantly upgrades the academic syllabi so as to keep the students well to deal with changing trends in the field of Electrical and electronic engineering. It also emphasizes on Information Security, Image Processing, Software Engineering, Optical and Mobile Networks, Soft Computing, Complex Event Processing, Data Mining, Web Technology and several other recent topics. The Department of Electrical and electronic engineering is accredited by NBA (National Board of Accreditation). So far, eight batches of students have successfully completed the degree course with flying colours.",
+			"The Department of Civil Engineering was established during the inception of the college. Apart from offering B.Tech in Civil Engineering, two M.Tech programmes in Structural Engineering and Environmental Engineering specialization and PhD  programme in Civil Engineering are offered. The major strength of this department is its faculty. Highly qualified, experienced and committed faculty members significantly contribute to the growth of the college in general and this department in particular. Students are offered world class training both in theory and practice. Industrial training is part of the curriculum both for UG and PG Students.",
 
 			vision: [
 				{
-					point : "To Produce Competent Professionals in Information Technology so as to Achieve the Global Innovation of Engineering and Technology"
+					point : "To create skilled and employable engineers through teaching, training and research to serve and provide sustainable solutions to the society with professional and ethical commitment."
 				},
 			 ],
 			 Mission: [
 				{
-					point : "To Provide High Quality Education and Training in Information Technology Through Advanced Learning Environment with State-of-the Art Facilities, Teaching Methodologies, Contemporary Curriculum and Research",
+					point : "To provide a dynamic learning environment through innovative teaching methodologies and contemporary curriculum so as to prepare competitive students for successful profession",
+				},
+				{
+					point : "To impart technical skills through rigorous laboratory practices hands on field training so as to prepare the students to face real world situations.",
+				},
+				{
+					point : "To actively encourage and mentor students through academic and research activities to develop the ability to be creative and innovative, to face the challenges of rapidly changing technology and development.",
 				},
 			 ],
 
@@ -389,56 +395,36 @@ export const Civil = {
 			syllabusPdf: "",
 		},
 	},
-	facilities: {
-		lab1: {
-			name: "",
+	facilities: [
+		{
+			name: "Electronic Devices and Circuits Lab",
 			img: "",
-			content: "",
+			content: " practical oriented electronic circuits that are very essential for the students to solidify their theoretical concepts. This Manual provides a communication bridge between the theory and practical world of the electronic circuits.",
 		},
-		lab2: {
-			name: "",
+		{
+			name: "Microprocessor Lab",
 			img: "",
-			content: "",
+			content: "The purpose of this laboratory is to train the students to be familiar with the software and hardware of microprocessors so that they can gain enough experiences to meet the demand of the microprocessor era. The facilities in the laboratory enable students to build a firm background in microprocessor hardware as well as software .",
 		},
-		lab3: {
-			name: "",
+		{
+			name: "Embedded System Design Lab",
 			img: "",
-			content: "",
+			content: "Embedded Systems Design Lab The ESD Lab is used to teach students to design and simulate digital circuits. The lab includes Oscilloscopes, Arbitrary Function Generators, Power Supplies and Multimeters. Many high tech software packages are installed to allow students to create embedded systems.",
 		},
-		lab4: {
-			name: "",
+		{
+			name: "Sensors & Transducers Lab",
 			img: "",
-			content: "",
+			content: "The word “Transducer” is the collective term used for both Sensors which can be used to sense a wide range of different energy forms such as movement, electrical signals, radiant energy, thermal or magnetic energy, etc., and Actuators which can be used to switch voltages or currents.",
 		},
-		lab5: {
-			name: "",
+		{
+			name: "Process Control Lab",
 			img: "",
-			content: "",
+			content: "Multi Process trainer, Multi variable Laboratory type Level Process, Calibration test bench, PLC trainer, Distributed Control system, Control Valve Characteristics Setup,",
 		},
-		lab6: {
-			name: "",
+		{
+			name: "Virtual Instrumentation Lab",
 			img: "",
-			content: "",
+			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
 		},
-		lab7: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab8: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab9: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab10: {
-			name: "",
-			img: "",
-			content: "",
-		},
-	},
+	],
 };

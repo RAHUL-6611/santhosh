@@ -1,30 +1,33 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
+
 import DeptLandingPage from "../components/LandingPage";
 import DeptHeader from "../components/DeptHead";
 import Courses from "../components/Courses";
 import Faculty from "../components/Faculty";
 import Facilities from "../components/Facilities";
-import Research from "../components/ReasearchPart";
 import Notices from "../components/Notice";
 import Footer from "../../../components/Footer";
 import Alumini from "../components/Alumini";
-// import Students from "../components/Students";
+import Students from "../components/Students";
 import RetiredFaculty from "../components/RetiredFaculty";
 import MedalAwards from "../components/MedalAwards";
 import Placements from "../components/Placements";
 import UpcomingEvents from "../components/UpcomingEvents";
-import DepartmentCommittees from "../components/DepartmentCommittees"
+import DepartmentCommittees from "../components/DepartmentCommittees";
+
 import { API_BASE_URL } from "../../../config";
 
 import "../components/LandingPage/style.css";
+// import Index from "../components/Students/index.jsx";
 
 export default function Department({ department }) {
-	console.log(department);
+	// console.log(department);
 	const [faculty, setFaculty] = useState(null);
 	const [sortedFaculty, setSortedFaculty] = useState(null);
 	const [hodProfile, setHodProfile] = useState(null);
+	// console.log(faculty)   
 
 	useEffect(() => {
 		async function fetchFaculty() {
@@ -89,7 +92,7 @@ export default function Department({ department }) {
 				<Route path="/alumini" element={<Alumini />} value={department} />
 				<Route path="/department-committees" element={<DepartmentCommittees />} value={department} />
 				<Route path="/upcoming-events" element={<UpcomingEvents />} value={department} />
-				{/* <Route path="/students" element={<Students />} value={department} /> */}
+				<Route path="/students" element={<Students />} value={department} />
 				<Route path="/retired-faculty" element={<RetiredFaculty />} value={department} />
 				<Route path="/medal-awards" element={<MedalAwards />} value={department} />
 				<Route path="/placements" element={<Placements />} value={department} />

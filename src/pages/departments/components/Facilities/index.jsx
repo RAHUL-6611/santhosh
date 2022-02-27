@@ -2,28 +2,37 @@ import React from "react";
 
 import { getImageUrl } from "../../../../config";
 
-const Facilities = () => {
+const Facilities = ({ value }) => {
+
+	let facility = value.facilities
+
 	return (
 		<div className="flex w-full bg-grey flex-col px-20 pt-10 justify-center items-center">
 			<div className="block sm:grid sm:grid-cols-2  md:flex md:flex-col justify-center items-center">
-				<div className="fac block md:flex md:flex-row justify-around py-10 ">
+				{
+					facility.map((e, index)=>{
+						return (
+							<>
+			  <div key={e.name} className="fac block md:flex md:flex-row-reverse justify-around py-10 ">
 					<img
-						src={getImageUrl("appl1.jpg")}
+						src={getImageUrl("appl2.jpg")}
 						className="p-10 Facility-img"
 						alt=""
 					/>
 					<div className="details flex flex-col md:md:w-1/2   mx-5 ">
 						<div className="title_of_fac border-red-900 border-b-4 font-bold text-3xl text-slate-500 text-left">
-							<h3 className="text-4xl">SRINIVASA RAMANUJAN COMPUTING CENTRE</h3>
+							<h3 className="text-4xl">{e.name}</h3>
 						</div>
 						<div className="details_of_fac text-2xl text-left pt-5">
-						Desktop Computers - Intel Core 2 Duro  E 7300 2.666 GHz 3MB Cache 1066 Mhz Fsb DDR2 RAM 667 Mhz  Intel G 31 Chipset With Mother Board  Optical Mouse 17" TFT Monitor , OS  Free Linux /Doss, Microsoft, Novel, HCL Systems
-Desktop Computers - Intel® Core™ i5-4570 Processor @ 3.2 GHz Processor, Intel chipset H81,4 GB DDR3 RAM , 500 GB HDD, 47 cm (18.5 inch) LED Digital Colour Monitor, 16X  DVD writer, 1000  Mbps  on board integrated network port  Windows 8.1 Professional Licensed Preloaded  (30 Nos)
-
+						    {e.content}
 						</div>
 					</div>
 				</div>
-
+							</>
+						)
+					})
+				}
+{/* 
 				<div className="fac block md:flex md:flex-row-reverse justify-around py-10 ">
 					<img
 						src={getImageUrl("appl2.jpg")}
@@ -253,7 +262,7 @@ EPSON – PRINTER - M2170 Monochrome All-in-One Wi-Fi Duplex InkTank Printer(Bla
 
 						</div>
 					</div>
-				</div>
+				</div> */}
 					
 			</div>
 		</div>
