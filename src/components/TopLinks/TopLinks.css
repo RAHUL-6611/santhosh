@@ -2,17 +2,22 @@
 	background-color: rgb(196, 13, 13);
 	color: #fff;
 	white-space: nowrap;
-	overflow-x: auto;
-	text-align: right;
-	padding: 1rem;
-	/* Hide scrollbar for IE, Edge and Firefox */
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
+	overflow: hidden;
+	display: flex;
+	align-items: center;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.quick-links__container::-webkit-scrollbar {
-	display: none;
+.arrows {
+	align-self: stretch;
+	padding: 0.5em;
+	background-color: inherit;
+}
+
+.quick-links__links {
+	margin-left: auto;
+	padding: 1rem 0;
+	overflow-x: auto;
+	scroll-behavior: smooth;
 }
 
 .quick-links__link {

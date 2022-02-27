@@ -33,9 +33,8 @@ export default function StudentCount() {
 				{[
 					"undergraduate students",
 					"postgraduate students",
-					"Phd scholars",
-					"Research scholars",
-					"teaching and non-teaching staffs ",
+					"Ph.D scholars",
+					"Teaching and non-teaching staffs ",
 					"administrative faculties ",
 					"Award won Projects",
 					"inovations by students",

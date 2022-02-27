@@ -14,8 +14,8 @@ function Home() {
 		<div>
 			<Header />
 			<Banner />
-			<SmallCarousel />
 			<NewsFlash />
+			<SmallCarousel />
 			<AboutPTU />
 			<NewsPTU />
 			<CarouselHold />

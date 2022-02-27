@@ -127,6 +127,10 @@
 	font-weight: 500;
 }
 
+.desktop-nav__link--sub-menu-title {
+	font-size: 1rem;
+}
+
 .desktop-nav__link:hover {
 	color: #b20000;
 }
@@ -211,6 +215,12 @@
 .desktop-nav__nested-sub-menu > div {
 	display: flex;
 	align-items: center;
+	font-size: 0.9rem;
+}
+
+.desktop-nav__nested-sub-menu--departments {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (min-width: 350px) {

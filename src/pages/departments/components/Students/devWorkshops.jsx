@@ -2,7 +2,7 @@ import React from "react";
 
 import "./style.css";
 
-import img from "../../../../components/assets/college_img.jpg";
+import img from "./college_img.jpg";
 
 export default function DevWorkshops() {
 	return (

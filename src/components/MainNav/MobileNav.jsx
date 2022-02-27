@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { FaArrowCircleRight, FaArrowLeft, FaTimesCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 import "../SearchInput/SearchInput.css";
 import SearchInput from "../SearchInput";
@@ -9,9 +10,9 @@ import "./MainNav.css";
 function MenuItem({ menu, handleNavigate }) {
 	return (
 		<li className="mobile-nav__item">
-			<a href={menu.href} className="mobile-nav__link">
+			<Link to={menu.href} className="mobile-nav__link">
 				{menu.text}
-			</a>
+			</Link>
 			{menu.subMenus ? (
 				<span onClick={handleNavigate} className="mobile-nav__right-icon">
 					<FaArrowCircleRight className="mobile-nav__right-arrow" />

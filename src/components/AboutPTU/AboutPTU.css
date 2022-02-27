@@ -1,4 +1,5 @@
 .about-ptu {
+	margin-top: 3em;
 	margin-bottom: 2em;
 }
 
@@ -110,7 +111,6 @@
 @media screen and (min-width: 1240px) {
 	.about-ptu {
 		grid-template-columns: 250px auto 250px;
-
 	}
 	.about-ptu__sub-parts--center {
 		margin: 0 2em;

@@ -1,20 +1,15 @@
-.chancellor-part-top{
-	position: relative;
-    height: 265px;
-    width: 100vw;
-    overflow: hidden;
-}
-
 .chancellor-card__container {
 	display: flex;
-    width: 460px;
-    color: #f1eded;
-    background-color: #ba0b0b;
-    padding: 1.4em;
-    margin: 10px 10px 16px 10px;
-    text-align: left;
-    border-radius: 1px;
-    box-shadow: 0 0 20px 2px #00000040;
+	border-radius: 20px;
+	width: 460px;
+	color: #f1eded;
+	background-color: rgb(141, 43, 30, 0.75);
+	padding: 1em;
+	margin: 10px;
+	margin-bottom: 0;
+	text-align: left;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #0000003d;
 }
 
 .chancellor-card__container img {
@@ -52,33 +47,26 @@
 }
 .chancellor-card__parts a {
 	text-decoration: none;
-    border: 5px;
-    background-color: rgb(5 30 84 / 40%);
-    color: white;
-    padding: 0.3em 0.7em;
-    border-radius: 30px;
-    margin: 8px;
+	border: 5px;
+	background-color: rgb(33 72 153);
+	color: white;
+	padding: 0.2em 0.5em;
+	border-radius: 5px;
 }
 
 .chancellor-card-cont {
 	display: flex;
-	/* overflow-x: auto; */
+	overflow-x: auto;
 	flex-wrap: nowrap;
 	align-items: center;
 	scroll-behavior: smooth;
-	/* Hide scrollbar for IE, Edge and Firefox */
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
-	background-color: white;
-	margin: 20px 0px;
-	transform: translateX(-50%);
-    position: absolute;
-    left: 50%;
+	padding: 3em 0;
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
 }
 .slide-hold {
 	position: relative;
 }
-.font::-webkit-scrollbar {
+.chancellor-card-cont::-webkit-scrollbar {
 	display: none;
 }
 
@@ -87,7 +75,7 @@
 }
 
 .slide {
-	/* padding: 0 2rem; */
+	padding: 0 2rem;
 	display: flex;
 	justify-content: center;
 }
@@ -97,6 +85,7 @@
 	display: flex;
 	font-size: 1.2rem;
 	z-index: 1;
+	background-color: white;
 }
 
 .btn button {
@@ -114,13 +103,13 @@
 	right: 0;
 }
 
-@media only screen and (min-width: 1341px) {
+@media only screen and (min-width: 1474px) {
 	.btn {
 		display: none;
 	}
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) {
 	.chancellor-card__container {
 		width: 340px;
 	}

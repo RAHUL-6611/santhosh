@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IoMdArrowDropright } from "react-icons/io";
 
+function getComputedCss(text) {
+	if (text.includes("Departments"))
+		return "desktop-nav__nested-sub-menu--departments";
+	else return "";
+}
+
 function DesktopNav(props) {
 	const { menus } = props;
 
@@ -30,10 +36,17 @@ function DesktopNav(props) {
 										{menu.subMenus.map((subMenu, index) => {
 											return (
 												<div key={index} className="desktop-nav__seperator">
-													<Link to={subMenu.href} className="desktop-nav__link">
+													<Link
+														to={subMenu.href}
+														className="desktop-nav__link desktop-nav__link--sub-menu-title"
+													>
 														{subMenu.text}
 													</Link>
-													<div className="desktop-nav__nested-sub-menu">
+													<div
+														className={`desktop-nav__nested-sub-menu ${getComputedCss(
+															subMenu.text
+														)}`}
+													>
 														{subMenu.subMenus &&
 															subMenu.subMenus.map((subMenu, index) => {
 																return (

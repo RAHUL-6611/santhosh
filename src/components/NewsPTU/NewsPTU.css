@@ -10,9 +10,7 @@
 .event__date {
 	background-color: #ad0303;
 	color: whitesmoke;
-	margin-right: 8px;
 	padding: 8px 5px;
-	padding-right: 10px;
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
@@ -34,12 +32,13 @@
 
 .event__box-card {
 	background-color: #ad0303;
+	display: flex;
+	padding: 0 0.2em;
 }
 
 .event__container {
 	margin: 13px 0px;
 	border-bottom: 2px dashed #ad0303;
-	border-left: 2px solid #ad0303;
 	display: flex;
 }
 
@@ -61,6 +60,11 @@
 	line-height: 0;
 	padding: 0.2em;
 	font-size: 1.1rem;
+}
+
+.news-ptu-part__head h2 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
 }
 
 .update__content {

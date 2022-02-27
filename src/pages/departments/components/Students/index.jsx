@@ -1,6 +1,6 @@
 import React from "react";
 
-import articleImg from "../../../../components/assets/college_img.jpg";
+import articleImg from "./college_img.jpg";
 
 import DevWorkshops from "./devWorkshops";
 import "./style.css";

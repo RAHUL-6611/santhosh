@@ -8,22 +8,23 @@ import { getImageUrl } from "../../config";
 export default function SmallCarousel() {
 	const scrollContainerRef = useRef();
 
-	let moveLeft = (e) => {
-         console.log(e)
+	let moveLeft = () => {
+		scrollContainerRef.current?.scrollBy(-180, 0);
 	};
 
-	let moveRight = (e) => {
-		console.log(e)
-
+	let moveRight = () => {
+		scrollContainerRef.current?.scrollBy(180, 0);
 	};
 
 	return (
-		<div className="chancellor-part-top">
-			<div className="chancellor-card-cont" ref={scrollContainerRef}>
+		<div
+			className="chancellor-card-cont hide-scrollbar"
+			ref={scrollContainerRef}
+		>
 			<div className="btn btn--left">
 				<button
-					onClick={(e) => {
-						moveLeft(e);
+					onClick={() => {
+						moveLeft();
 					}}
 				>
 					<BsArrowLeftCircle />
@@ -32,20 +33,20 @@ export default function SmallCarousel() {
 			<div className="slide-hold">
 				<div className="slide">
 					<ChancellorCard
-						img={getImageUrl("pro chancellor.jpg")}
-						desig="Revenue, Relief-cum-Rehabilitation, Transport, Education and Port"
-						name="Shri. Ashok Kumar, IAS"
-						title="Pro Chancellor"
-					/>
-					<ChancellorCard
 						img={getImageUrl("chancellor.jpg")}
 						desig="Hon'ble Lt. Governor of Puducherry"
 						name="Dr. Tamilisai Soundararajan"
 						title="Chancellor"
 					/>
 					<ChancellorCard
+						img={getImageUrl("pro chancellor.jpg")}
+						desig="Revenue, Relief-cum-Rehabilitation, Transport, Education and Port"
+						name="Shri. Ashok Kumar, IAS"
+						title="Pro Chancellor"
+					/>
+					<ChancellorCard
 						img={getImageUrl("vc dr s mohan.jpg")}
-						desig="Vice Chancellor"
+						desig=""
 						name="Dr.S Mohan"
 						title="Vice Chancellor"
 					/>
@@ -53,14 +54,13 @@ export default function SmallCarousel() {
 			</div>
 			<div className="btn btn--right">
 				<button
-					onClick={(e) => {
-						moveRight(e);
+					onClick={() => {
+						moveRight();
 					}}
 				>
 					<BsArrowRightCircle />
 				</button>
 			</div>
-		</div>
 		</div>
 	);
 }

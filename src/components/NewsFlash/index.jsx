@@ -2,10 +2,14 @@ import React, { useRef, useState } from "react";
 import { IoMdPlay, IoMdPause } from "react-icons/io";
 
 import "./NewsFlash.css";
+import useFetch from "../../hooks/useFetch";
 
-function NewsFlash() {
+function NewsFlash({ visiblity = "all" }) {
 	const marqueeRef = useRef();
 	const [marqueeStatus, setMarqueeStatus] = useState("play");
+	const { data, error } = useFetch(
+		"News_Event.php?visiblity=" + visiblity + "&content=news_flash"
+	);
 
 	const toggleMarqueeStatus = () => {
 		if (marqueeStatus === "play") {
@@ -26,12 +30,27 @@ function NewsFlash() {
 				</button>
 			</p>
 			<marquee ref={marqueeRef}>
-				{/* Latest news from the University &nbsp; &nbsp; &nbsp; 📰 &nbsp; &nbsp;
-    &nbsp; Latest news from the University */}
-				Classes will be conducted in offline mode with effect from 4.2.2022
-				except for First year B.Tech
+				{error ? (
+					<h2>Something went wrong in server</h2>
+				) : !data ? (
+					<div>
+						<div />
+					</div>
+				) : data.length === 0 ? (
+					<h2>No Latest news</h2>
+				) : (
+					<ul className="news-flash__list">
+						{data.map((news) => {
+							return (
+								<li key={news.news_id} className="news-flash__item">
+									<b>{news.given_by} : </b>
+									{news.news_content}
+								</li>
+							);
+						})}
+					</ul>
+				)}
 			</marquee>
-			{/* <marquee>Latest news from the University</marquee> */}
 		</div>
 	);
 }

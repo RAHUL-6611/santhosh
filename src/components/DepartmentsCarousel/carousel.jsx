@@ -14,21 +14,24 @@ const slideWidth = 20;
 
 const _items = [
 	{
-		player: {//8
+		player: {
+			//8
 			title: "IT",
 			desc: "The Department of Information Technology has well experienced faculty, skilled technical staff and well equipped laboratories. It offers one undergraduate program B.Tech. (Information Technology). It aims at providing high quality training to students through the latest in Information Technology.",
 			image: getImageUrl("eie 2.jpg"),
 		},
 	},
 	{
-		player: {//9
+		player: {
+			//9
 			title: "CSE",
 			desc: "The Department aims at providing high quality training to students through the latest in computer technology and  offers B.Tech. (CSE), M.Tech. (Data Science), M.Tech. (Information Security), MCA and Ph.D.(including QIP and NDF schemes) programme.",
 			image: getImageUrl("cse.jpg"),
 		},
 	},
 	{
-		player: {  //first
+		player: {
+			//first
 			title: "EEE",
 			desc: "The Department of Electrical and Electronics Engineering provides a progressive environment for learning through systematic teaching methodologies, rigorous practical training and contemporary curriculum; research through creative activities in conventional and thrust areas of Electrical and Electronics Engineering.",
 			image: getImageUrl("eee.jpg"),
@@ -36,48 +39,48 @@ const _items = [
 	},
 
 	{
-		player: { //2
+		player: {
+			//2
 			title: "ECE",
 			desc: "Dept. of ECE, Pondicherry Engineering College was established in the year 1985. Throughout its sparkling history of 33 years, the department of ECE has been known for its exceptionally strong Under-Graduate and Graduate training programmes.",
 			image: getImageUrl("ece 2.jpg"),
 		},
 	},
 	{
-		player: {//3
-			title: "CSE",
-			desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis deserunt quas quibusdam numquam neque molestiae tempora veritatis earum ab minima.",
-			image: getImageUrl("cse.jpg"),
-		},
-	},
-	{
-		player: {//4
+		player: {
+			//4
 			title: "Chemical",
 			desc: "The Department of chemical engineering was established in the year 1998 with a vision to impart high quality chemical engineering education and to serve the needs of industries and societies through technical services, consultancy and research.",
 			image: getImageUrl("chemical department.jpg"),
 		},
 	},
 	{
-		player: {//5
+		player: {
+			//5
 			title: "EIE",
 			desc: "Instrumentation is the branch of engineering that deals with measurement and control. In  this  fully  automated world, this  course  which  is  a  complete  blend  of  technical  subjects.",
 			image: getImageUrl("eie 2.jpg"),
 		},
 	},
 	{
-		player: {//6
+		player: {
+			//6
 			title: "Civil",
 			desc: "The Department of Civil Engineering was established during the inception of the college. Apart from offering B.Tech in Civil Engineering, two M.Tech programmes in Structural Engineering and Environmental Engineering specialization and PhD  programme in Civil Engineering are offered.",
 			image: getImageUrl("civil.jpg"),
 		},
 	},
 	{
-		player: {//7
+		player: {
+			//7
 			title: "Mectronics",
 			desc: "The Department of Mechanical Engineering offers B. Tech., M. Tech., and Ph. D Programmes. The Department of Mechanical Engineering has become the QIP centre in the year 2013. Highly qualified, experienced and committed faculty members significantly contribute to the growth of the college in general and the Department in particular. The UG course of the department is accreted by NBA for a period of 5 years. ",
 			image: getImageUrl("me.jpg"),
 		},
 	},
 ];
+
+_items.sort((a, b) => a.player.title.localeCompare(b.player.title));
 
 const length = _items.length;
 _items.push(..._items);
@@ -96,16 +99,31 @@ const createItem = (position, idx) => {
 
 	switch (position) {
 		case length - 1:
-			item.styles = { ...item.styles, opacity: 0, display: "none", zIndex : "-11111" };
+			item.styles = {
+				...item.styles,
+				opacity: 0,
+				display: "none",
+				zIndex: "-11111",
+			};
 			break;
 		case length + 1:
-			item.styles = { ...item.styles, opacity: 0, display: "none", zIndex : "-11111"};
+			item.styles = {
+				...item.styles,
+				opacity: 0,
+				display: "none",
+				zIndex: "-11111",
+			};
 			break;
 		case length:
-			item.styles = { ...item.styles, opacity: 0, display: "none", zIndex : "-11111" };
-			// break;
+			item.styles = {
+				...item.styles,
+				opacity: 0,
+				display: "none",
+				zIndex: "-11111",
+			};
+		// break;
 		default:
-			item.styles = { ...item.styles, opacity: 1, zIndex : "-11111"};
+			item.styles = { ...item.styles, opacity: 1, zIndex: "-11111" };
 			break;
 	}
 
@@ -151,11 +169,11 @@ const Carousel = () => {
 		if (!isTicking) {
 			setIsTicking(true);
 			setItems((prev) => {
-				return prev.map((_, i) => { 
-					if(i===bigLength-1){
-						console.log(i)
+				return prev.map((_, i) => {
+					if (i === bigLength - 1) {
+						console.log(i);
 					}
-					return prev[(i - jump + bigLength) % bigLength]
+					return prev[(i - jump + bigLength) % bigLength];
 				});
 			});
 		}

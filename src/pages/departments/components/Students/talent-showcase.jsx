@@ -2,14 +2,7 @@ import React from "react";
 
 import "./talent.css";
 
-import img from "../../../../components/assets/college_img.jpg";
-import img1 from "../../../../components/assets/college_img.jpg";
-import img2 from "../../../../components/assets/college_img.jpg";
-import img3 from "../../../../components/assets/college_img.jpg";
-import img4 from "../../../../components/assets/college_img.jpg";
-import img5 from "../../../../components/assets/college_img.jpg";
-import img6 from "../../../../components/assets/college_img.jpg";
-import img7 from "../../../../components/assets/college_img.jpg";
+
 
 
 export default function TalentShowcase(){
