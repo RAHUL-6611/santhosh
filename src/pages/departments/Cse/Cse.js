@@ -15,32 +15,28 @@ export const CSE = {
 		count : [
 			{
 				name: "B.Tech Students",
-				count : 23
+				count : 481
 			},
 			{
-				name: "M.Tech Students",
-				count : 23
+				name: "M.Tech Data Science Students",
+				count : 20
 			},
 			{
-				name: "MCA Students",
-				count : 23
+				name: "M.Tech Information Security Students",
+				count : 19
 			},
 			{
 				name: "Ph.d Scholars",
-				count : 23
+				count : 85
 			},
 			{
-				name: "Faculty",
-				count : 23
-			},
-			{
-				name: "Staff",
-				count : 23
+				name: "MCA Students",
+				count : 84
 			},
 		],
 
 		about:
-			"The Department of Computer Science and Engineering was established in the year 1987 with the objective of imparting high quality education in the field of Computer Science. It provides a comprehensive program that emphasizes on Advanced Data Structures and Algorithms, Advanced Software Design, Artificial Intelligence, Parallel and Distributed Systems, Graphics and Image Processing, Machine Learning, Internet of Things, Information Security, Digital Forensics and Big Data Mining. The department has competent and committed faculty which encourages students' involvement in various academic and co-curricular activities. The department has well equipped computer laboratories with more than 400 computers and a Research Laboratory to carry out research and project activities.  The department has the latest infrastructure facilities with high speed Internet, advanced software labs, hardware labs, seminar halls and class rooms equipped with LCD projectors.",
+			"The Department of Computer Science and Engineering was established in the year 1987 with the objective of imparting high quality education in the field of Computer Science. It provides a comprehensive program that emphasizes on Advanced Data Structures and Algorithms, Advanced Software Design, Artificial Intelligence, Parallel and Distributed Systems, Graphics and Image Processing, Machine Learning, Internet of Things, Information Security, Digital Forensics and Big Data Mining.The department has competent and committed faculty which encourages students' involvement in various academic and co-curricular activities. The department has well equipped computer laboratories with more than 400 computers and a Research Laboratory to carry out research and project activities.  The department has the latest infrastructure facilities with high speed Internet, advanced software labs, hardware labs, seminar halls and class rooms equipped with LCD projectors. Students of all programmes can take project internship with different organizations. This component has been included in the curriculum to provide exposure for the students to work in an organization environment, as well as a chance to apply the learning in solving real-world business problems. The department has a long tradition of producing technically competent engineers since 1987 and it has renowned alumni occupying prominent positions in the industry, academia and research all over the world. The students of the department have got placements in major companies like HP, ZOHO, HCL, NOKIA, INFOSYS, RELIANCE, CTS, L&T INFOTECH etc.The Department faculty are actively involved in various AICTE- RPS, UGC and SERB Sponsored Research Projects, Consultancy projects and Collaborative Projects with other government sectors.",
 
 			vision: [
 				{

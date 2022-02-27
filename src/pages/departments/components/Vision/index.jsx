@@ -8,7 +8,8 @@ import "./style.css"
 
 const Vision = ({ value }) => {
 
-	value = value.About.vision
+	let value1 = value.About.vision
+	let value2 = value.About.Mission
 
 	return (
 		<div className="pb-10 mt-10">
@@ -19,7 +20,7 @@ const Vision = ({ value }) => {
 			<div className="vision-content my-10 md:mx-20 mx-5 p-5">
 				<h2 className="vision-heading text-2xl px-20 py-5 text-500">Vision</h2>
 				{
-					value.map((e)=>{
+					value1.map((e)=>{
 				             return (
 								<div className="flex align-center p-2 my-3">
 								<MdOutlineTravelExplore className="text-5xl mx-5" />
@@ -32,7 +33,7 @@ const Vision = ({ value }) => {
 				}
 				<h2 className="vision-heading text-2xl px-20 py-5 text-500">Mission</h2>
 				{
-					value.map((e)=>{
+					value2.map((e)=>{
 				             return (
 								<div className="flex align-center p-2 my-3">
 								<MdOutlineTravelExplore className="text-5xl mx-5" />
