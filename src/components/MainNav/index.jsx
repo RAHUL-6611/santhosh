@@ -97,10 +97,15 @@ const menus = [
 					{ text: "EIE", href: "/eie", subMenus: null },
 					{ text: "ECE", href: "/ece", subMenus: null },
 					{ text: "IT", href: "/it", subMenus: null },
+					{text: "Maths", href: "/math", subMenus: null},
+					{text: "Physics", href: "/physics", subMenus: null},
+					{text: "HSS", href: "/hms", subMenus: null},
+					{text: "Chemistry", href: "/chem", subMenus: null},
+					// { text: "", href: "/social-science-and-humanities", subMenus: null },
 				],
 			},
 			{
-				text: "Curriculam & Syllabus",
+				text: "Curriculum & Syllabus",
 				href: "#",
 				subMenus: [
 					{ text: "B.Tech", href: "#", subMenus: null },

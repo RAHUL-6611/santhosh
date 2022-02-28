@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { getImageUrl } from "../../../../config";
 
-export default function DeptHeader({ name }) {
+export default function DeptHeader({ value }) {
 	let toggle_nav = () => {
 		document
 			.getElementsByClassName("small-navbar")[0]
@@ -16,7 +16,7 @@ export default function DeptHeader({ name }) {
 		return window.scroll(0, 0);
 	};
 
-	console.log(name)
+	console.log(value)
 	return (
 		<>
 			<div className="deptHead">
@@ -27,7 +27,7 @@ export default function DeptHeader({ name }) {
 							alt=""
 							className="img-top"
 						/>
-						<h3>{name.LongName}</h3>
+						<h3>{value.About.LongName}</h3>
 					</div>
 					<div className="searchbar_dept">
 						<input type="text" placeholder="Search here" />
@@ -35,7 +35,7 @@ export default function DeptHeader({ name }) {
 					</div>
 				</div>
 				<div className="imgsec">
-					<img src={name.DeptImg} alt="cse" />
+					<img src={value.DeptImg} alt="cse" />
 				</div>
 			</div>
 
@@ -50,62 +50,62 @@ export default function DeptHeader({ name }) {
 				</div>
 				<div className="small-navbar hidden lg:hidden block">
 					<Link
-						to="/cse/about"
+						to={value.basePath + "/about"}
 						onClick={() => {
 							toggle_nav();
 							go_top();
 						}}
-					>
+						>
 						<p>DEPARTMENT</p>
 					</Link>
 					<Link
-						to="/cse/faculty"
+						to={value.basePath + "/faculty"}
 						onClick={() => {
 							toggle_nav();
 							go_top();
 						}}
-					>
+						>
 						<p>FACULTY</p>
 					</Link>
 					<Link
-						to="/cse/syllabus"
+						to={value.basePath + "/syllabus"}
 						onClick={() => {
 							toggle_nav();
 							go_top();
 						}}
-					>
+						>
 						<p>CURRICULUM</p>
 					</Link>
 					<Link
-						to="/cse/research"
+						to={value.basePath + "/research"}
 						onClick={() => {
 							toggle_nav();
 							go_top();
 						}}
-					>
+						>
 						<p>RESEARCH</p>
 					</Link>
 					<Link
-						to="/cse/facilities"
+						to={value.basePath + "/facilities"}
 						onClick={() => {
 							toggle_nav();
 							go_top();
 						}}
-					>
+						>
 						<p>FACILITIES</p>
 					</Link>
 				</div>
 				<div className="nav-inside lg:flex lg:justify-center hidden">
 					<Link
-						to="/cse/about"
+						to={value.basePath + "/about"}
 						onClick={() => {
 							go_top();
 						}}
-					>
+						>
 						<p>DEPARTMENT</p>
 					</Link>
 					<Link
-						to="/cse/faculty"
+						to={value.basePath + "/faculty"}
 						onClick={() => {
 							go_top();
 						}}
@@ -113,27 +113,27 @@ export default function DeptHeader({ name }) {
 						<p>FACULTY</p>
 					</Link>
 					<Link
-						to="/cse/syllabus"
+						to={value.basePath + "/syllabus"}
 						onClick={() => {
 							go_top();
 						}}
-					>
+						>
 						<p>CURRICULUM</p>
 					</Link>
 					<Link
-						to="/cse/research"
+						to={value.basePath + "/research"}
 						onClick={() => {
 							go_top();
 						}}
-					>
+						>
 						<p>RESEARCH</p>
 					</Link>
 					<Link
-						to="/cse/facilities"
+						to={value.basePath + "/facilities"}
 						onClick={() => {
 							go_top();
 						}}
-					>
+						>
 						<p>FACILITIES</p>
 					</Link>
 				</div>

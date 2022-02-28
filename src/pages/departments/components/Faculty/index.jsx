@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 export default function Faculty({ faculty, value }) {
 	const query = useQuery();
-	console.log(faculty);
+	// console.log(faculty);
 
 	if (!faculty) {
 		return <FacultySinglePlaceholder />;
@@ -26,7 +26,7 @@ export default function Faculty({ faculty, value }) {
 	return (
 		<>
 			{!query.get("id") ? (
-				postTier.map((tier) => {
+				postTier.reverse().map((tier) => {
 					return <FacultySingle key={tier} Fname={tier} data={faculty[tier]} />;
 				})
 			) : (
@@ -42,8 +42,8 @@ export default function Faculty({ faculty, value }) {
 function FacultyParts() {
 	return (
 		<>
-			<FacultySingle Fname="Professors" data={professors} />
 			<FacultySingle Fname="Associate professors" data={associFacultyData} />
+			<FacultySingle Fname="Professors" data={professors} />
 			<FacultySingle Fname="Assistant professors" data={assisFacultyData} />
 			<FacultySingle Fname="Supporting staff" data={supportingStaff} />
 		</>
@@ -77,6 +77,12 @@ function FacultySingle({ Fname, data }) {
 						</div>
 						<div className="big-cont flex flex-col p-10">
 							<p className="fac-name">{name}</p>
+							<p className="">
+								<p>
+								Qualification : 
+								{name}
+								</p>
+								</p>
 							{Fname.includes("supporting") ? (
 								<p>Designation : {sub}</p>
 							) : (
@@ -85,12 +91,12 @@ function FacultySingle({ Fname, data }) {
 
 							{Fname.includes("supporting") ? <p></p> : <p>Phone : {number}</p>}
 							{msg === "" ? <p></p> : <p>Email : {msg}</p>}
-							<div className="mt-auto">
+							<div className="mt-auto single-faculty__back-btn w-3/4 pl-2">
 								<Link
 									to={`/cse/faculty?id=${id}`}
-									className="faculty__view-link"
+									className="faculty__view-link text-center capitalize"
 								>
-									view full profile
+									<button>View Full Profile</button>
 								</Link>
 							</div>
 						</div>
@@ -108,11 +114,11 @@ function FacultySingle({ Fname, data }) {
 							>
 								<div className="parts1">
 									<img
-										className="faculty-img"
+										className="faculty-img "
 										src={
 											e.pp_file_name
 												? getProfileImageUrl(e.pp_file_name)
-												: getImageUrl("Unknown_person.jpg")
+												: getImageUrl("default_avatar.jpg")
 										}
 										alt=""
 									/>

@@ -9,7 +9,7 @@ const Facilities = ({ value }) => {
 	return (
 		<div className="flex w-full bg-grey flex-col px-20 pt-10 justify-center items-center">
 			<div className="block sm:grid sm:grid-cols-2  md:flex md:flex-col justify-center items-center">
-				{
+				{/* {
 					facility.map((e, index)=>{
 						return (
 							<>
@@ -19,7 +19,7 @@ const Facilities = ({ value }) => {
 						className="p-10 Facility-img"
 						alt=""
 					/>
-					<div className="details flex flex-col md:md:w-1/2   mx-5 ">
+					<div className="details flex flex-col md:md:w-1/2 mx-5 ">
 						<div className="title_of_fac border-red-900 border-b-4 font-bold text-3xl text-slate-500 text-left">
 							<h3 className="text-4xl">{e.name}</h3>
 						</div>
@@ -31,8 +31,8 @@ const Facilities = ({ value }) => {
 							</>
 						)
 					})
-				}
-{/* 
+				}  */}
+ 
 				<div className="fac block md:flex md:flex-row-reverse justify-around py-10 ">
 					<img
 						src={getImageUrl("appl2.jpg")}
@@ -262,7 +262,7 @@ EPSON – PRINTER - M2170 Monochrome All-in-One Wi-Fi Duplex InkTank Printer(Bla
 
 						</div>
 					</div>
-				</div> */}
+				</div>
 					
 			</div>
 		</div>

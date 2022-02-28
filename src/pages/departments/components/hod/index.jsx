@@ -1,7 +1,8 @@
 import React from "react";
 
 import "./style.css";
-import { getImageUrl } from "../../../../config";
+// import { getImageUrl } from "../../../../config";
+import {Link} from "react-router-dom"
 
 export default function HodCard({ value }) {
  
@@ -20,7 +21,9 @@ export default function HodCard({ value }) {
 					{/* <p>
 						{value.content}
 					</p> */}
+					<Link to="/cse/hod" style={{ textDecoration: 'none' , background:"none"}}>
 					<button className="Hod-message">HOD message</button>
+					</Link>
 				</div>
 
 			</div>

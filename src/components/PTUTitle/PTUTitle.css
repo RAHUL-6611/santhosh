@@ -24,6 +24,7 @@
 
 .ptu-title__collage-name {
 	font-size: 2rem;
+	margin: 0;
 }
 
 .ptu-title__collage-name :not(.ptu-title__first-letter) {
@@ -31,6 +32,7 @@
 }
 
 .ptu-title__place {
+	padding: 0;
 	font-size: 1.1rem;
 }
 
