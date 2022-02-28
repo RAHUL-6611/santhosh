@@ -81,3 +81,7 @@
 	height: 330px;
 	right: 0;
 }
+.research-boxxx{
+	overflow-y: auto;
+    height: 302px;
+}

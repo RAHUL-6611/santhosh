@@ -15,7 +15,7 @@ export default function Courses() {
 							five-year program of studies at an accredited university or
 							accredited university-level institution.
 						</p>
-						<button class="cc-see-more">Download Syllabus</button>
+						<div className="text-center pt-5"><button class="cc-see-more">Download Syllabus</button></div>
 					</div>
 					<div class="ccCard">
 						<h2 class="cctitle">M.Tech</h2>
@@ -25,7 +25,7 @@ export default function Courses() {
 							is a knowledge and practical skills based programme that imparts
 							students with job ready computer science knowledge.
 						</p>
-						<button class="cc-see-more text-center">Download Syllabus</button>
+						<div className="text-center pt-5"><button class="cc-see-more">Download Syllabus</button></div>
 					</div>
 				</div>
 				<hr />
@@ -43,7 +43,7 @@ export default function Courses() {
 							Courses
 						</p>
 
-						<button class="cc-see-more">Download Syllabus</button>
+						<div className="text-center pt-5"><button class="cc-see-more">Download Syllabus</button></div>
 					</div>
 					<div class="ccCard">
 						<h2 class="cctitle">Ph.D</h2>
@@ -55,7 +55,7 @@ export default function Courses() {
 							making fundamental new contributions to an EECS topic.
 						</p>
 
-						<button class="cc-see-more">Download Syllabus</button>
+						<div className="text-center pt-5"><button class="cc-see-more">Download Syllabus</button></div>
 					</div>
 				</div>
 			</div>

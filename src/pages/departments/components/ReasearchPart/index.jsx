@@ -43,8 +43,8 @@ export default function Research() {
 				return (
 					<div className="">
 						<div class="boxx flex">
-							<div className="p-10 flex">
-								<div>
+							<div className="flex">
+								<div className="px-10 py-5 research-boxxx">
 								  <h2>{index + 1}</h2>
 								  <h3>{e.title}</h3>
 								  <br />

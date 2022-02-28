@@ -16,6 +16,7 @@ import MedalAwards from "../components/MedalAwards";
 import Placements from "../components/Placements";
 import UpcomingEvents from "../components/UpcomingEvents";
 import DepartmentCommittees from "../components/DepartmentCommittees";
+import Research from "../components/ReasearchPart";
 
 import { API_BASE_URL } from "../../../config";
 
@@ -89,6 +90,7 @@ export default function Department({ department }) {
 				<Route path="/facilities" element={<Facilities value={department} />} />
 				<Route path="/notices" element={<Notices />} value={department} />
 				<Route path="/syllabus" element={<Courses />} value={department} />
+				<Route path="/research" element={<Research />} value={department} />
 				<Route path="/alumini" element={<Alumini />} value={department} />
 				<Route path="/department-committees" element={<DepartmentCommittees />} value={department} />
 				<Route path="/upcoming-events" element={<UpcomingEvents />} value={department} />
