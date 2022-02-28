@@ -12,10 +12,14 @@ import { ECE } from "./pages/departments/Ece/Ece"
 import { ME } from "./pages/departments/Mech/Mech"
 import { Chem } from "./pages/departments/Chem/Chem"
 import { Civil } from "./pages/departments/Civil/Civil"
+import { Chemistry } from "./pages/departments/Chemistry/Chemistry";
+import { Physics } from "./pages/departments/Physics/Physics";
+import { Maths } from "./pages/departments/Maths/Maths";
+import { HSM } from "./pages/departments/HSM/Hsm";
 
 import Department from "./pages/departments/Department";
 
-const departmentProps = [IT, CSE, EEE,EIE, ME, ECE, Chem, Civil];
+const departmentProps = [IT, CSE, EEE,EIE, ME, ECE, Chem, Civil, Chemistry, Physics, Maths, HSM];
 
 function App() {
 	return (
