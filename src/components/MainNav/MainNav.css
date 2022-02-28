@@ -1,3 +1,6 @@
+*{
+	font-family: Poppins;
+}
 .mobile-nav__container {
 	position: fixed;
 	background-color: #333;
@@ -136,6 +139,8 @@
 }
 
 .desktop-nav__main-link {
+	font-family: Poppins;
+	font-weight:600;
 	font-size: 1.1rem;
 	padding: 1em 1.5em;
 	display: inline-block;

@@ -26,7 +26,7 @@ export default function Faculty({ faculty, value }) {
 	return (
 		<>
 			{!query.get("id") ? (
-				postTier.reverse().map((tier) => {
+				postTier.map((tier) => {
 					return <FacultySingle key={tier} Fname={tier} data={faculty[tier]} />;
 				})
 			) : (
@@ -70,7 +70,7 @@ function FacultySingle({ Fname, data }) {
 					<div className="big-in fac-info flex">
 						<div className="big-img">
 							<img
-								style={{ width: "300px", height: "300px" }}
+								// style={{ width: "300px", height: "300px" }}
 								src={image}
 								alt=""
 							/>

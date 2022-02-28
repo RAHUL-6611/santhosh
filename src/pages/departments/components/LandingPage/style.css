@@ -3,14 +3,22 @@
 } */
 
 .faculty-img {
-	width: 100px;
-	height: 81px;
+	object-fit: cover;
+	width :100px;
+	height :100px;
+	/* width: 100px; */
+	/* height: 81px; */
 }
 
 .big-in {
 	padding: 40px 26px;
 	background: #8080801a;
 	height: max-content;
+}
+
+.big-in .big-img img{
+	min-width: 260px;
+	max-width: 260px;
 }
 
 .big {
@@ -162,6 +170,8 @@ image_for_dept {
 }
 
 .title_dept h3 {
+	font-family: Poppins;
+	font-weight:600;
 	padding: 0.5rem 2rem;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -188,6 +198,8 @@ image_for_dept {
 }
 
 .navbar_for_dept p {
+	font-family: Poppins;
+	font-weight:600;
 	margin: 0;
 	padding: 0.9rem 1.5rem;
 	display: flex;
@@ -265,7 +277,7 @@ image_for_dept {
 }
 
 .dept-title {
-	font-size: 40px;
+	font-size: 20px;
 	text-align: left;
 	color: rgb(19, 24, 83);
 }
@@ -361,6 +373,7 @@ image_for_dept {
 @media (max-width: 900px) {
 	.cse-hold {
 		display: block;
+		/* flex-direction: column; */
 	}
 	.title_of-dept {
 		margin: 30px 0px;
@@ -483,7 +496,7 @@ image_for_dept {
 	height: 120px;
 	border: none;
 	position: absolute;
-	transform: translate(-8px, 26px);
+	transform: translate(-8px, -26px);
 	background: #00000047;
 	border-radius: 50%;
 	padding: 12px;

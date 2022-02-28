@@ -42,7 +42,8 @@ export default function SmallCarousel() {
 						/>
 					<ChancellorCard
 						img={getImageUrl("pro chancellor.jpg")}
-						desig="Revenue, Relief-cum-Rehabilitation, Transport, Education and Port"
+						// desig="Revenue, Relief-cum-Rehabilitation, Transport, Education and Port"
+						desig="Hon'ble Secretary (Education) to Govt. of Puducherry"
 						name="Shri. Ashok Kumar, IAS"
 						title="Pro Chancellor"
 						path="pro-vc"
@@ -80,9 +81,9 @@ const ChancellorCard = ({ img, name, title, desig ,path}) => {
 				<p className="chancellor-card__desig">{desig}</p>
 				<p className="chancellor-card__title">{title}</p>
 				<p>
-					<Link to={path}>
-					Read message
-					</Link>
+					{/* <Link to={path}> */}
+					{/* Read message */}
+					{/* </Link> */}
 				</p>
 			</div>
 		</div>

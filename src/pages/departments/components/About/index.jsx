@@ -32,10 +32,14 @@ const About = ({ value }) => {
 
 	return (
 		<div>
-			<div className="cse-hold hw1 block md:flex md:justify-evenly px-20 pt-10 mt-20">
+			<div className="cse-hold hw1 flex md:flex md:justify-evenly px-20 pt-10 mt-20">
 				<div>
 					<div className="explore text-left">Explore the</div>
-					<div className="dept-title text-left">{value.ShortName} Department</div>
+					<div className="dept-title text-left">
+						<p style={{fontSize:"22px"}}>
+						{value.LongName}
+						</p>
+						</div>
 				</div>
 				<div className="title_of-dept">
 					<div className="numbers grid grid-cols-3 gap-14">

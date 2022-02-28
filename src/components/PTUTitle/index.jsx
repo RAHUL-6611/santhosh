@@ -5,16 +5,19 @@ import "./PTUTitle.css";
 import "../SearchInput/SearchInput.css";
 import SearchInput from "../SearchInput";
 import { getImageUrl } from "../../config";
+import {Link} from "react-router-dom"
 
 function PTUTitle({ handleOnClick }) {
 	return (
 		<section className="ptu-title__container">
 			<div className="ptu-title__logo-header">
+				<Link to="/" style={{ textDecoration: 'none' ,width:"190px"}}>
 				<img
 					src={getImageUrl("logo.png")}
 					className="ptu-title__logo"
 					alt="Puducherry Technological University"
-				/>
+					/>
+					</Link>
 				<div className="ptu-title__collage-name-container">
 					<h1 className="ptu-title__collage-name">
 						<span className="ptu-title__first-letter">P</span>

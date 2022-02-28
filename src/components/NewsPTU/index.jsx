@@ -1,152 +1,152 @@
 import React, { useEffect, useRef, useState } from "react";
 import { IoMdPause, IoMdPlay } from "react-icons/io";
-
+import {API_BASE_URL} from "../../config"
 import "./NewsPTU.css";
 import Placeholder from "../Placeholder";
 import useFetch from "../../hooks/useFetch";
 import { getMonthShortForm } from "../../utils/common";
 
-let eventObj = [
-	{
-		news_id: "26",
-		title: "Event Heading",
-		given_by: null,
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-14",
-	},
-	{
-		news_id: "27",
-		title: "Event Heading",
-		given_by: null,
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-14",
-	},
-];
+// let eventObj = [
+// 	{
+// 		news_id: "26",
+// 		title: "Event Heading",
+// 		given_by: null,
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-14",
+// 	},
+// 	{
+// 		news_id: "27",
+// 		title: "Event Heading",
+// 		given_by: null,
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-14",
+// 	},
+// ];
 
-let newsObj = [
-	{
-		title: "News Heading",
-		given_by: "Registrar",
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-10",
-		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-	},
-	{
-		title: "News Heading",
-		given_by: "Registrar",
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-10",
-		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-	},
-	{
-		title: "News Heading",
-		given_by: "Registrar",
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-10",
-		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-	},
-	{
-		title: "News Heading",
-		given_by: "Registrar",
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-10",
-		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-	},
-	{
-		title: "News Heading",
-		given_by: "Registrar",
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-10",
-		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-	},
-	{
-		title: "News Heading",
-		given_by: "Registrar",
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-10",
-		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-	},
-	{
-		title: "News Heading",
-		given_by: null,
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-10",
-		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-	},
-	{
-		title: "News Heading",
-		given_by: null,
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-10",
-		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-	},
-	{
-		title: "News Heading",
-		given_by: null,
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-10",
-		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-	},
-	{
-		title: "News Heading",
-		given_by: null,
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-10",
-		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-	},
-	{
-		title: "News Heading",
-		given_by: null,
-		news_content: "Small news msg instead of long one",
-		start_date: "2022-02-05",
-		end_date: "2022-02-10",
-		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-	},
-	{
-		title: "New Title",
-		given_by: "Dr.Sathiyamurthy ",
-		news_content: "qqq",
-		start_date: "2022-02-09",
-		end_date: "2022-02-12",
-		file_name: null,
-	},
-	{
-		title: "New Title",
-		given_by: "Dr.Sathiyamurthy ",
-		news_content: "qwert",
-		start_date: "2022-02-09",
-		end_date: "2022-02-11",
-		file_name: null,
-	},
-	{
-		title: "test",
-		given_by: "HOD CSE",
-		news_content: "test_content",
-		start_date: "2022-02-03",
-		end_date: "2022-03-03",
-		file_name: null,
-	},
-	{
-		title: "test",
-		given_by: "HOD CSE",
-		news_content: "test_content",
-		start_date: "2022-02-03",
-		end_date: "2022-03-03",
-		file_name: null,
-	},
-];
+// let newsObj = [
+// 	{
+// 		title: "News Heading",
+// 		given_by: "Registrar",
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-10",
+// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+// 	},
+// 	{
+// 		title: "News Heading",
+// 		given_by: "Registrar",
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-10",
+// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+// 	},
+// 	{
+// 		title: "News Heading",
+// 		given_by: "Registrar",
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-10",
+// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+// 	},
+// 	{
+// 		title: "News Heading",
+// 		given_by: "Registrar",
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-10",
+// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+// 	},
+// 	{
+// 		title: "News Heading",
+// 		given_by: "Registrar",
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-10",
+// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+// 	},
+// 	{
+// 		title: "News Heading",
+// 		given_by: "Registrar",
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-10",
+// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+// 	},
+// 	{
+// 		title: "News Heading",
+// 		given_by: null,
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-10",
+// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+// 	},
+// 	{
+// 		title: "News Heading",
+// 		given_by: null,
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-10",
+// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+// 	},
+// 	{
+// 		title: "News Heading",
+// 		given_by: null,
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-10",
+// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+// 	},
+// 	{
+// 		title: "News Heading",
+// 		given_by: null,
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-10",
+// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+// 	},
+// 	{
+// 		title: "News Heading",
+// 		given_by: null,
+// 		news_content: "Small news msg instead of long one",
+// 		start_date: "2022-02-05",
+// 		end_date: "2022-02-10",
+// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+// 	},
+// 	{
+// 		title: "New Title",
+// 		given_by: "Dr.Sathiyamurthy ",
+// 		news_content: "qqq",
+// 		start_date: "2022-02-09",
+// 		end_date: "2022-02-12",
+// 		file_name: null,
+// 	},
+// 	{
+// 		title: "New Title",
+// 		given_by: "Dr.Sathiyamurthy ",
+// 		news_content: "qwert",
+// 		start_date: "2022-02-09",
+// 		end_date: "2022-02-11",
+// 		file_name: null,
+// 	},
+// 	{
+// 		title: "test",
+// 		given_by: "HOD CSE",
+// 		news_content: "test_content",
+// 		start_date: "2022-02-03",
+// 		end_date: "2022-03-03",
+// 		file_name: null,
+// 	},
+// 	{
+// 		title: "test",
+// 		given_by: "HOD CSE",
+// 		news_content: "test_content",
+// 		start_date: "2022-02-03",
+// 		end_date: "2022-03-03",
+// 		file_name: null,
+// 	},
+// ];
 
 export function AutoScrollContainer(props) {
 	const { title, data, children } = props;
@@ -255,6 +255,7 @@ export function NoticesAndUpdates({ visiblity = "all" }) {
 	);
 
 	const { data, error } = response;
+	console.log(data);
 
 	// console.log(response);
 
@@ -303,6 +304,7 @@ export function NoticesAndUpdates({ visiblity = "all" }) {
 						topic={e.title}
 						byWhom={e.given_by}
 						message={e.news_content}
+						file_name={e.file_name}
 					/>
 				);
 			}}
@@ -317,7 +319,7 @@ export function Events({ visiblity = "all" }) {
 
 	const { data, error } = response;
 
-	// console.log(response);
+	console.log(response);
 
 	if (error || !data || data.length === 0) {
 		return (
@@ -399,7 +401,7 @@ export default function NewsPTU() {
 	);
 }
 
-const Updated = ({ topic, byWhom, message }) => {
+const Updated = ({ topic, byWhom, message,file_name }) => {
 	return (
 		<div className="update__container">
 			<div className="update__content">
@@ -408,6 +410,9 @@ const Updated = ({ topic, byWhom, message }) => {
 					<h3>{byWhom}</h3>
 					<br />
 					<p>{message}</p>
+					<a href={API_BASE_URL + file_name} target="_blank" >
+						<p>View More</p>
+					</a>
 				</div>
 			</div>
 			<hr />

@@ -22,11 +22,13 @@ export default function DeptHeader({ value }) {
 			<div className="deptHead">
 				<div className="header_dept flex justify-around">
 					<div className="title_dept flex items-center">
+						<Link to="/" style={{padding:0,margin:0,textDecoration:"none"}}>
 						<img
 							src={getImageUrl("PTU_Logo-color.png")}
-							alt=""
+							alt="aaaaaaaaaaaaa"
 							className="img-top"
-						/>
+							/>
+							</Link>
 						<h3>{value.About.LongName}</h3>
 					</div>
 					<div className="searchbar_dept">
@@ -35,7 +37,7 @@ export default function DeptHeader({ value }) {
 					</div>
 				</div>
 				<div className="imgsec">
-					<img src={value.DeptImg} alt="cse" />
+					<img src={value.About.DeptImg} alt="cse" />
 				</div>
 			</div>
 

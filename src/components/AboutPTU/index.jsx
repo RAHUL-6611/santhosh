@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom"
 import "./AboutPTU.css";
 
 import { getImageUrl } from "../../config";
@@ -8,15 +8,18 @@ let carddesc = [
 	{
 		title: "Research",
 		img: getImageUrl("mectro.jpg"),
+		link:"https://research.pec.edu/"
 	},
 	{
 		title: "Startups",
 		img: getImageUrl("Startup.jpg"),
+		link:"https://www.aicpecf.org/"
 	},
 	{
 		title: "Placements",
 		img: getImageUrl("placement.jpeg"),
 		className: "about-part__card--placement",
+		link:"https://tnp.pec.edu/"
 	},
 ];
 
@@ -79,7 +82,7 @@ function AboutPTU() {
 				</div>
 				<div className="about-ptu__sub-parts about-ptu__sub-parts--right">
 					{carddesc.map((e, index) => {
-						return <Card key={index} {...e} />;
+						return <Card key={index}  {...e} />;
 					})}
 				</div>
 			</div>
@@ -89,12 +92,13 @@ function AboutPTU() {
 
 export default AboutPTU;
 
-const Card = ({ title, img, className, ...rest }) => {
+const Card = ({ title, img, className,link, ...rest }) => {
 	let containerClass = "about-part__card";
 	if (className) {
 		containerClass += " " + className;
 	}
 	return (
+		<a href={link}>
 		<div {...rest} className={containerClass}>
 			<div className="about-part__card-msg">
 				<div className="about-part__card-msg-head">
@@ -107,5 +111,6 @@ const Card = ({ title, img, className, ...rest }) => {
 				</div>
 			</div>
 		</div>
+		</a>
 	);
 };
