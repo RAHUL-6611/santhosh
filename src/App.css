@@ -9,9 +9,9 @@
 }
 
 body {
-	font-family:'Linden Hill', serif,"Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-		sans-serif;
+	font-family: "Linden Hill", serif, "Helvetica Neue", -apple-system,
+		BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+		"Fira Sans", "Droid Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -21,8 +21,8 @@ code {
 		monospace;
 }
 
-p{
-	font-size: 21px;
+p {
+	font-size: 16px;
 }
 
 .title {

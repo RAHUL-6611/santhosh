@@ -9,7 +9,7 @@ import useDimension from "../../hooks/useDimension";
 const campusLifePhotos = [
 	{
 		title: "Library",
-		desc: "Constructed in 1994, the PEC Library is located in an easily accessible central part of the PEC Campus, surrounded by various departments. The Library building with its striking architecture has been carefully planned to provide more space and natural lighting for the comfort of the users. It houses over 56,000 books of diverse disciplines from national and international authors, numbers of research publications, science journals and also provides e-access to it's staffs and students through which a huge collection of e-books and journals is available.",
+		desc: "Constructed in 1994, the PTU Library is located in an easily accessible central part of the PTU Campus, surrounded by various departments. The Library building with its striking architecture has been carefully planned to provide more space and natural lighting for the comfort of the users. It houses over 56,000 books of diverse disciplines from national and international authors, numbers of research publications, science journals and also provides e-access to it's staffs and students through which a huge collection of e-books and journals is available.",
 		img: {
 			src: "https://cms.pec.edu/home/img/library.jpg",
 		},
@@ -22,7 +22,7 @@ const campusLifePhotos = [
 		img: {
 			src: "https://cms.pec.edu/home/img/audi.jpg",
 		},
-		desc: "The auditorium of PEC is a marvellous construction with a seating capacity of around 800 people. The main hall of the auditorium is engineered for fantastic acoustics and have all the necessary equipment for hosting a performance, function or presentation. The two storeyed building also houses a cafeteria with attached kitchen, 2 seminar halls and green rooms.",
+		desc: "The auditorium of PTU is a marvellous construction with a seating capacity of around 800 people. The main hall of the auditorium is engineered for fantastic acoustics and have all the necessary equipment for hosting a performance, function or presentation. The two storeyed building also houses a cafeteria with attached kitchen, 2 seminar halls and green rooms.",
 		moreInfoLink: null,
 	},
 	{
@@ -30,7 +30,7 @@ const campusLifePhotos = [
 		img: {
 			src: "https://cms.pec.edu/home/img/sports.jpg",
 		},
-		desc: "The sports complex of PEC bustles with energy all the time and has been fostering several athletes at PEC for ages now. The Sports Complex encompasses the basketball, football/cricket, volleyball and handball courts. Sports events are conducted round the year concluded by a grand Sports day to felicitate the champions of the year.",
+		desc: "The sports complex of PTU bustles with energy all the time and has been fostering several athletes at PTU for ages now. The Sports Complex encompasses the basketball, football/cricket, volleyball and handball courts. Sports events are conducted round the year concluded by a grand Sports day to felicitate the champions of the year.",
 		moreInfoLink: null,
 	},
 	{
@@ -46,11 +46,11 @@ const campusLifePhotos = [
 		img: {
 			src: "https://cms.pec.edu/home/img/hostel.jpg",
 		},
-		desc: "There are 3 boys’ hostels (Varali, Saranga and Charukesi named after ragas of Carnatic Music) and a girls’ hostel (Tharangini). The hostels at PEC witness students of varied culture and diversities from various parts of India. The hostels have attached mess and serves a menu decided collectively by the students of the hostel. Every hostel is equipped with Wi-Fi facility and has a common room and spacious areas where the members can socialize, relax or play. Hostellers celebrate festivals like Chithirai Thiruvizha, Onam and Holi with great energy and responsibility every year.",
+		desc: "There are 3 boys’ hostels (Varali, Saranga and Charukesi named after ragas of Carnatic Music) and a girls’ hostel (Tharangini). The hostels at PTU witness students of varied culture and diversities from various parts of India. The hostels have attached mess and serves a menu decided collectively by the students of the hostel. Every hostel is equipped with Wi-Fi facility and has a common room and spacious areas where the members can socialize, relax or play. Hostellers celebrate festivals like Chithirai Thiruvizha, Onam and Holi with great energy and responsibility every year.",
 		moreInfoLink: null,
 	},
 	{
-		title: "TNP Centre and Atul Incubator",
+		title: "TNP Centre and Atal Incubation",
 		img: {
 			src: "https://cms.pec.edu/home/img/tnp.jpg",
 		},
@@ -62,7 +62,7 @@ const campusLifePhotos = [
 		img: {
 			src: "https://cms.pec.edu/home/img/oat.jpg",
 		},
-		desc: "The Open Air Theatre (OAT) at PEC is a spacious theatre with the capacity to accommodate around 500 people. The OAT would witness a lot of fun gatherings. People gather and enjoy with zest here for DJ night or any fest organized there. Another open air stage is constructed behind the auditorium which can accommodate even more audience. The spot is perfect with cool breeze blowing for hosting night-time functions under the stars.",
+		desc: "The Open Air Theatre (OAT) at PTU is a spacious theatre with the capacity to accommodate around 500 people. The OAT would witness a lot of fun gatherings. People gather and enjoy with zest here for DJ night or any fest organized there. Another open air stage is constructed behind the auditorium which can accommodate even more audience. The spot is perfect with cool breeze blowing for hosting night-time functions under the stars.",
 		moreInfoLink: null,
 	},
 	{

@@ -97,10 +97,10 @@ const menus = [
 					{ text: "EIE", href: "/eie", subMenus: null },
 					{ text: "ECE", href: "/ece", subMenus: null },
 					{ text: "IT", href: "/it", subMenus: null },
-					{text: "Maths", href: "/maths", subMenus: null},
-					{text: "Physics", href: "/physics", subMenus: null},
-					{text: "HSM", href: "/hsm", subMenus: null},
-					{text: "Chemistry", href: "/chemistry", subMenus: null},
+					{ text: "Maths", href: "/maths", subMenus: null },
+					{ text: "Physics", href: "/physics", subMenus: null },
+					{ text: "HSM", href: "/hsm", subMenus: null },
+					{ text: "Chemistry", href: "/chemistry", subMenus: null },
 					// { text: "", href: "/social-science-and-humanities", subMenus: null },
 				],
 			},
@@ -129,7 +129,7 @@ const menus = [
 	},
 	{
 		text: "Research",
-		href: "#",
+		href: "https://research.pec.edu",
 		subMenus: [
 			{
 				text: "Research Facilities",

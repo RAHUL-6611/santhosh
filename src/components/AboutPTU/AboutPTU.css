@@ -47,6 +47,7 @@
 
 .about-ptu__sub-parts--center .about-text {
 	margin-bottom: 1em;
+	text-align: justify;
 }
 .about-ptu__sub-parts .head-hold h6 {
 	font-size: 32px;

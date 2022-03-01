@@ -10,7 +10,7 @@ import { getImageUrl } from "../../config";
 const Footer = () => {
 	return (
 		<div>
-			<footer className="footer-distributed">
+			<footer id="main-footer" className="footer-distributed">
 				<div className="footer-left">
 					<img
 						src={getImageUrl("PTU_Logo_black_white.png")}
@@ -38,9 +38,10 @@ const Footer = () => {
 				<div className="footer-right">
 					<p className="footer-company-about">
 						Address: East coast Road, Pillaichavady, Puducherry,{" "}
-						<span>605 041</span> <br />
+						<span>605 014</span> <br />
 					</p>
 					<p className="footer-company-about">Phone No: 0413 265 5281</p>
+					<p className="footer-company-about">Email Id: info@ptuniv.edu.in</p>
 					<br />
 					<p className="footer-company-about">Follow us on</p>
 

@@ -62,11 +62,11 @@ export function TopLinksContainer() {
 const links = [
 	{
 		text: "Mail Portal",
-		href: "#",
+		href: "https://mail.google.com/a/ptuniv.edu.in",
 	},
 	{
 		text: "Examination Wing",
-		href: "#",
+		href: "https://ptucoe.info",
 	},
 	{
 		text: "Quick Links",
@@ -78,10 +78,10 @@ const links = [
 	},
 	{
 		text: "Alumni",
-		href: "#",
+		href: "https://pecaa.pec.edu",
 	},
 	{
 		text: "Contact",
-		href: "#",
+		href: "#main-footer",
 	},
 ];

@@ -4,7 +4,7 @@ import "./SmallCarousel.css";
 
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import { getImageUrl } from "../../config";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function SmallCarousel() {
 	const scrollContainerRef = useRef();
@@ -39,18 +39,18 @@ export default function SmallCarousel() {
 						name="Dr. Tamilisai Soundararajan"
 						title="Chancellor"
 						path="chancellor"
-						/>
+					/>
 					<ChancellorCard
 						img={getImageUrl("pro chancellor.jpg")}
 						// desig="Revenue, Relief-cum-Rehabilitation, Transport, Education and Port"
-						desig="Hon'ble Secretary (Education) to Govt. of Puducherry"
+						desig="Hon'ble Secretary (Education) Govt. of Puducherry"
 						name="Shri. Ashok Kumar, IAS"
 						title="Pro Chancellor"
 						path="pro-vc"
-						/>
+					/>
 					<ChancellorCard
 						img={getImageUrl("vc dr s mohan.jpg")}
-						desig=""
+						desig="B.E., M.E., Ph.D., FNAE., FIE., FIPHE., FIWWA., FIASE."
 						name="Dr.S Mohan"
 						title="Vice Chancellor"
 						path="vc"
@@ -70,7 +70,7 @@ export default function SmallCarousel() {
 	);
 }
 
-const ChancellorCard = ({ img, name, title, desig ,path}) => {
+const ChancellorCard = ({ img, name, title, desig, path }) => {
 	return (
 		<div className="chancellor-card__container">
 			<div className="chancellor-card__parts">
