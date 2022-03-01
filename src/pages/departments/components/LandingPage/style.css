@@ -191,7 +191,7 @@ image_for_dept {
 }
 
 .bars {
-	display: none;
+	/* display: none; */
 	padding: 10px 30px 10px 0px;
 	text-align: right;
 	z-index: 111;

@@ -1,14 +1,14 @@
 import { getImageUrl } from "../../../config";
 
-import Image from "../../../../src/components/assets/CSE_HOD.png"
+// import Image from "../../../../src/components/assets/CSE_HOD.png"
 
 
 export const HSM = {
-	basePath: "/hsm",
+	basePath: "/hss",
 	About: {
-		DeptName: "HUMANITIES AND MANAGEMENT DEPARTMENT",
-		ShortName: "HUMANITIES AND MANAGEMENT DEPARTMENT",
-		LongName: "DEPARTMENT OF HUMANITIES AND MANAGEMENT ",
+		DeptName: "HUMANITIES AND SOCIAL SCIENCE DEPARTMENT",
+		ShortName: "HUMANITIES AND SOCIAL SCIENCE DEPARTMENT",
+		LongName: "DEPARTMENT OF HUMANITIES AND SOCIAL SCIENCE ",
 
 		DeptImg: "",
 
@@ -17,27 +17,24 @@ export const HSM = {
 		],
 
 		about:
-			"The Department of Computer Science and Engineering was established in the year 1987 with the objective of imparting high quality education in the field of Computer Science. It provides a comprehensive program that emphasizes on Advanced Data Structures and Algorithms, Advanced Software Design, Artificial Intelligence, Parallel and Distributed Systems, Graphics and Image Processing, Machine Learning, Internet of Things, Information Security, Digital Forensics and Big Data Mining.The department has competent and committed faculty which encourages students' involvement in various academic and co-curricular activities. The department has well equipped computer laboratories with more than 400 computers and a Research Laboratory to carry out research and project activities.  The department has the latest infrastructure facilities with high speed Internet, advanced software labs, hardware labs, seminar halls and class rooms equipped with LCD projectors. Students of all programmes can take project internship with different organizations. This component has been included in the curriculum to provide exposure for the students to work in an organization environment, as well as a chance to apply the learning in solving real-world business problems. The department has a long tradition of producing technically competent engineers since 1987 and it has renowned alumni occupying prominent positions in the industry, academia and research all over the world. The students of the department have got placements in major companies like HP, ZOHO, HCL, NOKIA, INFOSYS, RELIANCE, CTS, L&T INFOTECH etc.The Department faculty are actively involved in various AICTE- RPS, UGC and SERB Sponsored Research Projects, Consultancy projects and Collaborative Projects with other government sectors.",
+			"The Department of HSS was established in the year 1995 with two faculty members on its rolls. Since its inception it has grown in strength with the rise in faculty members from two to four. Currently, there are three Faculty members in English and one in Economics. The Department offers one mandatory credit course for First year B.Tech students and four Open Elective courses for III year B.Tech students. In addition, zero credit courses for UG students and MAC courses are offered for PG students. A Language Laboratory is in place for honing the students’ communication skills. The faculty Members of the Department act as Class Advisors and mentors for First year B.Tech students.",
 
 			vision: [
 				{
-					point : "To explore innovative approaches to enhance and expand learning opportunities through the integration of various technologies."
-				},
-				{
-					point : "To build a strong research and teaching environment that responds to the real-time challenges of the industry.",
+					point : "To promote excellence in the teaching learning process by fostering value based learning through a humanistic approach and be a constructive stakeholder in the professional education scenario."
 				},
 				
 			 ],
 
 			 Mission: [
 				{
-					point : "To inculcate the blend of competence, aptitude of knowledge and investigate flair through devising an ambient environment for sustainable learning.",
+					point : "To facilitate a stimulating environment in order to help students develop their linguistic, organizational and leadership skills.",
 				},
 				{
-					point : "To transform attitude, values, priorities by changing mindset and instill positive outlook for socially conscious intellectual development.",
+					point : "To inculcate a spirit of enquiry and encourage independent, analytical, creative and critical thinking.",
 				},
 				{
-					point : "Incubate, apply and spread innovative ideas to evolve the department as a centre of excellence in thrust areas.",
+					point : "To create competent and conscientious professionals with a strong sense of social responsibility, commitment and compassion.",
 				},
 			 ],
 
@@ -378,35 +375,5 @@ export const HSM = {
 		},
 	},
 	facilities: [
-		{
-			name: "Electronic Devices and Circuits Lab",
-			img: "",
-			content: " practical oriented electronic circuits that are very essential for the students to solidify their theoretical concepts. This Manual provides a communication bridge between the theory and practical world of the electronic circuits.",
-		},
-		{
-			name: "Microprocessor Lab",
-			img: "",
-			content: "The purpose of this laboratory is to train the students to be familiar with the software and hardware of microprocessors so that they can gain enough experiences to meet the demand of the microprocessor era. The facilities in the laboratory enable students to build a firm background in microprocessor hardware as well as software .",
-		},
-		{
-			name: "Embedded System Design Lab",
-			img: "",
-			content: "Embedded Systems Design Lab The ESD Lab is used to teach students to design and simulate digital circuits. The lab includes Oscilloscopes, Arbitrary Function Generators, Power Supplies and Multimeters. Many high tech software packages are installed to allow students to create embedded systems.",
-		},
-		{
-			name: "Sensors & Transducers Lab",
-			img: "",
-			content: "The word “Transducer” is the collective term used for both Sensors which can be used to sense a wide range of different energy forms such as movement, electrical signals, radiant energy, thermal or magnetic energy, etc., and Actuators which can be used to switch voltages or currents.",
-		},
-		{
-			name: "Process Control Lab",
-			img: "",
-			content: "Multi Process trainer, Multi variable Laboratory type Level Process, Calibration test bench, PLC trainer, Distributed Control system, Control Valve Characteristics Setup,",
-		},
-		{
-			name: "Virtual Instrumentation Lab",
-			img: "",
-			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
-		},
 	],
 };

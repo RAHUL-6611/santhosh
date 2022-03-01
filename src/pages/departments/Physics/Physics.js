@@ -1,6 +1,6 @@
 import { getImageUrl } from "../../../config";
 
-import Image from "../../../../src/components/assets/CSE_HOD.png"
+// import Image from "../../../../src/components/assets/CSE_HOD.png"
 
 
 export const Physics = {

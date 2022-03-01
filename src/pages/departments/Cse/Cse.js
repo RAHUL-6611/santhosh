@@ -8,7 +8,7 @@ export const CSE = {
 	About: {
 		DeptName: "Computer science and engineering",
 		ShortName: "CSE",
-		LongName: "DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING",
+		LongName: "COMPUTER SCIENCE AND ENGINEERING",
 
 		DeptImg: getImageUrl("cse.jpg"),
 
@@ -399,34 +399,64 @@ export const CSE = {
 	},
 	facilities: [
 		{
-			name: "Electronic Devices and Circuits Lab",
+			name: "Distributed Computing Lab",
 			img: "",
-			content: " practical oriented electronic circuits that are very essential for the students to solidify their theoretical concepts. This Manual provides a communication bridge between the theory and practical world of the electronic circuits.",
+			content: "Intel Core i5 second generation 2400 @ 3.1Ghz 6 MB L3 cache 500 GB 7200 rpm Serial ATA HDD, 2 GB 1066 MHz DDR3 RAM, 18.5 inch Digital Color Monitor, 10/100/ 1000 Network Port. 10 KVA UPS with Exide SMF Batteries (one Hour Backup)",
 		},
 		{
-			name: "Microprocessor Lab",
+			name: "Wireless LAN Lab",
 			img: "",
-			content: "The purpose of this laboratory is to train the students to be familiar with the software and hardware of microprocessors so that they can gain enough experiences to meet the demand of the microprocessor era. The facilities in the laboratory enable students to build a firm background in microprocessor hardware as well as software .",
+			content: "Intel i5 , RAM - 2GB DDR3 1333, Hard Disk 320 GB 7200 RPM SATA / 300 8.5 HDD SATA DVD writer 22x PS/2 key board block 3 button scroll optical USB mouse HCL led wide 18.5 Monitor with Speaker Intel Core i5 second generation 2400 @ 3.1Ghz 6MB L3 cache 500 GB 7200 rpm Serial ATA HDD, 2 GB 1066 MHz DDR3 RAM, 18.5 inch Digital Color Monitor, 10/100/ 1000 Network Port",
 		},
 		{
-			name: "Embedded System Design Lab",
+			name: "Problem Solving Lab",
 			img: "",
-			content: "Embedded Systems Design Lab The ESD Lab is used to teach students to design and simulate digital circuits. The lab includes Oscilloscopes, Arbitrary Function Generators, Power Supplies and Multimeters. Many high tech software packages are installed to allow students to create embedded systems.",
+			content: "Desktop Computers: INFINITE LA390 PRO Intel Core i5, 2400@3.10 GHz 6MB, Intel H77 Chipset, 2GB DDR3, 500 GB Hard Disk, Accessories, 10/100/1000 On-board NIC Desktop Computers - Intel® Core™ i5-4570 Processor @ 3.2 GHz Processor, Intel chipset H81,4 GB DDR3 RAM , 500 GB HDD, 47 cm (18.5 inch) LED Digital Colour Monitor, 16X DVD writer, 1000 Mbps on board integrated network port Windows 8.1 Professional Licensed Desktop Computers - Intel® Core™ i3-4160 Processor @ 3.6 GHz Processor, 4 GB DDR3 RAM , 500 GB HDD, 47 cm (18.5 inch) LED Digital Color Monitor, 16X DVD writer, 1000 Mbps on board integrated network port Windows 8.1 Professional Licensed Preloaded 10 KVA UPS with Exide SMF Batteries (one Hour Backup)",
 		},
 		{
-			name: "Sensors & Transducers Lab",
+			name: "Hardware and Network Trouble Shooting Lab",
 			img: "",
-			content: "The word “Transducer” is the collective term used for both Sensors which can be used to sense a wide range of different energy forms such as movement, electrical signals, radiant energy, thermal or magnetic energy, etc., and Actuators which can be used to switch voltages or currents.",
+			content: "Desktop Computers - Intel® Core™ i5-4570 Processor @ 3.2 GHz Processor, Intel chipset H81,4 GB DDR3 RAM , 500 GB HDD, 47 cm (18.5 inch) LED Digital Colour Monitor, 16X DVD writer, 1000 Mbps on board integrated network port Windows 8.1 Professional Licensed Preloaded 10 KVA UPS with Exide SMF Batteries (one Hour Backup)",
 		},
 		{
-			name: "Process Control Lab",
+			name: "Information Security Lab",
 			img: "",
-			content: "Multi Process trainer, Multi variable Laboratory type Level Process, Calibration test bench, PLC trainer, Distributed Control system, Control Valve Characteristics Setup,",
+			content: "HP 406 Series core I5- 4570 DSTP HP Intel core I5-4 th Gen Processor, 4GB DDR3 RAM, 500 GB HDD,DVDRW HP18.5” LED Monitor HP Usb Keyboard&amp; Mouse RestIntel Xeon processor E5 2600 v4 product family. Operating System Options: Microsoft Windows Server 2008 R2. Chipset: Intel C610 series chipset.",
 		},
 		{
-			name: "Virtual Instrumentation Lab",
+			name: "Embedded Systems Lab",
 			img: "",
-			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
+			content: "HCL Desktop Computers - Intel i5 , RAM - 2GB DDR3 1333, Hard Disk 320 GB 7200 RPM SATA / 300 8.5 HDD SATA DVD writer 22x PS/2 key board block 3 button scroll optical USB mouse HCL led wide 18.5 Monitor with speaker Red Hat V5.5 Media (10 Nos.) HP Desktop Computers - Intel Core i5 4570 @ 3.2 GHz, or Higher, 4 GB DDR3-1600 RAM, 500 GB 7200 RPM SATA Hard Disk or higher, 47cm (18.5 inch) LED Digital Colour monitor, 8X DVD RW or higher, Integrated Intel PRO 10/100/1000 Network (15 Nos.) ARM 7 Trainer Boards, ARM Cortex Trainer Boards Intel Galileo Development Boards, JLINK Debugger Interface kits such as, Matrix Graphic LCD Interface, Real, Time Clock Interface, I2C Interface Card, Temperature Transducer Measurement",
+		},
+		{
+			name: "Microprocessor s and Microcontroller s Lab",
+			img: "",
+			content: "8085 Microprocessor trainer kits, 8086 Microprocessor trainer kits, 8051Microcontroller trainer kits, Interface kits like Stepper motors, Traffic controllers, Elevators, Music synthesizers, Desktop computers.",
+		},
+		{
+			name: "Data Analytics Lab",
+			img: "",
+			content: "Desktop Computers - Intel core i5 RAM-2GB DDR3, 320 GB, DVD writer Lx Infinite Pro Bl1280 5W Rms H1 Media Speakers-Black, HCL 3button W/Scroll Optical Mouse- HCL 101+14 button Int Keyboard Blk Vista Kit Free Dos Preloaded LX Infiniti Pro BL 1280, Intel G31 Chipset, Intel Core 2 Duo E7200 2.53GHz 1066MHz 3MB cache, 320 GB HDD, keyboard, mouse, DOS Preloaded 47cm HCL Wide LCD W/Speaker TCO Blk",
+		},
+		{
+			name: "Research Lab",
+			img: "",
+			content: "Intel Core i3- 4 th Gen Desktop. H81 Intel Chipset, Mother Board, 4GB DDR3 RAM, 500GB HDD, DVD, RW HP 18.5” LED Monitor HP USB Keyboard HP USB mouse Intel Core 2 Duo CPU E 7500 @ 2.93GHz 2.94GHz RAM 2.00GB HID- complaint mouse standard PS/2 Keyboard HCMEL WBTII monitor (HCL)",
+		},
+		{
+			name: "Srinivasa Ramanujam Computer Centre",
+			img: "",
+			content: "Desktop Computers - Intel Core 2 Duro E 7300 2.666 GHz 3MB Cache 1066 Mhz Fsb DDR2 RAM 667 Mhz Intel G 31 Chipset With Mother Board Optical Mouse 17&quot; TFT Monitor , OS Free Linux /Doss, Microsoft, Novel, HCL Systems Desktop Computers - Intel® Core™ i5-4570 Processor @ 3.2 GHz Processor, Intel chipset H81,4 GB DDR3 RAM , 500 GB HDD, 47 cm (18.5 inch) LED Digital Colour Monitor, 16X DVD writer, 1000 Mbps on board integrated network port Windows 8.1 Professional Licensed Preloaded (30 Nos)",
+		},
+		{
+			name: "Web Technology Lab",
+			img: "",
+			content: "HP Desktop Computer 10th Generation Intel® Core™ i5 processor 3.0 Ghz Windows 10 Home Single Language. 8 GB DDR4- 2666 MHz RAM (1 x 8 GB) 256 GB  SSD. 500GB 7200 rpm SATA HDD, Numeric KVA UPS BENQ- Digital Projector MS560P – SVGA(800X600) , DLP – Support for 1.1X, TR 1.96-2.15, HDMIx EPSON – PRINTER - M2170 Monochrome All-in- One Wi-Fi Duplex InkTank Printer(Black)",
+		},
+		{
+			name: "Artificial Intelligence and Data Science Lab",
+			img: "",
+			content: "HP Desktop Computer 10th Generation Intel® Core™ i5 processor 3.0 Ghz Windows 10 Home Single Language. 8 GB DDR4-2666 MHz RAM (1 x 8 GB) 256 GB  SSD. 500GB 7200 rpm SATA HDD, Numeric KVA UPS HP Desktop Computerh Generation Intel® Core™ i5 processor 3.0 Ghzdows 10 Home Single Language.B DDR4-2666 MHz RAM (1 x 8 GB) 256 GB . 500GB 7200 rpm SATA HDD, Numeric KVA",
 		},
 	],
 };

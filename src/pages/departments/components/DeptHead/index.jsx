@@ -43,7 +43,7 @@ export default function DeptHeader({ value }) {
 
 			<div className="navbar_for_dept justify-right lg:justify-center">
 				<div
-					className="bars lg:hidden hidden"
+					className="bars lg:hidden block"
 					onClick={() => {
 						toggle_nav();
 					}}

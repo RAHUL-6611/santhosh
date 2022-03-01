@@ -1,8 +1,5 @@
 import React from "react";
 import { MdOutlineTravelExplore } from "react-icons/md";
-import { SiReasonstudios } from "react-icons/si";
-import { BsBookHalf } from "react-icons/bs";
-import { RiTeamFill } from "react-icons/ri";
 
 import "./style.css"
 

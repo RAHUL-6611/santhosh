@@ -14,7 +14,7 @@ const DeptLandingPage = ({ value }) => {
 			<About value={ value } />
 			<Vision value={ value } />
 			<Notice />
-			<Testimonial />
+			{/* <Testimonial /> */}
 		</div>
 	);
 };

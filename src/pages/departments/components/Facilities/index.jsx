@@ -1,7 +1,5 @@
 import React from "react";
 
-import { getImageUrl } from "../../../../config";
-
 const Facilities = ({ value }) => {
 
 	let facility = value.facilities
@@ -15,7 +13,7 @@ const Facilities = ({ value }) => {
 							<>
 			  <div key={e.name} className="fac block md:flex md:flex-row-reverse justify-around py-10 ">
 					<img
-						src={getImageUrl("appl2.jpg")}
+						src={""}
 						className="p-10 Facility-img"
 						alt=""
 					/>
