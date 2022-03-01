@@ -16,32 +16,24 @@ export const ECE = {
 		count : [
 			{
 				name: "B.Tech Students",
-				count : 23
+				count : 344
 			},
 			{
-				name: "M.Tech Students",
-				count : 23
+				name: "M.Tech Students(ECE)",
+				count : 14
 			},
 			{
-				name: "MCA Students",
-				count : 23
+				name: "M.Tech Students(WC)",
+				count : 3
 			},
 			{
-				name: "Ph.d Scholars",
-				count : 23
-			},
-			{
-				name: "Faculty",
-				count : 23
-			},
-			{
-				name: "Staff",
-				count : 23
+				name: "Research Scholars",
+				count : 66
 			},
 		],
 
 		about:
-			"The Department of Electrical and electronic engineering has well experienced faculty, skilled technical staff and well equipped laboratories. It offers one undergraduate program B.Tech. (Electrical and electronic engineering). It aims at providing high quality training to students through the latest in Electrical and electronic engineering. In order to maintain the standard of education, it constantly upgrades the academic syllabi so as to keep the students well to deal with changing trends in the field of Electrical and electronic engineering. It also emphasizes on Information Security, Image Processing, Software Engineering, Optical and Mobile Networks, Soft Computing, Complex Event Processing, Data Mining, Web Technology and several other recent topics. The Department of Electrical and electronic engineering is accredited by NBA (National Board of Accreditation). So far, eight batches of students have successfully completed the degree course with flying colours.",
+			"The Dept. of Electronics and Communication Engineering, Pondicherry Engineering College was established during the inception of the institute, in 1985. It has a strong undergraduate programme in Electronics and Communication Engineering B.Tech (ECE) along with M.Tech in Electronics and Communication Engineering and M.Tech Wireless Communication and Ph.D degrees. The principal mission of the department is to formulate a very strong foundation in the various aspects of Electronics and Communication and provide training in the contemporary areas such as VLSI, Embedded system, Wireless communication, IOT etc.",
 
 			vision: [
 				{
@@ -390,56 +382,71 @@ export const ECE = {
 			syllabusPdf: "",
 		},
 	},
-	facilities: {
-		lab1: {
-			name: "",
+	facilities: [
+		{
+			name: "COMMUNICATION LAB-III",
 			img: "",
+			content: "The objective of this lab is to familiarise the students with microwave and optical communication techniques/technologies in microwave communication. The students study the operation and characteristics of microwave sources such as klystron and gunn diodes, load impedance and standing wave measurements, antenna gain and radiation pattern measurements. Optical communication deals with the study of the characteristics of the optical fibre and also analog and digital fibre links using LED and LASER sources.",
+		},
+		{
+			name: "ADVANCED COMMUNICATION LAB",
+			img: "",
+			content: "This lab is an advancement of the communication lab-III where the students perform experiments using advanced equipments such as the vector network analyser, spectrum analyser, DTA and RCA.",
+		},
+		{
+			name: "PG COMMUNICATION DESIGN AND SIMULATION LAB",
+			img: "",
+			content: "This lab course for M.Tech students teaches the students on microwave sources and devices, optical fibre and characteristic and design of microwave and optical fibre communication links. Students are also trained to handle and perform experiments using advanced equipment available in the lab.",
+		},
+		{
+			name: "High Performance Communication Lab",
+			img: "",
+			content: " Facility created for design and analysis of wireless communication systems using advanced testing equipment’s like Spectrum Analyser, CDMA Trainer, High frequency DSO and OFDM trainer kit and Special simulation tools NetSim and QUALNET(Research)",
+		},
+		{
+			name: "Freescale Systems Lab",
+			img: "",
+			content: "This lab has been established as a collaborative venture between Pondicherry Engineering College and M/S Freescale Semiconductors. India Pvt. Ltd. in accordance with the MoU signed during September, 2008. Freescale Semiconductors has donated ninety development tools which include Hardware and Software.",
+		},
+		{
+			name: "COMMUNICATION LABORATORY-I",
+			img: "",
+			content: "Students construct and analyse circuits on analog communication transmitter and receiver. The students conduct experiment to understand the signals available at different stages of AM and FM receivers.",
+		},
+		{
+			name: "COMMUNICATION LABORATORY-II",
+			img: "",
+			content: "The objective of this course is to familiarise the students with different blocks in digital communication different digital communication. Different digital modems and codecs are constructed and tested.",
+		},
+		{
+			name: "Computer Networks Laboratory",
+			img: "",
+			content: "HP Core 2 Duo @2.9 GHz, 2GB RAM, 160GB HDD , Windows 7/ Windows 8. 100Mbps Internet facility. 10KVA UPS.",
+		},
+		{
+			name: "Electronic Devices Laboratory",
+			img: "",
+			content: "The primary objective of the lab is to serve as a platform for understanding the operating principles of electron devices through experiments and also to study their characteristics.",
+		},
+		{
+			name: "DIGITAL CIRCUITS DESIGN LAB",
+			img: "",
+			content: "The lab is intented for sophomores for practising their theoretical knowledge by designing. Constucting and testing the combinational as well as sequential digital circuits.",
+		},
+		{
+			name: "ELECTRONICS CIRCUITS LAB-I",
+			img: "",
+			content: "The students are offered hands-on experience in designing, constructing and testing the analog electronics circuits. The students design the circuits, solder them and then test the performance experimentally. This lab nurtures all the skills that are essential to design and test advanced electronics and communication circuits. The students also validate the experimental results using PSpice computer simulator.",
+		},
+		{
+			name: "ELECTRONICS CIRCUITS LAB-II",
+			img: "",
+			content: "This laboratory course is an advanced extension of Electonics circuits lab-I. The students design advanced analog and pulse circuits.They construct the circuit and test them. This lab builds the confidence of the students to design the advanced electronic circuits. The students study the impact of various design parameters on the performance of the circuits using PSpice computer simulator.",
+		},
+		{
+			name: "Wireless Communication Laboratory",
+			img: "Lenovo V530 - Intel® core TM :3-8100 CPU @3.60 GHz 4 GB RAM 64-bit Operating system X64 based processor - Windows 10. HP - Intel® core TM :i5-6500CPU@3.20 GHz 4 GB RAM 64-bit Operating system X64 based processor - Windows 10. Labview 2018 and my RIO tool kit",
 			content: "",
 		},
-		lab2: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab3: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab4: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab5: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab6: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab7: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab8: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab9: {
-			name: "",
-			img: "",
-			content: "",
-		},
-		lab10: {
-			name: "",
-			img: "",
-			content: "",
-		},
-	},
+	],
 };

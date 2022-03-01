@@ -16,19 +16,15 @@ export const EEE = {
 		count : [
 			{
 				name: "B.Tech Students",
-				count : 23
+				count : 235
 			},
 			{
 				name: "M.Tech Students",
-				count : 23
-			},
-			{
-				name: "MCA Students",
-				count : 23
+				count : 12
 			},
 			{
 				name: "Ph.d Scholars",
-				count : 23
+				count : 5
 			},
 		],
 

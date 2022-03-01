@@ -391,35 +391,6 @@ export const ME = {
 		},
 	},
 	facilities: [
-		{
-			name: "Electronic Devices and Circuits Lab",
-			img: "",
-			content: " practical oriented electronic circuits that are very essential for the students to solidify their theoretical concepts. This Manual provides a communication bridge between the theory and practical world of the electronic circuits.",
-		},
-		{
-			name: "Microprocessor Lab",
-			img: "",
-			content: "The purpose of this laboratory is to train the students to be familiar with the software and hardware of microprocessors so that they can gain enough experiences to meet the demand of the microprocessor era. The facilities in the laboratory enable students to build a firm background in microprocessor hardware as well as software .",
-		},
-		{
-			name: "Embedded System Design Lab",
-			img: "",
-			content: "Embedded Systems Design Lab The ESD Lab is used to teach students to design and simulate digital circuits. The lab includes Oscilloscopes, Arbitrary Function Generators, Power Supplies and Multimeters. Many high tech software packages are installed to allow students to create embedded systems.",
-		},
-		{
-			name: "Sensors & Transducers Lab",
-			img: "",
-			content: "The word “Transducer” is the collective term used for both Sensors which can be used to sense a wide range of different energy forms such as movement, electrical signals, radiant energy, thermal or magnetic energy, etc., and Actuators which can be used to switch voltages or currents.",
-		},
-		{
-			name: "Process Control Lab",
-			img: "",
-			content: "Multi Process trainer, Multi variable Laboratory type Level Process, Calibration test bench, PLC trainer, Distributed Control system, Control Valve Characteristics Setup,",
-		},
-		{
-			name: "Virtual Instrumentation Lab",
-			img: "",
-			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
-		},
+		
 	],
 };

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { CustomCountUp } from "../../../../components/StudentCount";
 
 const About = ({ value }) => {
@@ -60,7 +60,7 @@ const About = ({ value }) => {
 				</div>
 			</div>
 
-			<div className="hw2 p-10 mx-20 my-10">
+			<div className="hw2 p-10 lg:mx-20 mx:5 my-10">
 				<br />
 				<h5 className="dep-h text-4xl">About the Department</h5>
 				<p className="dep-p py-10">

@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import Individual from "./individual";
 import useQuery from "../../../../hooks/useQuery";
 
-import {
-	professors,
-	associFacultyData,
-	assisFacultyData,
-	supportingStaff,
-} from "./facultyProfilePage";
+// import {
+// 	professors,
+// 	associFacultyData,
+// 	assisFacultyData,
+// 	supportingStaff,
+// } from "./facultyProfilePage";
+
+
 import { getImageUrl, getProfileImageUrl } from "../../../../config";
 import Placeholder from "../../../../components/Placeholder";
 import { Link } from "react-router-dom";
@@ -39,16 +41,16 @@ export default function Faculty({ faculty, value }) {
 	);
 }
 
-function FacultyParts() {
-	return (
-		<>
-			<FacultySingle Fname="Associate professors" data={associFacultyData} />
-			<FacultySingle Fname="Professors" data={professors} />
-			<FacultySingle Fname="Assistant professors" data={assisFacultyData} />
-			<FacultySingle Fname="Supporting staff" data={supportingStaff} />
-		</>
-	);
-}
+// function FacultyParts() {
+// 	return (
+// 		<>
+// 			<FacultySingle Fname="Associate professors" data={associFacultyData} />
+// 			<FacultySingle Fname="Professors" data={professors} />
+// 			<FacultySingle Fname="Assistant professors" data={assisFacultyData} />
+// 			<FacultySingle Fname="Supporting staff" data={supportingStaff} />
+// 		</>
+// 	);
+// }
 
 function FacultySingle({ Fname, data }) {
 	let [state, setState] = useState(0);
@@ -61,7 +63,7 @@ function FacultySingle({ Fname, data }) {
 	let image = data[state].pp_file_name
 		? getProfileImageUrl(data[state].pp_file_name)
 		: getImageUrl("Unknown_person.jpg");
-
+    let qualification = data[state].qualification;
 	return (
 		<>
 			<div className="faculty block md:grid md:grid-cols-7 py-20">
@@ -77,12 +79,8 @@ function FacultySingle({ Fname, data }) {
 						</div>
 						<div className="big-cont flex flex-col p-10">
 							<p className="fac-name">{name}</p>
-							<p className="">
-								<p>
-								Qualification : 
-								{name}
-								</p>
-								</p>
+							<div className="ml-3">{qualification}</div>
+							
 							{Fname.includes("supporting") ? (
 								<p>Designation : {sub}</p>
 							) : (
@@ -125,7 +123,7 @@ function FacultySingle({ Fname, data }) {
 								</div>
 								<div className="parts2 px-5">
 									<h5 className="fac-name2">{e.faculty_name}</h5>
-									<h6>{e.specialization}</h6>
+									<h6 className="my-2">{qualification}</h6>
 								</div>
 							</div>
 						);

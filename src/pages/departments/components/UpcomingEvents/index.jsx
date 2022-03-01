@@ -5,9 +5,9 @@ function plusSlides(n, className) {
 	showSlides((slideIndex += n), className);
 }
 
-function currentSlide(n, className) {
-	showSlides((slideIndex = n), className);
-}
+// function currentSlide(n, className) {
+// 	showSlides((slideIndex = n), className);
+// }
 function showSlides(n, className) {
 	// console.log(className)
 	var num = className.charAt(className.length - 1);

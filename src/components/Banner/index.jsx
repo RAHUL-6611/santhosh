@@ -14,13 +14,21 @@ import inaug from "../LandingPageCarousel/ptuInauguration.jpg";
 import hands from "../LandingPageCarousel/ptuInauguration_vicePresSpeech.jpg";
 
 const images = [
-	{ url: admin },
-	{ url: screen1 },
-	{ url: screen4 },
-	{ url: audi },
-	{ url: inaug },
-	{ url: hands },
+	{ url: getImageUrl("PEC_admin_block.gif") },
+	{ url: getImageUrl("ptuInauguration_screen1.jpg") },
+	{ url: getImageUrl("ptuInauguration_screen4.jpg") },
+	{ url: getImageUrl("pec-auditorium.jpg") },
+	{ url: getImageUrl("ptuInauguration.jpg") },
+	{ url: getImageUrl("ptuInauguration_vicePresSpeech.jpg") },
 ];
+// const images = [
+// 	{ url: admin },
+// 	{ url: screen1 },
+// 	{ url: screen4 },
+// 	{ url: audi },
+// 	{ url: inaug },
+// 	{ url: hands },
+// ];
 
 function Banner() {
 	const {

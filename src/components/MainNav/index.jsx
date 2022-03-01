@@ -99,7 +99,7 @@ const menus = [
 					{ text: "IT", href: "/it", subMenus: null },
 					{ text: "Maths", href: "/maths", subMenus: null },
 					{ text: "Physics", href: "/physics", subMenus: null },
-					{ text: "HSM", href: "/hsm", subMenus: null },
+					{ text: "HSS", href: "/hss", subMenus: null },
 					{ text: "Chemistry", href: "/chemistry", subMenus: null },
 					// { text: "", href: "/social-science-and-humanities", subMenus: null },
 				],

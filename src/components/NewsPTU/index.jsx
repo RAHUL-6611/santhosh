@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { IoMdPause, IoMdPlay } from "react-icons/io";
-import {API_BASE_URL} from "../../config"
+import { API_BASE_URL } from "../../config";
 import "./NewsPTU.css";
 import Placeholder from "../Placeholder";
 import useFetch from "../../hooks/useFetch";
@@ -157,45 +157,37 @@ export function AutoScrollContainer(props) {
 	const [scrollHeight, setScrollHeight] = useState(0);
 
 	useEffect(() => {
-		const element = updatesContainerRef.current;
-
-		// calculating the scroll height without the styles
-		// because by default the style is overflow hidden
-		// with scroll value only we can calculate
-		updateRef.current?.classList.remove("updates");
-		element?.classList.remove("updates-container--animation");
-
-		if (!(element?.scrollHeight > element?.clientHeight)) {
-			return;
-		}
-
-		element?.classList.add("updates-container--animation");
-		updateRef.current?.classList.add("updates");
-
-		let totalScrollHeight = element?.scrollHeight - element?.clientHeight;
-		setScrollHeight(totalScrollHeight);
+		// const element = updatesContainerRef.current;
+		// // calculating the scroll height without the styles
+		// // because by default the style is overflow hidden
+		// // with scroll value only we can calculate
+		// updateRef.current?.classList.remove("updates");
+		// element?.classList.remove("updates-container--animation");
+		// if (!(element?.scrollHeight > element?.clientHeight)) {
+		// 	return;
+		// }
+		// element?.classList.add("updates-container--animation");
+		// updateRef.current?.classList.add("updates");
+		// let totalScrollHeight = element?.scrollHeight - element?.clientHeight;
+		// setScrollHeight(totalScrollHeight);
 	}, [updatesContainerRef, updateRef]);
 
 	useEffect(() => {
-		const updatesContainer = updatesContainerRef.current;
-
-		function handleResize() {
-			// recalculating the scroll height without the styles
-			updateRef.current?.classList.remove("updates");
-			updatesContainer?.classList.remove("updates-container--animation");
-
-			setScrollHeight(
-				updatesContainer?.scrollHeight - updatesContainer?.clientHeight
-			);
-
-			updatesContainer?.classList.add("updates-container--animation");
-			updateRef.current?.classList.add("updates");
-		}
-
-		window.addEventListener("resize", handleResize);
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
+		// const updatesContainer = updatesContainerRef.current;
+		// function handleResize() {
+		// 	// recalculating the scroll height without the styles
+		// 	updateRef.current?.classList.remove("updates");
+		// 	updatesContainer?.classList.remove("updates-container--animation");
+		// 	setScrollHeight(
+		// 		updatesContainer?.scrollHeight - updatesContainer?.clientHeight
+		// 	);
+		// 	updatesContainer?.classList.add("updates-container--animation");
+		// 	updateRef.current?.classList.add("updates");
+		// }
+		// window.addEventListener("resize", handleResize);
+		// return () => {
+		// 	window.removeEventListener("resize", handleResize);
+		// };
 	}, [updatesContainerRef, updateRef]);
 
 	const toggleAnimationStatus = () => {
@@ -401,7 +393,7 @@ export default function NewsPTU() {
 	);
 }
 
-const Updated = ({ topic, byWhom, message,file_name }) => {
+const Updated = ({ topic, byWhom, message, file_name }) => {
 	return (
 		<div className="update__container">
 			<div className="update__content">
@@ -410,7 +402,7 @@ const Updated = ({ topic, byWhom, message,file_name }) => {
 					<h3>{byWhom}</h3>
 					<br />
 					<p>{message}</p>
-					<a href={API_BASE_URL + file_name} target="_blank" >
+					<a href={API_BASE_URL + file_name} target="_blank">
 						<p>View More</p>
 					</a>
 				</div>

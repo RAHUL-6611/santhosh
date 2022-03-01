@@ -4,7 +4,6 @@ import "./SmallCarousel.css";
 
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import { getImageUrl } from "../../config";
-import { Link } from "react-router-dom";
 
 export default function SmallCarousel() {
 	const scrollContainerRef = useRef();
