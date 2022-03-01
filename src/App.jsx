@@ -25,7 +25,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<HomeScreen />} />
+				<Route path="/*" element={<HomeScreen />} />
 				{departmentProps.map((department, index) => {
 					return (
 						<Route
@@ -35,7 +35,7 @@ function App() {
 						/>
 					);
 				})}
-				<Route path="*" element={<HomeScreen />} />
+				<Route path="/*" element={<HomeScreen />} />
 			</Routes>
 		</BrowserRouter>
 	);

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./carousel.css";
-
+import {Link} from "react-router-dom"
 // import img1 from '../../images/cse.jpg';
 import { getImageUrl } from "../../config";
 
@@ -19,6 +19,7 @@ const _items = [
 			title: "IT",
 			desc: "The Department of Information Technology has well experienced faculty, skilled technical staff and well equipped laboratories. It offers one undergraduate program B.Tech. (Information Technology). It aims at providing high quality training to students through the latest in Information Technology.",
 			image: getImageUrl("eie 2.jpg"),
+			path :"/it"
 		},
 	},
 	{
@@ -27,6 +28,7 @@ const _items = [
 			title: "CSE",
 			desc: "The Department aims at providing high quality training to students through the latest in computer technology and  offers B.Tech. (CSE), M.Tech. (Data Science), M.Tech. (Information Security), MCA and Ph.D.(including QIP and NDF schemes) programme.",
 			image: getImageUrl("cse.jpg"),
+			path:"/cse",
 		},
 	},
 	{
@@ -35,15 +37,17 @@ const _items = [
 			title: "EEE",
 			desc: "The Department of Electrical and Electronics Engineering provides a progressive environment for learning through systematic teaching methodologies, rigorous practical training and contemporary curriculum; research through creative activities in conventional and thrust areas of Electrical and Electronics Engineering.",
 			image: getImageUrl("eee.jpg"),
+			path:"eee",
 		},
 	},
-
+	
 	{
 		player: {
 			//2
 			title: "ECE",
 			desc: "Dept. of ECE, Pondicherry Engineering College was established in the year 1985. Throughout its sparkling history of 33 years, the department of ECE has been known for its exceptionally strong Under-Graduate and Graduate training programmes.",
 			image: getImageUrl("ece 2.jpg"),
+			path:"ece",
 		},
 	},
 	{
@@ -52,6 +56,7 @@ const _items = [
 			title: "Chemical",
 			desc: "The Department of chemical engineering was established in the year 1998 with a vision to impart high quality chemical engineering education and to serve the needs of industries and societies through technical services, consultancy and research.",
 			image: getImageUrl("chemical department.jpg"),
+			path:"chem",
 		},
 	},
 	{
@@ -60,6 +65,7 @@ const _items = [
 			title: "EIE",
 			desc: "Instrumentation is the branch of engineering that deals with measurement and control. In  this  fully  automated world, this  course  which  is  a  complete  blend  of  technical  subjects.",
 			image: getImageUrl("eie 2.jpg"),
+			path:"eie",
 		},
 	},
 	{
@@ -68,6 +74,7 @@ const _items = [
 			title: "Civil",
 			desc: "The Department of Civil Engineering was established during the inception of the college. Apart from offering B.Tech in Civil Engineering, two M.Tech programmes in Structural Engineering and Environmental Engineering specialization and PhD  programme in Civil Engineering are offered.",
 			image: getImageUrl("civil.jpg"),
+			path:"civil",
 		},
 	},
 	{
@@ -76,6 +83,7 @@ const _items = [
 			title: "Mectronics",
 			desc: "The Department of Mechanical Engineering offers B. Tech., M. Tech., and Ph. D Programmes. The Department of Mechanical Engineering has become the QIP centre in the year 2013. Highly qualified, experienced and committed faculty members significantly contribute to the growth of the college in general and the Department in particular. The UG course of the department is accreted by NBA for a period of 5 years. ",
 			image: getImageUrl("me.jpg"),
+			path:"mectro",
 		},
 	},
 ];
@@ -121,7 +129,7 @@ const createItem = (position, idx) => {
 				display: "none",
 				zIndex: "-11111",
 			};
-		// break;
+			break;
 		default:
 			item.styles = { ...item.styles, opacity: 1, zIndex: "-11111" };
 			break;
@@ -130,10 +138,11 @@ const createItem = (position, idx) => {
 	return item;
 };
 
-const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
+const CarouselSlideItem = ({ pos, idx, activeIdx, path }) => {
 	const item = createItem(pos, idx, activeIdx);
-
+	console.log(item.player.path);
 	return (
+		<Link to={item.player.path}>
 		<li className="carousel__slide-item" style={item.styles}>
 			<div className="carousel-slide-item__body">
 				<h4>{item.player.title}</h4>
@@ -145,6 +154,7 @@ const CarouselSlideItem = ({ pos, idx, activeIdx }) => {
 				<p className="car-para">{item.player.desc}</p>
 			</div>
 		</li>
+		</Link>
 	);
 };
 
@@ -209,6 +219,7 @@ const Carousel = () => {
 									idx={i}
 									pos={pos}
 									activeIdx={activeIdx}
+									// path={pos.path}
 								/>
 							))}
 						</ul>
