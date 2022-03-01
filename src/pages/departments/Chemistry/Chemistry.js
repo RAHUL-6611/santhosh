@@ -10,7 +10,7 @@ export const Chemistry = {
 		ShortName: "CHEMISTRY",
 		LongName: "DEPARTMENT OF CHEMISTRY",
 
-		DeptImg: getImageUrl("cse.jpg"),
+		DeptImg: getImageUrl("unknown.jpg"),
 
 		count : [
 			{
@@ -47,9 +47,9 @@ export const Chemistry = {
 
 		Hod: {
 			name: "Dr. G. Zayaraz",
-			Designation: "HOD CSE Department",
+			Designation: "HOD CHEMISTRY Department",
 			content: "HOD Cse Department Welcome to the department of Computer Science and Engineering. Here we will explore This is the message by cse hod.",
-			img: Image,
+			img: getImageUrl("Unknown_person.jpg"),
 		}
 	},
 

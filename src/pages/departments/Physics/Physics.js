@@ -10,7 +10,7 @@ export const Physics = {
 		ShortName: "PHYSICS",
 		LongName: "DEPARTMENT OF PHYSICS",
 
-		DeptImg: getImageUrl("cse.jpg"),
+		DeptImg: "",
 
 		count : [
 			{
@@ -47,8 +47,8 @@ export const Physics = {
 
 		Hod: {
 			name: "Dr. R. KANNAN",
-			Designation: "HOD MATHS Department",
-			img: Image,
+			Designation: "HOD PHYSICS Department",
+			img: getImageUrl("Unknown_person.jpg"),
 		}
 	},
 

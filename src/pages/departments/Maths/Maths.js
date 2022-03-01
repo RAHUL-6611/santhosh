@@ -7,10 +7,10 @@ export const Maths = {
 	basePath: "/maths",
 	About: {
 		DeptName: "MATHEMATICS DEPARTMENT",
-		ShortName: "MATHS",
-		LongName: "DEPARTMENT OF MATHS",
+		ShortName: "MATHEMATICS",
+		LongName: "DEPARTMENT OF MATHEMATICS",
 
-		DeptImg: getImageUrl("cse.jpg"),
+		DeptImg: "",
 
 		count : [
 			{
@@ -50,8 +50,8 @@ export const Maths = {
 
 		Hod: {
 			name: "Dr. S.MANGAYARCARASSY,",
-			Designation: "HOD MATHS Department",
-			img: Image,
+			Designation: "HOD MATHEMATICS Department",
+			img: getImageUrl("Unknown_person.jpg"),
 		}
 	},
 

@@ -6,11 +6,11 @@ import Image from "../../../../src/components/assets/CSE_HOD.png"
 export const HSM = {
 	basePath: "/hsm",
 	About: {
-		DeptName: "HSM Department",
-		ShortName: "HSM",
-		LongName: "DEPARTMENT OF HSM ",
+		DeptName: "HUMANITIES AND MANAGEMENT DEPARTMENT",
+		ShortName: "HUMANITIES AND MANAGEMENT DEPARTMENT",
+		LongName: "DEPARTMENT OF HUMANITIES AND MANAGEMENT ",
 
-		DeptImg: getImageUrl("cse.jpg"),
+		DeptImg: "",
 
 		count : [
 						
@@ -42,10 +42,9 @@ export const HSM = {
 			 ],
 
 		Hod: {
-			name: "Dr. G. Zayaraz",
-			Designation: "HOD CSE Department",
-			content: "HOD Cse Department Welcome to the department of Computer Science and Engineering. Here we will explore This is the message by cse hod.",
-			img: Image,
+			name: "",
+			Designation: "HOD HUMANITIES AND MANAGEMENT Department",
+			img: getImageUrl("Unknown_person.jpg"),
 		}
 	},
 
