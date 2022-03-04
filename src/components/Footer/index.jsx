@@ -37,30 +37,40 @@ const Footer = () => {
 				</div>
 				<div className="footer-right">
 					<p className="footer-company-about">
-						Address: East coast Road, Pillaichavady, Puducherry,{" "}
-						<span>605 014</span> <br />
+						Address: <br /> East coast Road, Pillaichavady, Puducherry,{" "}
+						<span>605 014</span>. <br />
 					</p>
-					<p className="footer-company-about">Phone No: 0413 265 5281</p>
+					<p className="footer-company-about">Phone No: 0413-2655281-288</p>
+					<p className="footer-company-about">Fax: 2655101</p>
 					<p className="footer-company-about">Email Id: info@ptuniv.edu.in</p>
 					<br />
 					<p className="footer-company-about">Follow us on</p>
 
 					<div className="footer-icons">
-						<a href="#" className="footer-icons__twitter">
+						{/* <a href="#" className="footer-icons__twitter">
 							<FaTwitter />
-						</a>
-						<a href="#" className="footer-icons__facebook">
+						</a> */}
+						<a
+							href="https://www.facebook.com/PTU.Pondicherry/"
+							className="footer-icons__facebook"
+						>
 							<FaFacebook />
 						</a>
-						<a href="#" className="footer-icons__instagram">
+						<a
+							href="https://www.instagram.com/puducherry_tech_university/"
+							className="footer-icons__instagram"
+						>
 							<FaInstagram />
 						</a>
-						<a href="#" className="footer-icons__youtube">
+						<a
+							href="https://www.youtube.com/channel/UC_KX66VEKIHunrHSsQwcNEw"
+							className="footer-icons__youtube"
+						>
 							<FaYoutube />
 						</a>
-						<a href="#" className="footer-icons__linkedin">
+						{/* <a href="#" className="footer-icons__linkedin">
 							<FaLinkedin />
-						</a>
+						</a> */}
 					</div>
 				</div>
 			</footer>

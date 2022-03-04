@@ -2,54 +2,55 @@ import { getImageUrl } from "../../../config";
 
 // import Image from "../../../../src/components/assets/CSE_HOD.png"
 
-
 export const Physics = {
 	basePath: "/physics",
 	About: {
-		DeptName: "PHYSICS DEPARTMENT",
+		DeptName: "PHYSICS",
 		ShortName: "PHYSICS",
 		LongName: "DEPARTMENT OF PHYSICS",
 
 		DeptImg: "",
 
-		count : [
+		count: [
 			{
 				name: "M.Sc Students",
-				count : 16
+				count: 16,
 			},
-			
 		],
 
 		about:
 			"The Department of Physics has been functioning right from the inception of the institution in 1985. The Department initially functioned as a supporting department catering to the demands of the under-graduate students. The Department started a post-graduate course in Material Science and Technology in 1992. The M.Phil. and Ph.D. research programs were begun in 1997. The Department has a well-equipped Physics Laboratory and P.G. Material Science &amp; Technology Laboratory. The laboratories of the department are equipped with state of the art equipment some of which include the following: Flaw Detector, Ultrasonic Magnetic Particle Detector, Eddy Current Detector, Strain analysis Equipment with DAS computer Stand-alone System, Viscometer (milli Pascal to mega Pascal range), Vacuum coating units with Electron Beam Gun, Four-probe, Two-probe Conductivity Measurement Setup, Differential Thermal Analyzer, Thermo Luminescence Set-up, High power Electro Magnet with imported gauss meters to measure axial and transverse magnetic fields, Electronic Balance Micro and Milligram Accuracy, Ball Mill (planetary type), and LCR meter. The department has five highly qualified and experienced faculty members. The Department has produced about 200 M.Sc (MS&amp;T), 30 M.Phills and 19 Ph.D Degrees. The department has produced more than 80 research papers in the international reputed, peer viewed journals like, Physical Review B, Journal of Applied physics, IEEE, Elsevier and Springer. Most of our PG and research candidates are well placed in several reputed Universities and Research Institutes (including IISc Bangalore, ISRO, IIT H) and in many Engineering Colleges as Physics and Chemistry Faculty. Others have found employment in IT and other industries.",
 
-			vision: [
-                {
-                    point : "To provide a platform for enriching and creating the knowledge through teaching and research in Physics.",
-                },
-                {
-                    point : "To improve the technical skill as well as value based education, for the development of science and technology to build a strong nation.",
-                },
-				
-            ],
-            
-            Mission: [
-                 {
-                     point : "To groom our young minds to become professionally and morally sound humans for building a healthy nation."
-                 },
-                 {
-                     point : "To motivate students through innovations, quality research publications and patents in Physics as well as in interdisciplinary areas and taking science and technology to the gross roots.",
-                 },
-                 {
-                     point : "Empowerment through self sufficiency.",
-                 },
-			 ],
+		vision: [
+			{
+				point:
+					"To provide a platform for enriching and creating the knowledge through teaching and research in Physics.",
+			},
+			{
+				point:
+					"To improve the technical skill as well as value based education, for the development of science and technology to build a strong nation.",
+			},
+		],
+
+		Mission: [
+			{
+				point:
+					"To groom our young minds to become professionally and morally sound humans for building a healthy nation.",
+			},
+			{
+				point:
+					"To motivate students through innovations, quality research publications and patents in Physics as well as in interdisciplinary areas and taking science and technology to the gross roots.",
+			},
+			{
+				point: "Empowerment through self sufficiency.",
+			},
+		],
 
 		Hod: {
 			name: "Dr. R. KANNAN",
 			Designation: "HOD PHYSICS Department",
 			img: getImageUrl("Unknown_person.jpg"),
-		}
+		},
 	},
 
 	Faculty: {
@@ -325,77 +326,7 @@ export const Physics = {
 			],
 		},
 	},
-	Research: {
-		research1: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research2: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research3: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research4: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research5: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research6: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-	},
-	curriculum: {
-		btech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mtech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mca: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		phd: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-	},
-	facilities: [
-		{
-			name: "B.TECH LABORATORY",
-			img: "",
-			content: "",
-		},
-		{
-			name: "M.Sc LABORATORY",
-			img: "",
-			content: "",
-		},
-		{
-			name: "RESEARCH LABORATORY",
-			img: "",
-			content: "",
-		},
-	],
+	Research: [],
+	curriculum: [],
+	facilities: [],
 };

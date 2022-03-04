@@ -35,10 +35,13 @@ function Banner() {
 		dimension: { width },
 	} = useDimention();
 
+	console.log(width);
+
 	return (
 		<div>
 			<div className="image_gallery">
 				<SimpleImageSlider
+					className="my-slider"
 					width={width}
 					height={500}
 					images={images}

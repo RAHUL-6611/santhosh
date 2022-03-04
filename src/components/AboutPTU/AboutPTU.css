@@ -48,6 +48,7 @@
 .about-ptu__sub-parts--center .about-text {
 	margin-bottom: 1em;
 	text-align: justify;
+	color: black;
 }
 .about-ptu__sub-parts .head-hold h6 {
 	font-size: 32px;
@@ -78,8 +79,11 @@
 	margin-top: 0.5em;
 }
 
-.about-ptu__sub-parts:nth-child(2) .about-img {
-	position: relative;
+.about-ptu__sub-parts .about-img {
+	height: 360px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
 }
 
 .about-part__card {

@@ -1,58 +1,62 @@
 import { getImageUrl } from "../../../config";
 
-import Image from "../../../../src/components/assets/CIVIL_HOD.jpg"
+import Image from "../../../../src/components/assets/CIVIL_HOD.jpg";
 
-import Dimg from "../../../../src/components/assets/pec_civil.jpg"
+import Dimg from "../../../../src/components/assets/pec_civil.jpg";
 
 export const Civil = {
-	basePath: "/Civil",
+	basePath: "/ce",
 	About: {
 		DeptName: "Civil engineering",
-		ShortName: "CIVIL",
+		ShortName: "ce",
 		LongName: "DEPARTMENT OF CIVIL ENGINEERING",
 
 		DeptImg: Dimg,
 
-		count : [
+		count: [
 			{
 				name: "B.Tech Students",
-				count : 23
+				count: 236,
 			},
 			{
 				name: "M.Tech Students",
-				count : 23
+				count: 58,
 			},
 			{
-				name: "Ph.d Scholars",
-				count : 23
+				name: "Ph.D Scholars",
+				count: 34,
 			},
 		],
 
 		about:
 			"The Department of Civil Engineering was established during the inception of the college. Apart from offering B.Tech in Civil Engineering, two M.Tech programmes in Structural Engineering and Environmental Engineering specialization and PhD  programme in Civil Engineering are offered. The major strength of this department is its faculty. Highly qualified, experienced and committed faculty members significantly contribute to the growth of the college in general and this department in particular. Students are offered world class training both in theory and practice. Industrial training is part of the curriculum both for UG and PG Students.",
 
-			vision: [
-				{
-					point : "To create skilled and employable engineers through teaching, training and research to serve and provide sustainable solutions to the society with professional and ethical commitment."
-				},
-			 ],
-			 Mission: [
-				{
-					point : "To provide a dynamic learning environment through innovative teaching methodologies and contemporary curriculum so as to prepare competitive students for successful profession",
-				},
-				{
-					point : "To impart technical skills through rigorous laboratory practices hands on field training so as to prepare the students to face real world situations.",
-				},
-				{
-					point : "To actively encourage and mentor students through academic and research activities to develop the ability to be creative and innovative, to face the challenges of rapidly changing technology and development.",
-				},
-			 ],
+		vision: [
+			{
+				point:
+					"To create skilled and employable engineers through teaching, training and research to serve and provide sustainable solutions to the society with professional and ethical commitment.",
+			},
+		],
+		Mission: [
+			{
+				point:
+					"To provide a dynamic learning environment through innovative teaching methodologies and contemporary curriculum so as to prepare competitive students for successful profession",
+			},
+			{
+				point:
+					"To impart technical skills through rigorous laboratory practices hands on field training so as to prepare the students to face real world situations.",
+			},
+			{
+				point:
+					"To actively encourage and mentor students through academic and research activities to develop the ability to be creative and innovative, to face the challenges of rapidly changing technology and development.",
+			},
+		],
 
 		Hod: {
 			name: "Dr.V.Murugaiyan",
 			Designation: "HOD CIVIL department",
 			img: Image,
-		}
+		},
 	},
 	Faculty: {
 		professors: {
@@ -327,63 +331,7 @@ export const Civil = {
 			],
 		},
 	},
-	Research: {
-		research1: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research2: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research3: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research4: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research5: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research6: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-	},
-	curriculum: {
-		btech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mtech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mca: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		phd: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-	},
-	facilities: [
-		
-	],
+	Research: [],
+	curriculum: [],
+	facilities: [],
 };

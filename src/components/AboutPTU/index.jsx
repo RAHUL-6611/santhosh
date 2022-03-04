@@ -7,18 +7,18 @@ let carddesc = [
 	{
 		title: "Research",
 		img: getImageUrl("mectro.jpg"),
-		link:"https://research.pec.edu/"
+		link: "https://research.pec.edu/",
 	},
 	{
 		title: "Startups",
 		img: getImageUrl("Startup.jpg"),
-		link:"https://www.aicpecf.org/"
+		link: "https://www.aicpecf.org/",
 	},
 	{
 		title: "Placements",
 		img: getImageUrl("placement.jpeg"),
 		className: "about-part__card--placement",
-		link:"https://tnp.pec.edu/"
+		link: "https://tnp.pec.edu/",
 	},
 ];
 
@@ -52,36 +52,46 @@ function AboutPTU() {
 						<h6 className="about-head">About PTU</h6>
 					</div>
 					<p className="about-text">
-						Puducherry Technological University (PTU), the first state
-						University of Puducherry came into existence on 5 th September,
-						2020, with the approval of UGC. Puducherry Technological University
-						(PTU) was inaugurated by Shri. Venkaiah Naidu, Honourable Vice
-						President, Government of India on 13 th September, 2021. Honourable
-						Lieutenant Governor, Dr. Tamilisai Soundararajan is the Chancellor
-						of Puducherry Technological University. Shri. Ashok Kumar is the
-						Pro- chancellor and Dr. S.Mohan is the first Vice Chancellor of
-						Puducherry Technological University (PTU). Perunthalaivar Kamarajar
-						Institute of Engineering and Technology (PKIET), Karaikal is a
-						constituent college of the University.
+						<b>Puducherry Technological University</b> (PTU), the{" "}
+						<b>first state University of Puducherry</b> came into existence on 5
+						<sup>th</sup> September, 2020, with the approval of UGC. Puducherry
+						Technological University (PTU) was inaugurated by{" "}
+						<b>
+							Shri. Venkaiah Naidu, Honourable Vice President, Government of
+							India
+						</b>{" "}
+						on 13<sup>th</sup> September, 2021.{" "}
+						<b>Honourable Lieutenant Governor, Dr. Tamilisai Soundararajan</b>{" "}
+						is the <b>Chancellor</b> of Puducherry Technological University.{" "}
+						<b>Shri. Ashok Kumar</b> is the <b>Pro-Chancellor</b> and{" "}
+						<b>Dr. S.Mohan</b> is the first <b>Vice-Chancellor</b> of Puducherry
+						Technological University (PTU). Perunthalaivar Kamarajar Institute
+						of Engineering and Technology (PKIET), Karaikal is a constituent
+						college of the University.
 						<br />
-						After having established for 36 years as a premier college for
-						technical education in Puducherry, Pondicherry Engineering College
-						has now been upgraded as Puducherry Technological University (PTU).
-						Currently the University holds 144 th rank under the Engineering
-						Category in the National Instiutional Ranking Framework (NIRF) 2021.
-						Although the University is at its nascent stage, it offers
-						undergraduate courses in nine branches of Engineering and Technology
-						and twelve Post- graduate courses in Engineering, Computer
-						Applications and Management besides Ph.D. in Engineering, Science
-						and English.
+						After having established for <b>36 years</b> as a premier college
+						for technical education in Puducherry,{" "}
+						<b>Pondicherry Engineering College</b> has now been upgraded as{" "}
+						<b>Puducherry Technological University</b> (PTU). Currently the
+						University holds{" "}
+						<b>
+							{" "}
+							144<sup>th</sup> rank{" "}
+						</b>{" "}
+						under the Engineering Category in the National Instiutional Ranking
+						Framework (NIRF) 2021. Although the University is at its nascent
+						stage, it offers undergraduate courses in nine branches of
+						Engineering and Technology and twelve Post-graduate courses in
+						Engineering, Computer Applications and Management besides Ph.D. in
+						Engineering, Science and English.
 					</p>
-					<div className="about-img">
-						<img src={getImageUrl("home.jpg")} alt="" />
+					<div>
+						<img className="about-img" src={getImageUrl("home.jpg")} alt="" />
 					</div>
 				</div>
 				<div className="about-ptu__sub-parts about-ptu__sub-parts--right">
 					{carddesc.map((e, index) => {
-						return <Card key={index}  {...e} />;
+						return <Card key={index} {...e} />;
 					})}
 				</div>
 			</div>
@@ -91,25 +101,25 @@ function AboutPTU() {
 
 export default AboutPTU;
 
-const Card = ({ title, img, className,link, ...rest }) => {
+const Card = ({ title, img, className, link, ...rest }) => {
 	let containerClass = "about-part__card";
 	if (className) {
 		containerClass += " " + className;
 	}
 	return (
 		<a href={link}>
-		<div {...rest} className={containerClass}>
-			<div className="about-part__card-msg">
-				<div className="about-part__card-msg-head">
-					<h3>{title}</h3>
-				</div>
-				<div>
-					<div className="about-part__card-img">
-						<img src={img} alt="" />
+			<div {...rest} className={containerClass}>
+				<div className="about-part__card-msg">
+					<div className="about-part__card-msg-head">
+						<h3>{title}</h3>
+					</div>
+					<div>
+						<div className="about-part__card-img">
+							<img src={img} alt="" />
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		</a>
 	);
 };

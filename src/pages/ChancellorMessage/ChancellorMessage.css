@@ -1,0 +1,60 @@
+.chancellor-message {
+	max-width: 1000px;
+	margin: 1em auto;
+	padding: 1em;
+	color: black;
+}
+
+.chancellor-message__head {
+	display: flex;
+	flex-direction: column;
+	background-color: brown;
+	padding: 1em;
+	color: white;
+}
+
+.chancellor-message__title {
+	margin-bottom: 1em;
+}
+
+.chancellor-message__name {
+	font-size: 1.4rem;
+}
+
+.chancellor-message__img {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.chancellor-message__body {
+	margin-top: 1em;
+}
+
+.chancellor-message__body p {
+	margin-bottom: 1.4em;
+	text-align: justify;
+}
+
+.chancellor-message__body ul {
+	list-style-type: disc;
+	margin: revert;
+	padding: revert;
+}
+
+@media screen and (min-width: 400px) {
+	.chancellor-message__img {
+		max-width: 350px;
+	}
+}
+
+@media screen and (min-width: 760px) {
+	.chancellor-message__content {
+		display: flex;
+	}
+	.chancellor-message__head {
+		align-self: flex-start;
+	}
+	.chancellor-message__body {
+		margin-top: 0;
+	}
+}

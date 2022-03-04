@@ -10,7 +10,6 @@ import useQuery from "../../../../hooks/useQuery";
 // 	supportingStaff,
 // } from "./facultyProfilePage";
 
-
 import { getImageUrl, getProfileImageUrl } from "../../../../config";
 import Placeholder from "../../../../components/Placeholder";
 import { Link } from "react-router-dom";
@@ -29,7 +28,14 @@ export default function Faculty({ faculty, value }) {
 		<>
 			{!query.get("id") ? (
 				postTier.map((tier) => {
-					return <FacultySingle key={tier} Fname={tier} data={faculty[tier]} />;
+					return (
+						<FacultySingle
+							key={tier}
+							dept={value.About.ShortName.toLowerCase()}
+							Fname={tier}
+							data={faculty[tier]}
+						/>
+					);
 				})
 			) : (
 				<Individual
@@ -52,7 +58,7 @@ export default function Faculty({ faculty, value }) {
 // 	);
 // }
 
-function FacultySingle({ Fname, data }) {
+function FacultySingle({ Fname, data, dept }) {
 	let [state, setState] = useState(0);
 
 	let id = data[state].faculty_id;
@@ -63,7 +69,7 @@ function FacultySingle({ Fname, data }) {
 	let image = data[state].pp_file_name
 		? getProfileImageUrl(data[state].pp_file_name)
 		: getImageUrl("Unknown_person.jpg");
-    let qualification = data[state].qualification;
+	let qualification = data[state].qualification;
 	return (
 		<>
 			<div className="faculty block md:grid md:grid-cols-7 py-20">
@@ -80,7 +86,7 @@ function FacultySingle({ Fname, data }) {
 						<div className="big-cont flex flex-col p-10">
 							<p className="fac-name">{name}</p>
 							<div className="ml-3">{qualification}</div>
-							
+
 							{Fname.includes("supporting") ? (
 								<p>Designation : {sub}</p>
 							) : (
@@ -91,7 +97,7 @@ function FacultySingle({ Fname, data }) {
 							{msg === "" ? <p></p> : <p>Email : {msg}</p>}
 							<div className="mt-auto single-faculty__back-btn w-3/4 pl-2">
 								<Link
-									to={`/cse/faculty?id=${id}`}
+									to={`/${dept}/faculty?id=${id}`}
 									className="faculty__view-link text-center capitalize"
 								>
 									<button>View Full Profile</button>
@@ -123,7 +129,7 @@ function FacultySingle({ Fname, data }) {
 								</div>
 								<div className="parts2 px-5">
 									<h5 className="fac-name2">{e.faculty_name}</h5>
-									<h6 className="my-2">{qualification}</h6>
+									<h6 className="my-2">{e.qualification}</h6>
 								</div>
 							</div>
 						);

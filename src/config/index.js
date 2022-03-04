@@ -1,4 +1,4 @@
-export const BASE_URL = "http://beta.ptuniv.edu.in/";
+export const BASE_URL = "https://beta.ptuniv.edu.in/";
 
 export const API_BASE_URL = BASE_URL + "cms/API/";
 

@@ -1,8 +1,8 @@
 import { getImageUrl } from "../../../config";
 
-import Image from "../../../../src/components/assets/ECE_HOD.jpg"
+import Image from "../../../../src/components/assets/ECE_HOD.jpg";
 
-import Dimg from "../../../../src/components/assets/ecedept.jpg"
+import Dimg from "../../../../src/components/assets/ecedept.jpg";
 
 export const ECE = {
 	basePath: "/ece",
@@ -13,45 +13,47 @@ export const ECE = {
 
 		DeptImg: Dimg,
 
-		count : [
+		count: [
 			{
 				name: "B.Tech Students",
-				count : 344
+				count: 344,
 			},
 			{
 				name: "M.Tech Students(ECE)",
-				count : 14
+				count: 14,
 			},
 			{
 				name: "M.Tech Students(WC)",
-				count : 3
+				count: 3,
 			},
 			{
 				name: "Research Scholars",
-				count : 66
+				count: 66,
 			},
 		],
 
 		about:
 			"The Dept. of Electronics and Communication Engineering, Pondicherry Engineering College was established during the inception of the institute, in 1985. It has a strong undergraduate programme in Electronics and Communication Engineering B.Tech (ECE) along with M.Tech in Electronics and Communication Engineering and M.Tech Wireless Communication and Ph.D degrees. The principal mission of the department is to formulate a very strong foundation in the various aspects of Electronics and Communication and provide training in the contemporary areas such as VLSI, Embedded system, Wireless communication, IOT etc.",
 
-			vision: [
-				{
-					point : "To produce globally competitive and socially sensitized engineering graduates and to bring out quality research in the frontier areas of Electronics and Communication Engineering."
-				},
-			 ],
+		vision: [
+			{
+				point:
+					"To produce globally competitive and socially sensitized engineering graduates and to bring out quality research in the frontier areas of Electronics and Communication Engineering.",
+			},
+		],
 
-			Mission: [
-                {
-					point : "To provide quality and contemporary education in the domain of Electronics and Communication Engineering through periodically updated curriculum, best-of-breed laboratory facilities, collaborative ventures with industries and effective teaching-learning process.",
-				},
-			], 
+		Mission: [
+			{
+				point:
+					"To provide quality and contemporary education in the domain of Electronics and Communication Engineering through periodically updated curriculum, best-of-breed laboratory facilities, collaborative ventures with industries and effective teaching-learning process.",
+			},
+		],
 
 		Hod: {
 			name: "Dr. Gnanou Florence Sudha",
 			Designation: "HOD ECE department",
 			img: Image,
-		}
+		},
 	},
 	Faculty: {
 		professors: {
@@ -326,122 +328,80 @@ export const ECE = {
 			],
 		},
 	},
-	Research: {
-		research1: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research2: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research3: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research4: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research5: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research6: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-	},
-	curriculum: {
-		btech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mtech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mca: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		phd: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-	},
+	Research: [],
+	curriculum: [],
 	facilities: [
 		{
 			name: "COMMUNICATION LAB-III",
 			img: "",
-			content: "The objective of this lab is to familiarise the students with microwave and optical communication techniques/technologies in microwave communication. The students study the operation and characteristics of microwave sources such as klystron and gunn diodes, load impedance and standing wave measurements, antenna gain and radiation pattern measurements. Optical communication deals with the study of the characteristics of the optical fibre and also analog and digital fibre links using LED and LASER sources.",
+			content:
+				"The objective of this lab is to familiarise the students with microwave and optical communication techniques/technologies in microwave communication. The students study the operation and characteristics of microwave sources such as klystron and gunn diodes, load impedance and standing wave measurements, antenna gain and radiation pattern measurements. Optical communication deals with the study of the characteristics of the optical fibre and also analog and digital fibre links using LED and LASER sources.",
 		},
 		{
 			name: "ADVANCED COMMUNICATION LAB",
 			img: "",
-			content: "This lab is an advancement of the communication lab-III where the students perform experiments using advanced equipments such as the vector network analyser, spectrum analyser, DTA and RCA.",
+			content:
+				"This lab is an advancement of the communication lab-III where the students perform experiments using advanced equipments such as the vector network analyser, spectrum analyser, DTA and RCA.",
 		},
 		{
 			name: "PG COMMUNICATION DESIGN AND SIMULATION LAB",
 			img: "",
-			content: "This lab course for M.Tech students teaches the students on microwave sources and devices, optical fibre and characteristic and design of microwave and optical fibre communication links. Students are also trained to handle and perform experiments using advanced equipment available in the lab.",
+			content:
+				"This lab course for M.Tech students teaches the students on microwave sources and devices, optical fibre and characteristic and design of microwave and optical fibre communication links. Students are also trained to handle and perform experiments using advanced equipment available in the lab.",
 		},
 		{
 			name: "High Performance Communication Lab",
 			img: "",
-			content: " Facility created for design and analysis of wireless communication systems using advanced testing equipment’s like Spectrum Analyser, CDMA Trainer, High frequency DSO and OFDM trainer kit and Special simulation tools NetSim and QUALNET(Research)",
+			content:
+				" Facility created for design and analysis of wireless communication systems using advanced testing equipment’s like Spectrum Analyser, CDMA Trainer, High frequency DSO and OFDM trainer kit and Special simulation tools NetSim and QUALNET(Research)",
 		},
 		{
 			name: "Freescale Systems Lab",
 			img: "",
-			content: "This lab has been established as a collaborative venture between Pondicherry Engineering College and M/S Freescale Semiconductors. India Pvt. Ltd. in accordance with the MoU signed during September, 2008. Freescale Semiconductors has donated ninety development tools which include Hardware and Software.",
+			content:
+				"This lab has been established as a collaborative venture between Pondicherry Engineering College and M/S Freescale Semiconductors. India Pvt. Ltd. in accordance with the MoU signed during September, 2008. Freescale Semiconductors has donated ninety development tools which include Hardware and Software.",
 		},
 		{
 			name: "COMMUNICATION LABORATORY-I",
 			img: "",
-			content: "Students construct and analyse circuits on analog communication transmitter and receiver. The students conduct experiment to understand the signals available at different stages of AM and FM receivers.",
+			content:
+				"Students construct and analyse circuits on analog communication transmitter and receiver. The students conduct experiment to understand the signals available at different stages of AM and FM receivers.",
 		},
 		{
 			name: "COMMUNICATION LABORATORY-II",
 			img: "",
-			content: "The objective of this course is to familiarise the students with different blocks in digital communication different digital communication. Different digital modems and codecs are constructed and tested.",
+			content:
+				"The objective of this course is to familiarise the students with different blocks in digital communication different digital communication. Different digital modems and codecs are constructed and tested.",
 		},
 		{
 			name: "Computer Networks Laboratory",
 			img: "",
-			content: "HP Core 2 Duo @2.9 GHz, 2GB RAM, 160GB HDD , Windows 7/ Windows 8. 100Mbps Internet facility. 10KVA UPS.",
+			content:
+				"HP Core 2 Duo @2.9 GHz, 2GB RAM, 160GB HDD , Windows 7/ Windows 8. 100Mbps Internet facility. 10KVA UPS.",
 		},
 		{
 			name: "Electronic Devices Laboratory",
 			img: "",
-			content: "The primary objective of the lab is to serve as a platform for understanding the operating principles of electron devices through experiments and also to study their characteristics.",
+			content:
+				"The primary objective of the lab is to serve as a platform for understanding the operating principles of electron devices through experiments and also to study their characteristics.",
 		},
 		{
 			name: "DIGITAL CIRCUITS DESIGN LAB",
 			img: "",
-			content: "The lab is intented for sophomores for practising their theoretical knowledge by designing. Constucting and testing the combinational as well as sequential digital circuits.",
+			content:
+				"The lab is intented for sophomores for practising their theoretical knowledge by designing. Constucting and testing the combinational as well as sequential digital circuits.",
 		},
 		{
 			name: "ELECTRONICS CIRCUITS LAB-I",
 			img: "",
-			content: "The students are offered hands-on experience in designing, constructing and testing the analog electronics circuits. The students design the circuits, solder them and then test the performance experimentally. This lab nurtures all the skills that are essential to design and test advanced electronics and communication circuits. The students also validate the experimental results using PSpice computer simulator.",
+			content:
+				"The students are offered hands-on experience in designing, constructing and testing the analog electronics circuits. The students design the circuits, solder them and then test the performance experimentally. This lab nurtures all the skills that are essential to design and test advanced electronics and communication circuits. The students also validate the experimental results using PSpice computer simulator.",
 		},
 		{
 			name: "ELECTRONICS CIRCUITS LAB-II",
 			img: "",
-			content: "This laboratory course is an advanced extension of Electonics circuits lab-I. The students design advanced analog and pulse circuits.They construct the circuit and test them. This lab builds the confidence of the students to design the advanced electronic circuits. The students study the impact of various design parameters on the performance of the circuits using PSpice computer simulator.",
+			content:
+				"This laboratory course is an advanced extension of Electonics circuits lab-I. The students design advanced analog and pulse circuits.They construct the circuit and test them. This lab builds the confidence of the students to design the advanced electronic circuits. The students study the impact of various design parameters on the performance of the circuits using PSpice computer simulator.",
 		},
 		{
 			name: "Wireless Communication Laboratory",

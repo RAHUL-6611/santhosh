@@ -11,20 +11,12 @@
 }
 .ccParent {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 }
-.MTech,
-.BTech,
-.MCA {
+
+.ccCard {
 	display: flex;
 	flex-direction: column;
-}
-body {
-	color: var(--font-color);
-	background: var(--body-bg);
-	font-family: "Noto Sans", sans-serif;
-}
-.ccCard {
 	width: 400px;
 	max-width: 86%;
 	/* min-height: 500px; */
@@ -83,7 +75,7 @@ div.ccCard > form > input:focus {
 
 .cc-see-more {
 	cursor: pointer;
-	padding: 5px 0px;
+	padding: 5px 14px;
 	width: 50%;
 	font-size: large;
 	left: 50%;

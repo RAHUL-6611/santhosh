@@ -10,9 +10,16 @@ import "./MainNav.css";
 function MenuItem({ menu, handleNavigate }) {
 	return (
 		<li className="mobile-nav__item">
-			<Link to={menu.href} className="mobile-nav__link">
-				{menu.text}
-			</Link>
+			{menu.isNormalLink && (
+				<a href={menu.href} className="mobile-nav__link">
+					{menu.text}
+				</a>
+			)}
+			{!menu.isNormalLink && (
+				<Link to={menu.href} className="mobile-nav__link">
+					{menu.text}
+				</Link>
+			)}
 			{menu.subMenus ? (
 				<span onClick={handleNavigate} className="mobile-nav__right-icon">
 					<FaArrowCircleRight className="mobile-nav__right-arrow" />

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CustomCountUp } from "../../../../components/StudentCount";
+import { BASE_URL } from "../../../../config";
 
 const About = ({ value }) => {
 	// let elements = [0, 0, 0, 0, 0, 0]
@@ -28,7 +29,9 @@ const About = ({ value }) => {
 	// 	}, incrementTime);
 	// },[duration])
 
-    value = value.About
+	const ShortName = value.About.ShortName.toLowerCase();
+
+	value = value.About;
 
 	return (
 		<div>
@@ -36,10 +39,8 @@ const About = ({ value }) => {
 				<div>
 					<div className="explore text-left">Explore the</div>
 					<div className="dept-title text-left">
-						<p style={{fontSize:"22px"}}>
-						{value.LongName}
-						</p>
-						</div>
+						<p style={{ fontSize: "22px" }}>{value.LongName}</p>
+					</div>
 				</div>
 				<div className="title_of-dept">
 					<div className="numbers grid grid-cols-3 gap-14">
@@ -47,12 +48,12 @@ const About = ({ value }) => {
 							return (
 								<p className="col-span-1">
 									<div className="numbers_name pb-2">
-										<h3 className="name_here text-2xl text-center"><CustomCountUp end={e.count} /></h3>
+										<h3 className="name_here text-2xl text-center">
+											<CustomCountUp end={e.count} />
+										</h3>
 									</div>
 									<br />
-									<h5 className="numberse_here text-center">
-										{e.name}
-									</h5>
+									<h5 className="numberse_here text-center">{e.name}</h5>
 								</p>
 							);
 						})}
@@ -63,13 +64,11 @@ const About = ({ value }) => {
 			<div className="hw2 p-10 lg:mx-20 mx:5 my-10">
 				<br />
 				<h5 className="dep-h text-4xl">About the Department</h5>
-				<p className="dep-p py-10">
-					{value.about}
-				</p>
+				<p className="dep-p py-10">{value.about}</p>
 				<div className="d-btn-hold text-left">
 					<button className="d-read px-5 py-2 text-white">
 						<a
-							href="http://beta.ptuniv.edu.in/edu/dept/cse/brochure/index.html"
+							href={BASE_URL + `flipbook/${ShortName}/index.html`}
 							target="_blank"
 							rel="noreferrer"
 						>

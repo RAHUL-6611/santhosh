@@ -1,8 +1,8 @@
 import { getImageUrl } from "../../../config";
 
-import Image from "../../../../src/components/assets/MECH_HOD.jpg"
+import Image from "../../../../src/components/assets/MECH_HOD.jpg";
 
-import Dimg from "../../../../src/components/assets/mech.jpg"
+import Dimg from "../../../../src/components/assets/mech.jpg";
 
 export const ME = {
 	basePath: "/me",
@@ -13,53 +13,54 @@ export const ME = {
 
 		DeptImg: Dimg,
 
-		count : [
+		count: [
 			{
 				name: "B.Tech Mechanical Students",
-				count : 230
+				count: 230,
 			},
 			{
 				name: "B.Tech Mechtronics Students",
-				count : 223
+				count: 223,
 			},
 			{
 				name: "M.Tech Energy Technology",
-				count : 30
+				count: 30,
 			},
 			{
 				name: "M.Tech PDM",
-				count : 14
+				count: 14,
 			},
-			
 		],
 
 		about:
 			"The Department of Mechanical Engineering offers B. Tech., M. Tech., and Ph. D Programmes. The Department of Mechanical Engineering has become the QIP centre in the year 2013. Highly qualified, experienced and committed faculty members significantly contribute to the growth of the college in general and the Department in particular. The UG course of the department is accreted by NBA for a period of 5 years. The Department has excellent laboratory facilities along with state-of-the-art computing facilities and library. The Department offers world class training both in theory and practice to the students apart from providing consultancy services to the local industries.			",
 
-			vision: [
-				{
-					point : "To produce dynamic, vibrant, demand driven and quality conscious human resource through consistent and sustained development ensuring highest standards of technological ethics."
-				},
-			 ],
+		vision: [
+			{
+				point:
+					"To produce dynamic, vibrant, demand driven and quality conscious human resource through consistent and sustained development ensuring highest standards of technological ethics.",
+			},
+		],
 
-			 Mission: [
-				{
-					point : "Strengthening the department to produce high quality engineers.",
-				},
-				{
-					point : "Scaling up education, research and development.",
-				},
-				{
-					point : "Evincing expertise through centers of excellence in focused areas of Mechanical Engineering.",
-				},
-			 ],
-
+		Mission: [
+			{
+				point:
+					"Strengthening the department to produce high quality engineers.",
+			},
+			{
+				point: "Scaling up education, research and development.",
+			},
+			{
+				point:
+					"Evincing expertise through centers of excellence in focused areas of Mechanical Engineering.",
+			},
+		],
 
 		Hod: {
 			name: "Dr.N. Alagumurthi",
 			Designation: "HOD MECH Department",
 			img: Image,
-		}
+		},
 	},
 	Faculty: {
 		professors: {
@@ -334,63 +335,7 @@ export const ME = {
 			],
 		},
 	},
-	Research: {
-		research1: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research2: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research3: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research4: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research5: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research6: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-	},
-	curriculum: {
-		btech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mtech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mca: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		phd: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-	},
-	facilities: [
-		
-	],
+	Research: [],
+	curriculum: [],
+	facilities: [],
 };

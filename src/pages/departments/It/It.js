@@ -1,8 +1,8 @@
 import { getImageUrl } from "../../../config";
 
-import Image from "../../../../src/components/assets/IT_HOD.png"
+import Image from "../../../../src/components/assets/IT_HOD.png";
 
-import Dimg from "../../../../src/components/assets/IT.jpg"
+import Dimg from "../../../../src/components/assets/IT.jpg";
 
 export const IT = {
 	basePath: "/it",
@@ -11,41 +11,52 @@ export const IT = {
 		ShortName: "IT",
 		LongName: "DEPARTMENT OF INFORMATION TECHNOLOGY",
 
-		DeptImg: Dimg, 
+		DeptImg: Dimg,
 
-		count : [
+		count: [
 			{
 				name: "B.Tech Students",
-				count : 185
+				count: 185,
 			},
 			{
 				name: "M.Tech IOT Students",
-				count : 12
+				count: 12,
 			},
-			
 		],
 
 		about:
 			"The Department of Information Technology has well experienced faculty, skilled technical staff and well equipped laboratories. It offers one undergraduate program B.Tech. (Information Technology). It aims at providing high quality training to students through the latest in Information Technology. In order to maintain the standard of education, it constantly upgrades the academic syllabi so as to keep the students well to deal with changing trends in the field of Information Technology. It also emphasizes on Information Security, Image Processing, Software Engineering, Optical and Mobile Networks, Soft Computing, Complex Event Processing, Data Mining, Web Technology and several other recent topics. The Department of Information Technology is accredited by NBA (National Board of Accreditation). So far, eight batches of students have successfully completed the degree course with flying colours.",
 
 		vision: [
-			       {
-					   point : "To Produce Competent Professionals in Information Technology so as to Achieve the Global Innovation of Engineering and Technology"
-				   },
-				   
-		        ],
-
-		Mission: [
 			{
-				point : "To Provide High Quality Education and Training in Information Technology Through Advanced Learning Environment with State-of-the Art Facilities, Teaching Methodologies, Contemporary Curriculum and Research",
+				point:
+					"To Produce Competent Professionals in Information Technology so as to Achieve the Global Innovation of Engineering and Technology",
 			},
 		],
 
-	    Hod: {
+		Mission: [
+			{
+				point:
+					"To Provide High Quality Education and Training in Information Technology Through Advanced Learning Environment with State-of-the Art Facilities, Teaching Methodologies, Contemporary Curriculum and Research",
+			},
+		],
+
+		Hod: {
 			name: "Dr. V. Govindasamy",
-			Designation: "HOD IT Department",
+			designation: "HOD IT Department",
 			img: Image,
-		}			
+			phnNo: "9488821647",
+			email: "vgopu@pec.edu",
+			content: `Welcome to Department of Information Technology. 
+			Our Department imparts excellence in Engineering Education. 
+			The Department of  IT strongly believes in building career and enriching young minds.
+			The  Department offers the three  courses:
+			1)  B.Tech in IT, 
+			2)	M. Tech  (IoT),
+			3)	Ph.D. 
+			I am highly confident that the students of our  Department Students  will show a great level of professional competence.
+			Wishing  You success in all your endeavours!`,
+		},
 	},
 	Faculty: {
 		professors: {
@@ -320,88 +331,7 @@ export const IT = {
 			],
 		},
 	},
-	Research: {
-		research1: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research2: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research3: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research4: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research5: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research6: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-	},
-	curriculum: {
-		btech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mtech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mca: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		phd: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-	},
-	facilities: [
-		 {
-			name: "CASIT Laboratory ",
-			img: "",
-			content: "Equipped with 35 Desktop computers with the configuration of Core 2 Duo, Core i3 and Core i5 processors",
-		},
-		 {
-			name: "Software Lab I ",
-			img: "",
-			content: "Equipped with 35 Desktop computers with the configuration of Core i3 and Core i5 processors",
-		},
-		{
-			name: "Software Lab II ",
-			img: "",
-			content: "Equipped with 35 systems with Core i5 processors ",
-		},
-		{
-			name: "IoT Lab ",
-			img: "",
-			content: "Equipped with 20 numbers of Intel Core i5 systems,  Rasperry Pi and Arduino Uno Boards",
-		},
-		{
-			name: "Hardware Lab ",
-			img: "",
-			content: "Equipped with Digital Trainer kits, FPGA kits, 8085 and 8086 Microprocessor and 8051 Microcontroller kits",
-		},
-		
-	],
+	Research: [],
+	curriculum: [],
+	facilities: [],
 };

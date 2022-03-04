@@ -1,8 +1,8 @@
 import { getImageUrl } from "../../../config";
 
-import Image from "../../../../src/components/assets/EEE_HOD.jpg"
+import Image from "../../../../src/components/assets/EEE_HOD.jpg";
 
-import Dimg from "../../../../src/components/assets/eee.jpg"
+import Dimg from "../../../../src/components/assets/eee.jpg";
 
 export const EEE = {
 	basePath: "/eee",
@@ -13,40 +13,41 @@ export const EEE = {
 
 		DeptImg: Dimg,
 
-		count : [
+		count: [
 			{
 				name: "B.Tech Students",
-				count : 235
+				count: 235,
 			},
 			{
 				name: "M.Tech Students",
-				count : 12
+				count: 12,
 			},
 			{
 				name: "Ph.d Scholars",
-				count : 5
+				count: 5,
 			},
 		],
 
 		about:
 			"The Department of Electrical and electronic engineering has well experienced faculty, skilled technical staff and well equipped laboratories. It offers one undergraduate program B.Tech. (Electrical and electronic engineering). It aims at providing high quality training to students through the latest in Electrical and electronic engineering. In order to maintain the standard of education, it constantly upgrades the academic syllabi so as to keep the students well to deal with changing trends in the field of Electrical and electronic engineering. It also emphasizes on Information Security, Image Processing, Software Engineering, Optical and Mobile Networks, Soft Computing, Complex Event Processing, Data Mining, Web Technology and several other recent topics. The Department of Electrical and electronic engineering is accredited by NBA (National Board of Accreditation). So far, eight batches of students have successfully completed the degree course with flying colours.",
 
-			vision: [
-				{
-					point : "Strive through teaching, learning and research to create revered Electrical and Electronics Engineers with strong theoretical knowledge, good practical exposure, critical thinking and innovation, amalgamated to achieve high quality professionals with social and ethical values."
-				},
-				
-			 ],
-			 Mission: [
-				{
-					point : "The Department of Electrical and Electronics Engineering provides a progressive environment for learning through systematic teaching methodologies, rigorous practical training and contemporary curriculum; research through creative activities in conventional and thrust areas of Electrical and Electronics Engineering. Actively engage and mentor students in scholarly and creative endeavors to develop the ability to navigate through a rapidly changing technology and society. Faculty dedicate through excellence in teaching, exemplified by a free exchange of ideas, fostering new understandings through research and creativity.",
-				},
-			 ],
+		vision: [
+			{
+				point:
+					"Strive through teaching, learning and research to create revered Electrical and Electronics Engineers with strong theoretical knowledge, good practical exposure, critical thinking and innovation, amalgamated to achieve high quality professionals with social and ethical values.",
+			},
+		],
+		Mission: [
+			{
+				point:
+					"The Department of Electrical and Electronics Engineering provides a progressive environment for learning through systematic teaching methodologies, rigorous practical training and contemporary curriculum; research through creative activities in conventional and thrust areas of Electrical and Electronics Engineering. Actively engage and mentor students in scholarly and creative endeavors to develop the ability to navigate through a rapidly changing technology and society. Faculty dedicate through excellence in teaching, exemplified by a free exchange of ideas, fostering new understandings through research and creativity.",
+			},
+		],
 		Hod: {
 			name: "Dr. C. Christober Asir Rajan",
 			Designation: "HOD EEE department",
 			img: Image,
-		}
+		},
 	},
 	Faculty: {
 		professors: {
@@ -321,112 +322,7 @@ export const EEE = {
 			],
 		},
 	},
-	Research: {
-		research1: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research2: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research3: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research4: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research5: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research6: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-	},
-	curriculum: {
-		btech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mtech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mca: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		phd: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-	},
-	facilities: [
-		{
-			name: "Basic Electrical Engineering Laboratory",
-			img: "",
-			content: " practical oriented electronic circuits that are very essential for the students to solidify their theoretical concepts. This Manual provides a communication bridge between the theory and practical world of the electronic circuits.",
-		},
-		{
-			name: "Electrical Machine Laboratory – I",
-			img: "",
-			content: "The purpose of this laboratory is to train the students to be familiar with the software and hardware of microprocessors so that they can gain enough experiences to meet the demand of the microprocessor era. The facilities in the laboratory enable students to build a firm background in microprocessor hardware as well as software .",
-		},
-		{
-			name: "Electronics Laboratory – I",
-			img: "",
-			content: "Embedded Systems Design Lab The ESD Lab is used to teach students to design and simulate digital circuits. The lab includes Oscilloscopes, Arbitrary Function Generators, Power Supplies and Multimeters. Many high tech software packages are installed to allow students to create embedded systems.",
-		},
-		{
-			name: "Electrical Machines Laboratory – II",
-			img: "",
-			content: "The word “Transducer” is the collective term used for both Sensors which can be used to sense a wide range of different energy forms such as movement, electrical signals, radiant energy, thermal or magnetic energy, etc., and Actuators which can be used to switch voltages or currents.",
-		},
-		{
-			name: "Electronics Laboratory – II",
-			img: "",
-			content: "Multi Process trainer, Multi variable Laboratory type Level Process, Calibration test bench, PLC trainer, Distributed Control system, Control Valve Characteristics Setup,",
-		},
-		{
-			name: "Electronics Laboratory – III",
-			img: "",
-			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
-		},
-		{
-			name: "Microprocessor and Microcontroller Laboratory",
-			img: "",
-			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
-		},
-		{
-			name: "Power Electronics Laboratory",
-			img: "",
-			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
-		},
-		{
-			name: "Solid State System Laboratory",
-			img: "",
-			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
-		},
-		{
-			name: "Electrical Drives Laboratory ",
-			img: "",
-			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
-		},
-	],
+	Research: [],
+	curriculum: [],
+	facilities: [],
 };

@@ -2,7 +2,6 @@ import { getImageUrl } from "../../../config";
 
 // import Image from "../../../../src/components/assets/CSE_HOD.png"
 
-
 export const Chemistry = {
 	basePath: "/chemistry",
 	About: {
@@ -12,45 +11,49 @@ export const Chemistry = {
 
 		DeptImg: getImageUrl("unknown.jpg"),
 
-		count : [
+		count: [
 			{
 				name: "Ph.D Scholars",
-				count : 45
+				count: 45,
 			},
-			
 		],
 
 		about:
 			"The Department of Computer Science and Engineering was established in the year 1987 with the objective of imparting high quality education in the field of Computer Science. It provides a comprehensive program that emphasizes on Advanced Data Structures and Algorithms, Advanced Software Design, Artificial Intelligence, Parallel and Distributed Systems, Graphics and Image Processing, Machine Learning, Internet of Things, Information Security, Digital Forensics and Big Data Mining.The department has competent and committed faculty which encourages students' involvement in various academic and co-curricular activities. The department has well equipped computer laboratories with more than 400 computers and a Research Laboratory to carry out research and project activities.  The department has the latest infrastructure facilities with high speed Internet, advanced software labs, hardware labs, seminar halls and class rooms equipped with LCD projectors. Students of all programmes can take project internship with different organizations. This component has been included in the curriculum to provide exposure for the students to work in an organization environment, as well as a chance to apply the learning in solving real-world business problems. The department has a long tradition of producing technically competent engineers since 1987 and it has renowned alumni occupying prominent positions in the industry, academia and research all over the world. The students of the department have got placements in major companies like HP, ZOHO, HCL, NOKIA, INFOSYS, RELIANCE, CTS, L&T INFOTECH etc.The Department faculty are actively involved in various AICTE- RPS, UGC and SERB Sponsored Research Projects, Consultancy projects and Collaborative Projects with other government sectors.",
 
-			vision: [
-				{
-					point : "To explore innovative approaches to enhance and expand learning opportunities through the integration of various technologies."
-				},
-				{
-					point : "To build a strong research and teaching environment that responds to the real-time challenges of the industry.",
-				},
-				
-			 ],
+		vision: [
+			{
+				point:
+					"To explore innovative approaches to enhance and expand learning opportunities through the integration of various technologies.",
+			},
+			{
+				point:
+					"To build a strong research and teaching environment that responds to the real-time challenges of the industry.",
+			},
+		],
 
-			 Mission: [
-				{
-					point : "To inculcate the blend of competence, aptitude of knowledge and investigate flair through devising an ambient environment for sustainable learning.",
-				},
-				{
-					point : "To transform attitude, values, priorities by changing mindset and instill positive outlook for socially conscious intellectual development.",
-				},
-				{
-					point : "Incubate, apply and spread innovative ideas to evolve the department as a centre of excellence in thrust areas.",
-				},
-			 ],
+		Mission: [
+			{
+				point:
+					"To inculcate the blend of competence, aptitude of knowledge and investigate flair through devising an ambient environment for sustainable learning.",
+			},
+			{
+				point:
+					"To transform attitude, values, priorities by changing mindset and instill positive outlook for socially conscious intellectual development.",
+			},
+			{
+				point:
+					"Incubate, apply and spread innovative ideas to evolve the department as a centre of excellence in thrust areas.",
+			},
+		],
 
 		Hod: {
 			name: "Dr. S. Rajagopan",
 			Designation: "HOD CHEMISTRY Department",
-			content: "HOD Cse Department Welcome to the department of Computer Science and Engineering. Here we will explore This is the message by cse hod.",
+			content:
+				"HOD Cse Department Welcome to the department of Computer Science and Engineering. Here we will explore This is the message by cse hod.",
 			img: getImageUrl("Unknown_person.jpg"),
-		}
+		},
 	},
 
 	Faculty: {
@@ -326,63 +329,7 @@ export const Chemistry = {
 			],
 		},
 	},
-	Research: {
-		research1: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research2: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research3: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research4: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research5: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research6: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-	},
-	curriculum: {
-		btech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mtech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mca: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		phd: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-	},
-	facilities: [
-		
-	],
+	Research: [],
+	curriculum: [],
+	facilities: [],
 };

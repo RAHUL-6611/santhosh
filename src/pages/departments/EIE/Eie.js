@@ -1,8 +1,8 @@
 import { getImageUrl } from "../../../config";
 
-import Image from "../../../../src/components/assets/EIE_HOD.jpg"
+import Image from "../../../../src/components/assets/EIE_HOD.jpg";
 
-import Dimg from "../../../../src/components/assets/IT.jpg"
+import Dimg from "../../../../src/components/assets/IT.jpg";
 
 export const EIE = {
 	basePath: "/eie",
@@ -11,51 +11,56 @@ export const EIE = {
 		ShortName: "EIE",
 		LongName: "DEPARTMENT OF Electronics and Instrumentation Engineering",
 
-        DeptImg: Dimg,
+		DeptImg: Dimg,
 
-		count : [
+		count: [
 			{
 				name: "B.Tech Students",
-				count : 213
+				count: 213,
 			},
 			{
 				name: "M.Tech Students",
-				count : 5
+				count: 5,
 			},
 		],
 
 		about:
 			"Instrumentation is the branch of engineering that deals with measurement, control and automation. In this fully automated world, this course which is a complete blend of technical subjects involving both Electronics and instrumentation areas seems to find its own place in providing the students with adequate knowledge and expertise. Electronics being the order of the day, it is very much necessary for the young minds to get accustomed with the latest developments in Electronics field. Moreover, a combination of Electronics and Instrumentation would fetch high dividends   for the students who take up Electronics and Instrumentation as their career course. With the increasing demand for instrumentation engineers, the Department of Electronics and Instrumentation Engineering was started in 1998 and has been producing resourceful engineers for the past twenty years. The department has been accredited by AICTE, New Delhi. The department has well experienced and highly-motivated faculty members who are specialised in different fields. The department offers UG (B.Tech in EIE), PG (M.Tech in Instrumentation Engineering) and Ph.D. in different areas of Instrumentation such as Biomedical, MEMS, Virtual Instruments and Embedded systems.",
 
-			vision: [
-				{
-					point : "To produce world class industry ready Instrumentation Engineers and to establish state of art Instrumentation facilities to cater to the needs of the society"
-				},
-							
-			 ],
+		vision: [
+			{
+				point:
+					"To produce world class industry ready Instrumentation Engineers and to establish state of art Instrumentation facilities to cater to the needs of the society",
+			},
+		],
 
-			 Mission: [
-				{
-					point : "To produce world class industry ready Instrumentation Engineers and to establish state of art Instrumentation facilities to cater to the needs of the society",
-				},
-				{
-					point : "To increase the visibility of academic programs globally and attract talent at all levels.",
-				},
-				{
-					point : "To undertake collaborative research / industrial projects through internship which offer opportunities for long term interaction with academia and industry.",
-				},
-				{
-					point : "Sustained interaction with the alumni, students, parents, faculty and other stake holders to stay relevant in the globalized environment.",
-				},
-				{
-					point : "To develop human potential to its fullest extent so that intellectually capable and imaginative gifted leaders can emerge in a range of professions ",
-				},
-			 ],
+		Mission: [
+			{
+				point:
+					"To produce world class industry ready Instrumentation Engineers and to establish state of art Instrumentation facilities to cater to the needs of the society",
+			},
+			{
+				point:
+					"To increase the visibility of academic programs globally and attract talent at all levels.",
+			},
+			{
+				point:
+					"To undertake collaborative research / industrial projects through internship which offer opportunities for long term interaction with academia and industry.",
+			},
+			{
+				point:
+					"Sustained interaction with the alumni, students, parents, faculty and other stake holders to stay relevant in the globalized environment.",
+			},
+			{
+				point:
+					"To develop human potential to its fullest extent so that intellectually capable and imaginative gifted leaders can emerge in a range of professions ",
+			},
+		],
 		Hod: {
 			name: "Dr. S. MOUROUGA PRAGASH",
 			Designation: "HOD EIE department",
 			img: Image,
-		}
+		},
 	},
 	Faculty: {
 		professors: {
@@ -330,92 +335,7 @@ export const EIE = {
 			],
 		},
 	},
-	Research: {
-		research1: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research2: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research3: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research4: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research5: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research6: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-	},
-	curriculum: {
-		btech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mtech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mca: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		phd: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-	},
-	facilities: [
-		{
-			name: "Electronic Devices and Circuits Lab",
-			img: "",
-			content: " practical oriented electronic circuits that are very essential for the students to solidify their theoretical concepts. This Manual provides a communication bridge between the theory and practical world of the electronic circuits.",
-		},
-		{
-			name: "Microprocessor Lab",
-			img: "",
-			content: "The purpose of this laboratory is to train the students to be familiar with the software and hardware of microprocessors so that they can gain enough experiences to meet the demand of the microprocessor era. The facilities in the laboratory enable students to build a firm background in microprocessor hardware as well as software .",
-		},
-		{
-			name: "Embedded System Design Lab",
-			img: "",
-			content: "Embedded Systems Design Lab The ESD Lab is used to teach students to design and simulate digital circuits. The lab includes Oscilloscopes, Arbitrary Function Generators, Power Supplies and Multimeters. Many high tech software packages are installed to allow students to create embedded systems.",
-		},
-		{
-			name: "Sensors & Transducers Lab",
-			img: "",
-			content: "The word “Transducer” is the collective term used for both Sensors which can be used to sense a wide range of different energy forms such as movement, electrical signals, radiant energy, thermal or magnetic energy, etc., and Actuators which can be used to switch voltages or currents.",
-		},
-		{
-			name: "Process Control Lab",
-			img: "",
-			content: "Multi Process trainer, Multi variable Laboratory type Level Process, Calibration test bench, PLC trainer, Distributed Control system, Control Valve Characteristics Setup,",
-		},
-		{
-			name: "Virtual Instrumentation Lab",
-			img: "",
-			content: "Virtual instrumentation is the use of customizable software and modular measurement hardware to create user-defined measurement systems, called virtual instruments. Traditional hardware instrumentation systems are made up of fixed hardware components, such as digital multimeters and oscilloscopes that are completely specific to their stimulus, analysis, or measurement function. Because of their hard-coded function, these systems are more limited in their versatility than virtual instrumentation systems.",
-		},
-	],
+	Research: [],
+	curriculum: [],
+	facilities: [],
 };

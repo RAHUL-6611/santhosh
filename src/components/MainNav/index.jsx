@@ -79,6 +79,11 @@ const menus = [
 						subMenus: null,
 					},
 					{
+						text: "Postgraduate",
+						href: "#",
+						subMenus: null,
+					},
+					{
 						text: "Ph.D",
 						href: "#",
 						subMenus: null,
@@ -90,9 +95,9 @@ const menus = [
 				href: "#",
 				subMenus: [
 					{ text: "CSE", href: "/cse", subMenus: null },
-					{ text: "CE", href: "/civil", subMenus: null },
+					{ text: "CE", href: "/ce", subMenus: null },
 					{ text: "ME", href: "/me", subMenus: null },
-					{ text: "CHE", href: "/Chem", subMenus: null },
+					{ text: "CHE", href: "/che", subMenus: null },
 					{ text: "EEE", href: "/eee", subMenus: null },
 					{ text: "EIE", href: "/eie", subMenus: null },
 					{ text: "ECE", href: "/ece", subMenus: null },
@@ -130,6 +135,7 @@ const menus = [
 	{
 		text: "Research",
 		href: "https://research.pec.edu",
+		isNormalLink: true,
 		subMenus: [
 			{
 				text: "Research Facilities",
@@ -155,7 +161,8 @@ const menus = [
 	},
 	{
 		text: "Innovation",
-		href: "#",
+		href: "https://www.aicpecf.org/",
+		isNormalLink: true,
 		subMenus: [
 			{
 				text: "Institute Entrepreneurship And Development Cell (IEDC)",
@@ -176,7 +183,8 @@ const menus = [
 	},
 	{
 		text: "Admissions",
-		href: "#",
+		href: "https://academics.pec.edu/",
+		isNormalLink: true,
 		subMenus: [
 			{
 				text: "Undergraduate",

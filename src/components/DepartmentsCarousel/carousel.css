@@ -28,7 +28,6 @@
 }
 
 .carousel__wrap {
-	margin-top: 5%;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
@@ -49,7 +48,7 @@
 }
 
 .carousel__inner {
-	height: 40rem;
+	height: 25rem;
 	position: relative;
 	width: calc(90rem);
 }
@@ -108,7 +107,7 @@
 	align-items: center;
 	background: rgba(0, 0, 0, 0.5);
 	color: white;
-	content: "visit";
+	content: "Visit";
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

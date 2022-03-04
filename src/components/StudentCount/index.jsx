@@ -20,7 +20,7 @@ export function CustomCountUp(props) {
 			partialVisibility
 			onChange={handleOnChange}
 		>
-			<CountUp suffix="+" {...rest} end={visible ? end : 0} />
+			<CountUp {...rest} end={visible ? end : 0} />
 		</VisibilitySensor>
 	);
 }
@@ -34,8 +34,8 @@ export default function StudentCount() {
 					{ title: "UG Students", count: 2489, suffix: "" },
 					{ title: "PG Students", count: 286, suffix: "" },
 					{ title: "Ph.D Scholars", count: 196, suffix: "" },
-					{ title: "Faculty", count: 124, suffix: "" },
-					{ title: "Supporting Staff", count: 200, suffix: "" },
+					{ title: "Faculty", count: 130, suffix: "" },
+					{ title: "Supporting Staff", count: 184, suffix: "" },
 					{ title: "Start-ups", count: 22, suffix: "+" },
 					{ title: "Ongoing Projects", count: 22, suffix: "+" },
 				].map((e) => {

@@ -17,7 +17,6 @@ export default function Individual({ id, dept }) {
 
 	useEffect(() => {
 		window.scroll(0, 0);
-		console.log("object");
 	}, []);
 
 	useEffect(() => {
@@ -27,7 +26,6 @@ export default function Individual({ id, dept }) {
 					API_BASE_URL +
 						`Faculty.php?dept_name_or_faculty_id=${id}&content=faculty_id`
 				);
-				console.log(response.data[0]);
 				setProfile(response.data[0]);
 			} catch (e) {
 				console.error(e);
@@ -151,15 +149,11 @@ export default function Individual({ id, dept }) {
 							</div>
 							<div className="project">
 								<span>Projects and Activities</span>
-								<p>
-						{profile?.projects}
-								</p>
+								<p>{profile?.projects}</p>
 							</div>
 							<div className="student">
 								<span>Students</span>
-								<p>
-									{profile?.students}
-								</p>
+								<p>{profile?.students}</p>
 							</div>
 						</div>
 						<div className="fifth">
@@ -168,27 +162,33 @@ export default function Individual({ id, dept }) {
 								<div className="journals">
 									<span>Journals</span>
 									<ul>
-										{
-											profile?.journals?.trim().split("\n").map((journal, id) => {
-												
+										{profile?.journals
+											?.trim()
+											.split("\n")
+											.map((journal, id) => {
 												if (journal !== null) {
 													return <p key={id}>{journal} </p>;
 												}
-											})
-										}
-										
+											})}
 									</ul>
 								</div>
 								<div className="conference">
 									<span>Conferences</span>
 									<ul>
-										{profile?.conference?.replace("<br />", " ").split("\n").map((con,id)=>{
-											console.log(profile?.conference?.replace("<br />", " ").replace("\r", " ").split("\n"));
-											if (con !== null || con !== "  ") {
-												return <p key={id}>{con}</p>
-											}
-										})}
-										
+										{profile?.conference
+											?.replace("<br />", " ")
+											.split("\n")
+											.map((con, id) => {
+												console.log(
+													profile?.conference
+														?.replace("<br />", " ")
+														.replace("\r", " ")
+														.split("\n")
+												);
+												if (con !== null || con !== "  ") {
+													return <p key={id}>{con}</p>;
+												}
+											})}
 									</ul>
 								</div>
 							</div>

@@ -157,37 +157,45 @@ export function AutoScrollContainer(props) {
 	const [scrollHeight, setScrollHeight] = useState(0);
 
 	useEffect(() => {
-		// const element = updatesContainerRef.current;
-		// // calculating the scroll height without the styles
-		// // because by default the style is overflow hidden
-		// // with scroll value only we can calculate
-		// updateRef.current?.classList.remove("updates");
-		// element?.classList.remove("updates-container--animation");
-		// if (!(element?.scrollHeight > element?.clientHeight)) {
-		// 	return;
-		// }
-		// element?.classList.add("updates-container--animation");
-		// updateRef.current?.classList.add("updates");
-		// let totalScrollHeight = element?.scrollHeight - element?.clientHeight;
-		// setScrollHeight(totalScrollHeight);
+		const element = updatesContainerRef.current;
+
+		// calculating the scroll height without the styles
+		// because by default the style is overflow hidden
+		// with scroll value only we can calculate
+		updateRef.current?.classList.remove("updates");
+		element?.classList.remove("updates-container--animation");
+
+		if (!(element?.scrollHeight > element?.clientHeight)) {
+			return;
+		}
+
+		element?.classList.add("updates-container--animation");
+		updateRef.current?.classList.add("updates");
+
+		let totalScrollHeight = element?.scrollHeight - element?.clientHeight;
+		setScrollHeight(totalScrollHeight);
 	}, [updatesContainerRef, updateRef]);
 
 	useEffect(() => {
-		// const updatesContainer = updatesContainerRef.current;
-		// function handleResize() {
-		// 	// recalculating the scroll height without the styles
-		// 	updateRef.current?.classList.remove("updates");
-		// 	updatesContainer?.classList.remove("updates-container--animation");
-		// 	setScrollHeight(
-		// 		updatesContainer?.scrollHeight - updatesContainer?.clientHeight
-		// 	);
-		// 	updatesContainer?.classList.add("updates-container--animation");
-		// 	updateRef.current?.classList.add("updates");
-		// }
-		// window.addEventListener("resize", handleResize);
-		// return () => {
-		// 	window.removeEventListener("resize", handleResize);
-		// };
+		const updatesContainer = updatesContainerRef.current;
+
+		function handleResize() {
+			// recalculating the scroll height without the styles
+			updateRef.current?.classList.remove("updates");
+			updatesContainer?.classList.remove("updates-container--animation");
+
+			setScrollHeight(
+				updatesContainer?.scrollHeight - updatesContainer?.clientHeight
+			);
+
+			updatesContainer?.classList.add("updates-container--animation");
+			updateRef.current?.classList.add("updates");
+		}
+
+		window.addEventListener("resize", handleResize);
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
 	}, [updatesContainerRef, updateRef]);
 
 	const toggleAnimationStatus = () => {
@@ -288,19 +296,46 @@ export function NoticesAndUpdates({ visiblity = "all" }) {
 	}
 
 	return (
-		<AutoScrollContainer title="Notices and Updates" data={data}>
-			{(e, i) => {
-				return (
-					<Updated
-						key={i}
-						topic={e.title}
-						byWhom={e.given_by}
-						message={e.news_content}
-						file_name={e.file_name}
-					/>
-				);
-			}}
-		</AutoScrollContainer>
+		// <div className="news-part">
+		// 	<div className="notice-head">
+		// 		<div className="notice-head-heading">
+		// 			<h2>Notices and Updates</h2>
+		// 		</div>
+		// 		<div className="update-part">
+		// 			{data.map((e, i) => {
+		// 				return (
+		// 					<Updated
+		// 						key={i}
+		// 						topic={e.title}
+		// 						byWhom={e.given_by}
+		// 						message={e.news_content}
+		// 						file_name={e.file_name}
+		// 					/>
+		// 				);
+		// 			})}
+		// 		</div>
+		// 	</div>
+		// </div>
+
+		<div className="news-ptu-part">
+			<div className="news-ptu-part__head">
+				<h2>Notices and Updates</h2>
+			</div>
+
+			<div className="updates-container">
+				{data.map((e, i) => {
+					return (
+						<Updated
+							key={i}
+							topic={e.title}
+							byWhom={e.given_by}
+							message={e.news_content}
+							file_name={e.file_name}
+						/>
+					);
+				})}
+			</div>
+		</div>
 	);
 }
 
@@ -310,8 +345,6 @@ export function Events({ visiblity = "all" }) {
 	);
 
 	const { data, error } = response;
-
-	console.log(response);
 
 	if (error || !data || data.length === 0) {
 		return (
@@ -367,20 +400,40 @@ export function Events({ visiblity = "all" }) {
 	}
 
 	return (
-		<AutoScrollContainer title="Upcoming Events" data={data}>
-			{(e, i) => {
-				const date = new Date(e.start_date);
-				return (
-					<Event
-						key={i}
-						topic={e.title}
-						message={e.news_content}
-						date={date.getDate()}
-						month={getMonthShortForm(date.getMonth())}
-					/>
-				);
-			}}
-		</AutoScrollContainer>
+		// <AutoScrollContainer title="Upcoming Events" data={data}>
+		// 	{(e, i) => {
+		// 		const date = new Date(e.start_date);
+		// 		return (
+		// 			<Event
+		// 				key={i}
+		// 				topic={e.title}
+		// 				message={e.news_content}
+		// 				date={date.getDate()}
+		// 				month={getMonthShortForm(date.getMonth())}
+		// 			/>
+		// 		);
+		// 	}}
+		// </AutoScrollContainer>
+
+		<div className="news-ptu-part">
+			<div className="news-ptu-part__head">
+				<h2>Upcoming Events</h2>
+			</div>
+			<div className="updates-container events-container">
+				{data.map((e, i) => {
+					const date = new Date(e.start_date);
+					return (
+						<Event
+							key={i}
+							topic={e.title}
+							message={e.news_content}
+							date={date.getDate()}
+							month={getMonthShortForm(date.getMonth())}
+						/>
+					);
+				})}
+			</div>
+		</div>
 	);
 }
 
@@ -393,7 +446,7 @@ export default function NewsPTU() {
 	);
 }
 
-const Updated = ({ topic, byWhom, message, file_name }) => {
+export const Updated = ({ topic, byWhom, message, file_name }) => {
 	return (
 		<div className="update__container">
 			<div className="update__content">
@@ -402,9 +455,17 @@ const Updated = ({ topic, byWhom, message, file_name }) => {
 					<h3>{byWhom}</h3>
 					<br />
 					<p>{message}</p>
-					<a href={API_BASE_URL + file_name} target="_blank">
-						<p>View More</p>
-					</a>
+					<p>
+						{file_name && (
+							<a
+								className="update__view-more-btn"
+								href={API_BASE_URL + file_name}
+								target="_blank"
+							>
+								View More
+							</a>
+						)}
+					</p>
 				</div>
 			</div>
 			<hr />

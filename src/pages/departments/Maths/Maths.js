@@ -1,58 +1,66 @@
 import { getImageUrl } from "../../../config";
 
-import Image from "../../../../src/components/assets/CSE_HOD.png"
-
+import Image from "../../../../src/components/assets/CSE_HOD.png";
 
 export const Maths = {
 	basePath: "/maths",
 	About: {
-		DeptName: "MATHEMATICS DEPARTMENT",
-		ShortName: "MATHEMATICS",
+		DeptName: "MATHEMATICS",
+		ShortName: "MATHS",
 		LongName: "DEPARTMENT OF MATHEMATICS",
 
 		DeptImg: "",
 
-		count : [
+		count: [
 			{
 				name: "M.Sc Students",
-				count : 22
+				count: 22,
 			},
 			{
 				name: "Ph.D Students",
-				count : 48
+				count: 48,
 			},
 		],
 
 		about:
 			"The Department of Mathematics has been functioning right from the inception of Pondicherry Engineering College in the year 1985. The department offer courses which caters to the requirement various under graduate and graduate programs of Engineering/Technology Departments of PTU. The department offers Full Time/Part Time PhD program in Mathematics.",
 
-			vision: [
-				{
-					point : "To explore innovative approaches to enhance and expand learning opportunities through the integration of various technologies."
-				},
-				{
-					point : "To build a strong research and teaching environment that responds to the real-time challenges of the industry.",
-				},
-				
-			 ],
+		vision: [
+			{
+				point:
+					"To explore innovative approaches to enhance and expand learning opportunities through the integration of various technologies.",
+			},
+			{
+				point:
+					"To build a strong research and teaching environment that responds to the real-time challenges of the industry.",
+			},
+		],
 
-			 Mission: [
-				{
-					point : "To inculcate the blend of competence, aptitude of knowledge and investigate flair through devising an ambient environment for sustainable learning.",
-				},
-				{
-					point : "To transform attitude, values, priorities by changing mindset and instill positive outlook for socially conscious intellectual development.",
-				},
-				{
-					point : "Incubate, apply and spread innovative ideas to evolve the department as a centre of excellence in thrust areas.",
-				},
-			 ],
+		Mission: [
+			{
+				point:
+					"To inculcate the blend of competence, aptitude of knowledge and investigate flair through devising an ambient environment for sustainable learning.",
+			},
+			{
+				point:
+					"To transform attitude, values, priorities by changing mindset and instill positive outlook for socially conscious intellectual development.",
+			},
+			{
+				point:
+					"Incubate, apply and spread innovative ideas to evolve the department as a centre of excellence in thrust areas.",
+			},
+		],
 
 		Hod: {
 			name: "Dr. S.MANGAYARCARASSY,",
-			Designation: "HOD MATHEMATICS Department",
+			designation: "HOD MATHEMATICS Department",
+			phnNo: "0413-2251407",
+			email: "dmangay@pec.edu",
+			content: `Welcome to the Department of Mathematics at PTU, Puducherry. The Department of Mathematics was established in the year 1985. The Department seeks to combine excellence in Mathematical education with service to the society. We are having well qualified, dedicated and dynamic faculty, whose expertise spans the range of disciplines in Mathematics stream. Our department maintains active research groups for carrying out collaborative and interdisciplinary research. The department has a distinguished record in both teaching and research. Our vision is to be recognized as innovative and leading Mathematics Department.
+			I am confident that the students of Engineering departments of Puducherry Technological University would justify the credibility of Mathematics Department by showing a high level of professional competence in their respective field.
+			I wish Best of Luck to all of the students of PTU.`,
 			img: getImageUrl("Unknown_person.jpg"),
-		}
+		},
 	},
 
 	Faculty: {
@@ -328,63 +336,7 @@ export const Maths = {
 			],
 		},
 	},
-	Research: {
-		research1: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research2: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research3: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research4: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research5: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-		research6: {
-			name: "",
-			img: "",
-			shortContent: "",
-			longContent: "",
-		},
-	},
-	curriculum: {
-		btech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mtech: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		mca: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-		phd: {
-			regulations: {},
-			syllabusPdf: "",
-		},
-	},
-	facilities: [
-		
-	],
+	Research: [],
+	curriculum: [],
+	facilities: [],
 };

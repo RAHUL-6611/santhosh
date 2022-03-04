@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 import "./Notice.css";
 import "../../../../components/NewsPTU/NewsPTU.css";
+import { NoticesAndUpdates, Updated } from "../../../../components/NewsPTU";
+import useFetch from "../../../../hooks/useFetch";
 
 let newsObj = [
 	{
@@ -37,10 +39,11 @@ let newsObj = [
 			"The first semester online classes commenced on 6.1.2022. The students are instructed to identify the section in which they belong to at <<here>>. The Time Table for all the sections can be viewed/downloaded at <<here>>.",
 	},
 ];
-export default function Notices() {
+export default function Notices({ value }) {
+	console.log(value);
 	return (
 		<div className="news-corner md:grid grid-cols-6 gap-4 my-20 mx-10">
-			<div className="news-part col-span-4">
+			{/* <div className="news-part col-span-4">
 				<div className="notice-head">
 					<div className="notice-head-heading">
 						<h2>Bulletin board</h2>
@@ -57,8 +60,9 @@ export default function Notices() {
 						})}
 					</div>
 				</div>
-			</div>
-			<div className="news-part col-span-2 mr-5">
+			</div> */}
+			<BulletinBoard visiblity="all" />
+			<div className="news-part mr-5">
 				<div className="news-in-part px-10">
 					<div className="flex justify-center">
 						<h3 className="not-text text-center text-2xl">
@@ -68,26 +72,26 @@ export default function Notices() {
 					<br />
 					<ol className="not-ol text-left">
 						<br />
-						<Link to="/cse/department-committees">
-						<li className="not-li my-5">Departmental Committies</li>
+						<Link to={`#`}>
+							<li className="not-li my-5">Departmental Committies</li>
 						</Link>
-						<Link to="/cse/alumini">
+						<Link to={`#`}>
 							<li className="not-li my-5">Notable Alumni</li>
 						</Link>
-						<Link to="/cse/placements">
-						<li className="not-li my-5">Placement Details</li>
+						<Link to={`#`}>
+							<li className="not-li my-5">Placement Details</li>
 						</Link>
-						<Link to="/cse/medal-awards">
-						<li className="not-li my-5">Medals & Awards</li>
+						<Link to={`#`}>
+							<li className="not-li my-5">Medals & Awards</li>
 						</Link>
-						<Link to="/cse/retired-faculty">
-						<li className="not-li my-5">Retired Faculty</li>
+						<Link to={`#`}>
+							<li className="not-li my-5">Retired Faculty</li>
 						</Link>
-						<Link to="/cse/students">
-						<li className="not-li my-5">Students</li>
+						<Link to={`#`}>
+							<li className="not-li my-5">Students</li>
 						</Link>
-						<Link to="/cse/upcoming-events">
-						<li className="not-li my-5">Upcoming Events</li>
+						<Link to={`#`}>
+							<li className="not-li my-5">Upcoming Events</li>
 						</Link>
 					</ol>
 				</div>
@@ -96,20 +100,80 @@ export default function Notices() {
 	);
 }
 
-const Updated = ({ topic, byWhom, message }) => {
-	return (
-		<div className="update">
-			<div className="content mx-5 py-6">
-				<h2 className="text-2xl">{topic}</h2>
-				<div className="newss">
-					<h3>{byWhom}</h3>
-					<br />
-					<p className="notices-msg" style={{ fontSize: "18px" }}>
-						{message}
-					</p>
+export function BulletinBoard({ visiblity = "all", dept = "cse" }) {
+	const allResponse = useFetch(
+		"News_Event.php?visiblity=" + visiblity + "&content=notices"
+	);
+
+	const deptResponse = useFetch(
+		"News_Event.php?visiblity=" + dept + "&content=notices"
+	);
+
+	let { error: allError, data: allData } = allResponse;
+	let { error: deptError, data: deptData } = deptResponse;
+
+	const error = allError || deptError;
+
+	// console.log(response);
+
+	if (error) {
+		return (
+			<div className="news-ptu-part">
+				<div className="news-ptu-part__head">
+					<h2>Bulletin board</h2>
+				</div>
+
+				<div className="updates-container">
+					<h2>Something went wrong</h2>
 				</div>
 			</div>
-			<hr />
+		);
+	}
+
+	let array = [];
+
+	console.log({ allData, deptData });
+
+	if (allData) {
+		array = [...allData];
+	}
+	if (deptData) {
+		array = [...array, ...deptData];
+	}
+
+	if (array.length === 0) {
+		return (
+			<div className="news-ptu-part">
+				<div className="news-ptu-part__head">
+					<h2>Bulletin board</h2>
+				</div>
+
+				<div className="updates-container">
+					<h2>No Bulletin board</h2>
+				</div>
+			</div>
+		);
+	}
+
+	return (
+		<div className="news-ptu-part">
+			<div className="news-ptu-part__head">
+				<h2>Notices and Updates</h2>
+			</div>
+
+			<div className="updates-container">
+				{array.map((e, i) => {
+					return (
+						<Updated
+							key={i}
+							topic={e.title}
+							byWhom={e.given_by}
+							message={e.news_content}
+							file_name={e.file_name}
+						/>
+					);
+				})}
+			</div>
 		</div>
 	);
-};
+}

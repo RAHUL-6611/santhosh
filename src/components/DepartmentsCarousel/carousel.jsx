@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./carousel.css";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 // import img1 from '../../images/cse.jpg';
 import { getImageUrl } from "../../config";
 
@@ -16,10 +16,10 @@ const _items = [
 	{
 		player: {
 			//8
-			title: "IT",
+			title: "Information Technology",
 			desc: "The Department of Information Technology has well experienced faculty, skilled technical staff and well equipped laboratories. It offers one undergraduate program B.Tech. (Information Technology). It aims at providing high quality training to students through the latest in Information Technology.",
 			image: getImageUrl("eie 2.jpg"),
-			path :"/it"
+			path: "/it",
 		},
 	},
 	{
@@ -28,7 +28,7 @@ const _items = [
 			title: "CSE",
 			desc: "The Department aims at providing high quality training to students through the latest in computer technology and  offers B.Tech. (CSE), M.Tech. (Data Science), M.Tech. (Information Security), MCA and Ph.D.(including QIP and NDF schemes) programme.",
 			image: getImageUrl("cse.jpg"),
-			path:"/cse",
+			path: "/cse",
 		},
 	},
 	{
@@ -37,26 +37,26 @@ const _items = [
 			title: "EEE",
 			desc: "The Department of Electrical and Electronics Engineering provides a progressive environment for learning through systematic teaching methodologies, rigorous practical training and contemporary curriculum; research through creative activities in conventional and thrust areas of Electrical and Electronics Engineering.",
 			image: getImageUrl("eee.jpg"),
-			path:"eee",
+			path: "/eee",
 		},
 	},
-	
+
 	{
 		player: {
 			//2
 			title: "ECE",
 			desc: "Dept. of ECE, Pondicherry Engineering College was established in the year 1985. Throughout its sparkling history of 33 years, the department of ECE has been known for its exceptionally strong Under-Graduate and Graduate training programmes.",
 			image: getImageUrl("ece 2.jpg"),
-			path:"ece",
+			path: "/ece",
 		},
 	},
 	{
 		player: {
 			//4
-			title: "Chemical",
+			title: "Chemical Engineering",
 			desc: "The Department of chemical engineering was established in the year 1998 with a vision to impart high quality chemical engineering education and to serve the needs of industries and societies through technical services, consultancy and research.",
 			image: getImageUrl("chemical department.jpg"),
-			path:"chem",
+			path: "/che",
 		},
 	},
 	{
@@ -65,25 +65,25 @@ const _items = [
 			title: "EIE",
 			desc: "Instrumentation is the branch of engineering that deals with measurement and control. In  this  fully  automated world, this  course  which  is  a  complete  blend  of  technical  subjects.",
 			image: getImageUrl("eie 2.jpg"),
-			path:"eie",
+			path: "/eie",
 		},
 	},
 	{
 		player: {
 			//6
-			title: "Civil",
+			title: "Civil Engineering",
 			desc: "The Department of Civil Engineering was established during the inception of the college. Apart from offering B.Tech in Civil Engineering, two M.Tech programmes in Structural Engineering and Environmental Engineering specialization and PhD  programme in Civil Engineering are offered.",
 			image: getImageUrl("civil.jpg"),
-			path:"civil",
+			path: "/ce",
 		},
 	},
 	{
 		player: {
 			//7
-			title: "Mectronics",
+			title: "Mechanical Engineering",
 			desc: "The Department of Mechanical Engineering offers B. Tech., M. Tech., and Ph. D Programmes. The Department of Mechanical Engineering has become the QIP centre in the year 2013. Highly qualified, experienced and committed faculty members significantly contribute to the growth of the college in general and the Department in particular. The UG course of the department is accreted by NBA for a period of 5 years. ",
 			image: getImageUrl("me.jpg"),
-			path:"mectro",
+			path: "/me",
 		},
 	},
 ];
@@ -143,17 +143,17 @@ const CarouselSlideItem = ({ pos, idx, activeIdx, path }) => {
 	console.log(item.player.path);
 	return (
 		<Link to={item.player.path}>
-		<li className="carousel__slide-item" style={item.styles}>
-			<div className="carousel-slide-item__body">
-				<h4>{item.player.title}</h4>
-			</div>
-			<div className="carousel__slide-item-img-link">
-				<img src={item.player.image} alt={item.player.title} />
-			</div>
-			<div className="carousel-slide-item__body">
-				<p className="car-para">{item.player.desc}</p>
-			</div>
-		</li>
+			<li className="carousel__slide-item" style={item.styles}>
+				<div className="carousel-slide-item__body">
+					<h4>{item.player.title}</h4>
+				</div>
+				<div className="carousel__slide-item-img-link">
+					<img src={item.player.image} alt={item.player.title} />
+				</div>
+				<div className="carousel-slide-item__body">
+					{/* <p className="car-para">{item.player.desc}</p> */}
+				</div>
+			</li>
 		</Link>
 	);
 };

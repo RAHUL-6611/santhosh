@@ -8,12 +8,14 @@
 	color: white;
 	margin-top: -2rem;
 }
+.student-count__container .title {
+	margin-bottom: 0.5em;
+}
 .student-count__box {
 	flex-direction: column;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	padding-top: 16px;
 }
 
 .student-count__items {

@@ -6,20 +6,34 @@ import "./App.css";
 
 import { IT } from "./pages/departments/It/It";
 import { CSE } from "./pages/departments/Cse/Cse";
-import { EEE } from "./pages/departments/EEE/Eee"
-import { EIE } from "./pages/departments/EIE/Eie"
-import { ECE } from "./pages/departments/Ece/Ece"
-import { ME } from "./pages/departments/Mech/Mech"
-import { Chem } from "./pages/departments/Chem/Chem"
-import { Civil } from "./pages/departments/Civil/Civil"
+import { EEE } from "./pages/departments/EEE/Eee";
+import { EIE } from "./pages/departments/EIE/Eie";
+import { ECE } from "./pages/departments/Ece/Ece";
+import { ME } from "./pages/departments/Mech/Mech";
+import { Che } from "./pages/departments/Che/Che";
+import { Civil } from "./pages/departments/Civil/Civil";
 import { Chemistry } from "./pages/departments/Chemistry/Chemistry";
 import { Physics } from "./pages/departments/Physics/Physics";
 import { Maths } from "./pages/departments/Maths/Maths";
-import { HSM } from "./pages/departments/HSM/Hsm";
+import { HSS } from "./pages/departments/HSS/Hss";
 
 import Department from "./pages/departments/Department";
+import ChancellorMessage from "./pages/ChancellorMessage";
 
-const departmentProps = [IT, CSE, EEE,EIE, ME, ECE, Chem, Civil, Chemistry, Physics, Maths, HSM];
+const departmentProps = [
+	IT,
+	CSE,
+	EEE,
+	EIE,
+	ME,
+	ECE,
+	Che,
+	Civil,
+	Chemistry,
+	Physics,
+	Maths,
+	HSS,
+];
 
 function App() {
 	return (
@@ -35,6 +49,7 @@ function App() {
 						/>
 					);
 				})}
+				<Route path="/vc-message" element={<ChancellorMessage />} />
 				<Route path="/*" element={<HomeScreen />} />
 			</Routes>
 		</BrowserRouter>
