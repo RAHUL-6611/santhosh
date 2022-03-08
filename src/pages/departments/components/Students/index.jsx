@@ -6,13 +6,9 @@ import DevWorkshops from "./devWorkshops";
 import "./style.css";
 import TalentShowcase from "./talent-showcase";
 
-
 export default function Students() {
 	return (
 		<>
-		{
-			console.log("students")
-		}
 			<div className="p-3">
 				<Title name="Students Articles" />
 				<div className="student-articles flex cols-span-5 row-span-4 gap-3">
@@ -75,15 +71,14 @@ export default function Students() {
 
 				<Title name="Dev Workshops" />
 				<div className="student-talent-showcase">
-			    	<DevWorkshops /> 
+					<DevWorkshops />
 				</div>
 
 				<Title name="Industry Exploration" />
 				<div className="industry-Exploration">
-			    	<DevWorkshops />
+					<DevWorkshops />
 				</div>
 
-				
 				<Title name="Talent Showcase" />
 				<div className="professional-dev-workshops">
 					<TalentShowcase />
@@ -94,11 +89,11 @@ export default function Students() {
 }
 
 let Title = ({ name }) => {
-	return(
+	return (
 		<div className="talentTitle">
 			<div className="titleUp my-10 mt-20 px-20">
-		    	<div className="titleDown py-2 px-10 text-3xl">{name}</div>
-		    </div>
+				<div className="titleDown py-2 px-10 text-3xl">{name}</div>
+			</div>
 		</div>
-	)
-}
+	);
+};

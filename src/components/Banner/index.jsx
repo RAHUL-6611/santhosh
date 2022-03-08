@@ -1,17 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { getImageUrl } from "../../config";
 import "./Banner.css";
-import LandingPageCarousel from "../LandingPageCarousel";
 import SimpleImageSlider from "react-simple-image-slider";
 
 import useDimention from "../../hooks/useDimension";
-
-import admin from "../LandingPageCarousel/PEC_admin_block.gif";
-import screen1 from "../LandingPageCarousel/ptuInauguration_screen1.jpg";
-import screen4 from "../LandingPageCarousel/ptuInauguration_screen4.jpg";
-import audi from "../LandingPageCarousel/pec-auditorium.jpg";
-import inaug from "../LandingPageCarousel/ptuInauguration.jpg";
-import hands from "../LandingPageCarousel/ptuInauguration_vicePresSpeech.jpg";
 
 const images = [
 	{ url: getImageUrl("PEC_admin_block.gif") },
@@ -21,21 +13,23 @@ const images = [
 	{ url: getImageUrl("ptuInauguration.jpg") },
 	{ url: getImageUrl("ptuInauguration_vicePresSpeech.jpg") },
 ];
-// const images = [
-// 	{ url: admin },
-// 	{ url: screen1 },
-// 	{ url: screen4 },
-// 	{ url: audi },
-// 	{ url: inaug },
-// 	{ url: hands },
-// ];
 
 function Banner() {
 	const {
-		dimension: { width },
+		dimension: { width, height },
 	} = useDimention();
 
-	console.log(width);
+	let sliderHeight = height;
+
+	if (width < 430) {
+		sliderHeight *= 0.4;
+	} else if (width < 600) {
+		sliderHeight *= 0.5;
+	} else if (width < 900) {
+		sliderHeight *= 0.6;
+	} else {
+		sliderHeight *= 0.8;
+	}
 
 	return (
 		<div>
@@ -43,7 +37,7 @@ function Banner() {
 				<SimpleImageSlider
 					className="my-slider"
 					width={width}
-					height={500}
+					height={sliderHeight}
 					images={images}
 					showBullets={true}
 					showNavs={true}

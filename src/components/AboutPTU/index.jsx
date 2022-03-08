@@ -52,38 +52,29 @@ function AboutPTU() {
 						<h6 className="about-head">About PTU</h6>
 					</div>
 					<p className="about-text">
-						<b>Puducherry Technological University</b> (PTU), the{" "}
-						<b>first state University of Puducherry</b> came into existence on 5
-						<sup>th</sup> September, 2020, with the approval of UGC. Puducherry
-						Technological University (PTU) was inaugurated by{" "}
-						<b>
-							Shri. Venkaiah Naidu, Honourable Vice President, Government of
-							India
-						</b>{" "}
-						on 13<sup>th</sup> September, 2021.{" "}
-						<b>Honourable Lieutenant Governor, Dr. Tamilisai Soundararajan</b>{" "}
-						is the <b>Chancellor</b> of Puducherry Technological University.{" "}
-						<b>Shri. Ashok Kumar</b> is the <b>Pro-Chancellor</b> and{" "}
-						<b>Dr. S.Mohan</b> is the first <b>Vice-Chancellor</b> of Puducherry
-						Technological University (PTU). Perunthalaivar Kamarajar Institute
-						of Engineering and Technology (PKIET), Karaikal is a constituent
-						college of the University.
-						<br />
-						After having established for <b>36 years</b> as a premier college
-						for technical education in Puducherry,{" "}
-						<b>Pondicherry Engineering College</b> has now been upgraded as{" "}
-						<b>Puducherry Technological University</b> (PTU). Currently the
-						University holds{" "}
-						<b>
-							{" "}
-							144<sup>th</sup> rank{" "}
-						</b>{" "}
-						under the Engineering Category in the National Instiutional Ranking
-						Framework (NIRF) 2021. Although the University is at its nascent
-						stage, it offers undergraduate courses in nine branches of
-						Engineering and Technology and twelve Post-graduate courses in
-						Engineering, Computer Applications and Management besides Ph.D. in
-						Engineering, Science and English.
+						Puducherry Technological University (PTU) is the first state
+						University of Union Territory of Puducherry. It seamlessly came into
+						existence on 5<sup>th</sup> September 2020 upon the elevation of
+						erstwhile Pondicherry Engineering College - PEC (established in the
+						year 1985 under the 7<sup>th</sup> five-year plan) with the
+						University status. PTU began its journey with a position of
+						pre-eminence and rightly stands as one of the finest engineering
+						schools offering Bachelors, Masters and Doctoral study programmes in
+						the prominent disciplines of Engineering/Technology, Science,
+						Management and Entrepreneurship. Highly qualified faculty, diverse
+						student population from across the country, best-of-breed
+						infrastructure and an expansive campus sprawling over 185.8 acres of
+						luscious green landscape on the shores of tantalizing Bay of Bengal
+						present an amiable ambience for the pursuit of intellectual
+						excellence. Thirty-six years on since its original inception, PTU
+						has a built legacy for itself and stands in good stead in terms of
+						discernible academic parameters. NIRF, MHRD, Govt. of India has
+						ranked us at 144 under the category of engineering education. PTU
+						alumni are spread far and wide across the globe holding eminent
+						positions in top global Corporates, Universities and Civil Services.
+						Some of them own successful enterprises in India and abroad. Such
+						accomplishments stand testimony to the quality of education we have
+						been offering from the classrooms of PTU.
 					</p>
 					<div>
 						<img className="about-img" src={getImageUrl("home.jpg")} alt="" />

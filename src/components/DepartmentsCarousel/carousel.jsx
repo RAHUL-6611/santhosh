@@ -140,7 +140,7 @@ const createItem = (position, idx) => {
 
 const CarouselSlideItem = ({ pos, idx, activeIdx, path }) => {
 	const item = createItem(pos, idx, activeIdx);
-	console.log(item.player.path);
+
 	return (
 		<Link to={item.player.path}>
 			<li className="carousel__slide-item" style={item.styles}>
@@ -181,7 +181,7 @@ const Carousel = () => {
 			setItems((prev) => {
 				return prev.map((_, i) => {
 					if (i === bigLength - 1) {
-						console.log(i);
+						// console.log(i);
 					}
 					return prev[(i - jump + bigLength) % bigLength];
 				});

@@ -25,128 +25,128 @@ import { getMonthShortForm } from "../../utils/common";
 // 	},
 // ];
 
-// let newsObj = [
-// 	{
-// 		title: "News Heading",
-// 		given_by: "Registrar",
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-10",
-// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-// 	},
-// 	{
-// 		title: "News Heading",
-// 		given_by: "Registrar",
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-10",
-// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-// 	},
-// 	{
-// 		title: "News Heading",
-// 		given_by: "Registrar",
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-10",
-// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-// 	},
-// 	{
-// 		title: "News Heading",
-// 		given_by: "Registrar",
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-10",
-// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-// 	},
-// 	{
-// 		title: "News Heading",
-// 		given_by: "Registrar",
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-10",
-// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-// 	},
-// 	{
-// 		title: "News Heading",
-// 		given_by: "Registrar",
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-10",
-// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-// 	},
-// 	{
-// 		title: "News Heading",
-// 		given_by: null,
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-10",
-// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-// 	},
-// 	{
-// 		title: "News Heading",
-// 		given_by: null,
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-10",
-// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-// 	},
-// 	{
-// 		title: "News Heading",
-// 		given_by: null,
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-10",
-// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-// 	},
-// 	{
-// 		title: "News Heading",
-// 		given_by: null,
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-10",
-// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-// 	},
-// 	{
-// 		title: "News Heading",
-// 		given_by: null,
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-10",
-// 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
-// 	},
-// 	{
-// 		title: "New Title",
-// 		given_by: "Dr.Sathiyamurthy ",
-// 		news_content: "qqq",
-// 		start_date: "2022-02-09",
-// 		end_date: "2022-02-12",
-// 		file_name: null,
-// 	},
-// 	{
-// 		title: "New Title",
-// 		given_by: "Dr.Sathiyamurthy ",
-// 		news_content: "qwert",
-// 		start_date: "2022-02-09",
-// 		end_date: "2022-02-11",
-// 		file_name: null,
-// 	},
-// 	{
-// 		title: "test",
-// 		given_by: "HOD CSE",
-// 		news_content: "test_content",
-// 		start_date: "2022-02-03",
-// 		end_date: "2022-03-03",
-// 		file_name: null,
-// 	},
-// 	{
-// 		title: "test",
-// 		given_by: "HOD CSE",
-// 		news_content: "test_content",
-// 		start_date: "2022-02-03",
-// 		end_date: "2022-03-03",
-// 		file_name: null,
-// 	},
-// ];
+let newsObj = [
+	{
+		title: "News Heading",
+		given_by: "Registrar",
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-10",
+		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+	},
+	{
+		title: "News Heading",
+		given_by: "Registrar",
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-10",
+		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+	},
+	{
+		title: "News Heading",
+		given_by: "Registrar",
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-10",
+		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+	},
+	{
+		title: "News Heading",
+		given_by: "Registrar",
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-10",
+		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+	},
+	{
+		title: "News Heading",
+		given_by: "Registrar",
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-10",
+		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+	},
+	{
+		title: "News Heading",
+		given_by: "Registrar",
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-10",
+		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+	},
+	{
+		title: "News Heading",
+		given_by: null,
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-10",
+		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+	},
+	{
+		title: "News Heading",
+		given_by: null,
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-10",
+		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+	},
+	{
+		title: "News Heading",
+		given_by: null,
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-10",
+		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+	},
+	{
+		title: "News Heading",
+		given_by: null,
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-10",
+		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+	},
+	{
+		title: "News Heading",
+		given_by: null,
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-10",
+		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
+	},
+	{
+		title: "New Title",
+		given_by: "Dr.Sathiyamurthy ",
+		news_content: "qqq",
+		start_date: "2022-02-09",
+		end_date: "2022-02-12",
+		file_name: null,
+	},
+	{
+		title: "New Title",
+		given_by: "Dr.Sathiyamurthy ",
+		news_content: "qwert",
+		start_date: "2022-02-09",
+		end_date: "2022-02-11",
+		file_name: null,
+	},
+	{
+		title: "test",
+		given_by: "HOD CSE",
+		news_content: "test_content",
+		start_date: "2022-02-03",
+		end_date: "2022-03-03",
+		file_name: null,
+	},
+	{
+		title: "Last title",
+		given_by: "HOD CSE",
+		news_content: "test_content",
+		start_date: "2022-02-03",
+		end_date: "2022-03-03",
+		file_name: null,
+	},
+];
 
 export function AutoScrollContainer(props) {
 	const { title, data, children } = props;
@@ -163,18 +163,63 @@ export function AutoScrollContainer(props) {
 		// because by default the style is overflow hidden
 		// with scroll value only we can calculate
 		updateRef.current?.classList.remove("updates");
-		element?.classList.remove("updates-container--animation");
+		// element?.classList.remove("updates-container--animation");
 
 		if (!(element?.scrollHeight > element?.clientHeight)) {
 			return;
 		}
 
-		element?.classList.add("updates-container--animation");
+		// element?.classList.add("updates-container--animation");
 		updateRef.current?.classList.add("updates");
 
 		let totalScrollHeight = element?.scrollHeight - element?.clientHeight;
 		setScrollHeight(totalScrollHeight);
 	}, [updatesContainerRef, updateRef]);
+
+	useEffect(() => {
+		const element = updatesContainerRef.current;
+		if (!element || scrollHeight <= 0) return;
+
+		let containerIntervalId = null;
+		let containerTimeoutId = null;
+		let totalHeightScrolled = 0;
+
+		function handleOnScroll(e) {
+			clearInterval(containerIntervalId);
+			clearTimeout(containerTimeoutId);
+
+			containerTimeoutId = setTimeout(() => {
+				clearInterval(containerIntervalId);
+				containerIntervalId = setInterval(() => {
+					if (totalHeightScrolled <= scrollHeight) {
+						totalHeightScrolled += 110;
+					} else {
+						totalHeightScrolled = 110;
+						element.scroll(0, 0);
+					}
+					element.scrollBy(0, 110);
+				}, 600);
+			}, 700);
+		}
+
+		containerIntervalId = setInterval(() => {
+			if (totalHeightScrolled <= scrollHeight) {
+				totalHeightScrolled += 110;
+			} else {
+				totalHeightScrolled = 110;
+				element.scroll(0, 0);
+			}
+			element.scrollBy(0, 110);
+		}, 600);
+
+		element.addEventListener("scroll", handleOnScroll);
+
+		return () => {
+			clearInterval(containerIntervalId);
+			clearTimeout(containerTimeoutId);
+			element.removeEventListener("scroll", handleOnScroll);
+		};
+	}, [updatesContainerRef, scrollHeight]);
 
 	useEffect(() => {
 		const updatesContainer = updatesContainerRef.current;
@@ -203,11 +248,11 @@ export function AutoScrollContainer(props) {
 	};
 
 	const handleOnMouseEnter = () => {
-		setAnimationStatus("pause");
+		// setAnimationStatus("pause");
 	};
 
 	const handleOnMouseLeave = () => {
-		setAnimationStatus("play");
+		// setAnimationStatus("play");
 	};
 
 	return (
@@ -228,9 +273,7 @@ export function AutoScrollContainer(props) {
 				ref={updatesContainerRef}
 				onMouseEnter={handleOnMouseEnter}
 				onMouseLeave={handleOnMouseLeave}
-				className={`updates-container hide-scrollbar ${
-					scrollHeight > 0 ? "updates-container--animation" : ""
-				}`}
+				className={`updates-container hide-scrollbar`}
 			>
 				<div
 					ref={updateRef}
@@ -238,7 +281,7 @@ export function AutoScrollContainer(props) {
 						animationStatus === "pause" ? "update-paused" : ""
 					}`}
 					style={{
-						"--to": `-${scrollHeight}px`,
+						"--to": `${scrollHeight}px`,
 						"--duration": `${data.length * 2}s`,
 					}}
 				>
@@ -255,9 +298,6 @@ export function NoticesAndUpdates({ visiblity = "all" }) {
 	);
 
 	const { data, error } = response;
-	console.log(data);
-
-	// console.log(response);
 
 	if (error || !data || data.length === 0) {
 		return (
@@ -296,46 +336,39 @@ export function NoticesAndUpdates({ visiblity = "all" }) {
 	}
 
 	return (
-		// <div className="news-part">
-		// 	<div className="notice-head">
-		// 		<div className="notice-head-heading">
-		// 			<h2>Notices and Updates</h2>
-		// 		</div>
-		// 		<div className="update-part">
-		// 			{data.map((e, i) => {
-		// 				return (
-		// 					<Updated
-		// 						key={i}
-		// 						topic={e.title}
-		// 						byWhom={e.given_by}
-		// 						message={e.news_content}
-		// 						file_name={e.file_name}
-		// 					/>
-		// 				);
-		// 			})}
-		// 		</div>
+		<AutoScrollContainer title="Notices and Updates" data={newsObj}>
+			{(e, i) => {
+				return (
+					<Updated
+						key={i}
+						topic={e.title}
+						byWhom={e.given_by}
+						message={e.news_content}
+						file_name={e.file_name}
+					/>
+				);
+			}}
+		</AutoScrollContainer>
+
+		// <div className="news-ptu-part">
+		// 	<div className="news-ptu-part__head">
+		// 		<h2>Notices and Updates</h2>
+		// 	</div>
+
+		// 	<div className="updates-container">
+		// 		{data.map((e, i) => {
+		// 			return (
+		// 				<Updated
+		// 					key={i}
+		// 					topic={e.title}
+		// 					byWhom={e.given_by}
+		// 					message={e.news_content}
+		// 					file_name={e.file_name}
+		// 				/>
+		// 			);
+		// 		})}
 		// 	</div>
 		// </div>
-
-		<div className="news-ptu-part">
-			<div className="news-ptu-part__head">
-				<h2>Notices and Updates</h2>
-			</div>
-
-			<div className="updates-container">
-				{data.map((e, i) => {
-					return (
-						<Updated
-							key={i}
-							topic={e.title}
-							byWhom={e.given_by}
-							message={e.news_content}
-							file_name={e.file_name}
-						/>
-					);
-				})}
-			</div>
-		</div>
 	);
 }
 
@@ -461,6 +494,7 @@ export const Updated = ({ topic, byWhom, message, file_name }) => {
 								className="update__view-more-btn"
 								href={API_BASE_URL + file_name}
 								target="_blank"
+								rel="noreferrer"
 							>
 								View More
 							</a>

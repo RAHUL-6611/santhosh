@@ -1,6 +1,4 @@
 .image_gallery {
-	min-width: 100vw;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -13,6 +11,13 @@
 	height: 100%;
 	max-width: 100%;
 	z-index: -1;
+}
+
+.rsis-image,
+.rsis-image + div {
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: 100% 100% !important;
 }
 
 .image-gallery__text-box {
@@ -68,7 +73,6 @@
 @media only screen and (max-width: 832px) {
 	.image_gallery {
 		width: 100%;
-		min-height: 60vh;
 	}
 	.drop-in {
 		border: 0;

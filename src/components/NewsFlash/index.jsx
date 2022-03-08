@@ -37,7 +37,7 @@ function NewsFlash({ visiblity = "all" }) {
 						<div />
 					</div>
 				) : data.length === 0 ? (
-					<h2>No Latest news</h2>
+					<h2 />
 				) : (
 					<ul className="news-flash__list">
 						{data.map((news) => {

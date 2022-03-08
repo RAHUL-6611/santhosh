@@ -16,19 +16,21 @@ export default function DeptHeader({ value }) {
 		return window.scroll(0, 0);
 	};
 
-	console.log(value)
 	return (
 		<>
 			<div className="deptHead">
 				<div className="header_dept flex justify-around">
 					<div className="title_dept flex items-center">
-						<Link to="/" style={{padding:0,margin:0,textDecoration:"none"}}>
-						<img
-							src={getImageUrl("PTU_Logo-color.png")}
-							alt="aaaaaaaaaaaaa"
-							className="img-top"
+						<Link
+							to="/"
+							style={{ padding: 0, margin: 0, textDecoration: "none" }}
+						>
+							<img
+								src={getImageUrl("PTU_Logo-color.png")}
+								alt="aaaaaaaaaaaaa"
+								className="img-top"
 							/>
-							</Link>
+						</Link>
 						<h3>{value.About.LongName}</h3>
 					</div>
 					<div className="searchbar_dept">
@@ -57,7 +59,7 @@ export default function DeptHeader({ value }) {
 							toggle_nav();
 							go_top();
 						}}
-						>
+					>
 						<p>DEPARTMENT</p>
 					</Link>
 					<Link
@@ -66,7 +68,7 @@ export default function DeptHeader({ value }) {
 							toggle_nav();
 							go_top();
 						}}
-						>
+					>
 						<p>FACULTY</p>
 					</Link>
 					<Link
@@ -75,7 +77,7 @@ export default function DeptHeader({ value }) {
 							toggle_nav();
 							go_top();
 						}}
-						>
+					>
 						<p>CURRICULUM</p>
 					</Link>
 					<Link
@@ -84,7 +86,7 @@ export default function DeptHeader({ value }) {
 							toggle_nav();
 							go_top();
 						}}
-						>
+					>
 						<p>RESEARCH</p>
 					</Link>
 					<Link
@@ -93,7 +95,7 @@ export default function DeptHeader({ value }) {
 							toggle_nav();
 							go_top();
 						}}
-						>
+					>
 						<p>FACILITIES</p>
 					</Link>
 				</div>
@@ -103,7 +105,7 @@ export default function DeptHeader({ value }) {
 						onClick={() => {
 							go_top();
 						}}
-						>
+					>
 						<p>DEPARTMENT</p>
 					</Link>
 					<Link
@@ -119,7 +121,7 @@ export default function DeptHeader({ value }) {
 						onClick={() => {
 							go_top();
 						}}
-						>
+					>
 						<p>CURRICULUM</p>
 					</Link>
 					<Link
@@ -127,7 +129,7 @@ export default function DeptHeader({ value }) {
 						onClick={() => {
 							go_top();
 						}}
-						>
+					>
 						<p>RESEARCH</p>
 					</Link>
 					<Link
@@ -135,7 +137,7 @@ export default function DeptHeader({ value }) {
 						onClick={() => {
 							go_top();
 						}}
-						>
+					>
 						<p>FACILITIES</p>
 					</Link>
 				</div>

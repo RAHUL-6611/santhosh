@@ -179,12 +179,12 @@ export default function Individual({ id, dept }) {
 											?.replace("<br />", " ")
 											.split("\n")
 											.map((con, id) => {
-												console.log(
-													profile?.conference
-														?.replace("<br />", " ")
-														.replace("\r", " ")
-														.split("\n")
-												);
+												// console.log(
+												// 	profile?.conference
+												// 		?.replace("<br />", " ")
+												// 		.replace("\r", " ")
+												// 		.split("\n")
+												// );
 												if (con !== null || con !== "  ") {
 													return <p key={id}>{con}</p>;
 												}

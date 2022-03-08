@@ -12,7 +12,6 @@ export default function HodCard({ value }) {
 			<div className="hod-card__container">
 				<div className="hod-card__parts">
 					<img src={hod.img} alt="" />
-					{console.log(hod.img)}
 				</div>
 				<div className="hod-card__parts hod-card__parts--fill">
 					<h4

@@ -112,18 +112,18 @@
 }
 
 .updates-container--animation {
-	overflow-y: hidden;
+	/* overflow-y: hidden; */
 }
 
 .updates {
 	--to: 0px;
 	--duration: 5s;
-	position: absolute;
+	/* position: absolute;
 	top: 0;
-	left: 0;
+	left: 0; */
 	width: 100%;
 	padding: 1em;
-	animation: scroll-updates var(--duration) ease-in-out infinite;
+	/* animation: scroll-updates var(--duration) ease-in-out infinite; */
 	z-index: -1;
 }
 

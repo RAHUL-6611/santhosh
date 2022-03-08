@@ -21,7 +21,9 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build",
+		"final:build": "react-scripts build",
+		"build": "set \"REACT_APP_BASE_URL=https://ptuniv.edu.in/\" && yarn final:build && node generateRoutes",
+		"beta:build": "set \"REACT_APP_BASE_URL=https://beta.ptuniv.edu.in/\" && yarn final:build && node generateRoutes",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},

@@ -1,4 +1,7 @@
-export const BASE_URL = "https://beta.ptuniv.edu.in/";
+export const BASE_URL =
+	process.env.REACT_APP_BASE_URL ?? "https://beta.ptuniv.edu.in/";
+
+console.log(BASE_URL);
 
 export const API_BASE_URL = BASE_URL + "cms/API/";
 

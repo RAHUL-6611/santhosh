@@ -61,7 +61,6 @@ export default function Department({ department }) {
 			} else {
 				acc[currentFaculty.post_tier.toLowerCase()] = [currentFaculty];
 			}
-			console.log(acc);
 			return acc;
 		}, {});
 

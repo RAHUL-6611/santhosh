@@ -40,7 +40,6 @@ let newsObj = [
 	},
 ];
 export default function Notices({ value }) {
-	console.log(value);
 	return (
 		<div className="news-corner md:grid grid-cols-6 gap-4 my-20 mx-10">
 			{/* <div className="news-part col-span-4">
@@ -131,8 +130,6 @@ export function BulletinBoard({ visiblity = "all", dept = "cse" }) {
 	}
 
 	let array = [];
-
-	console.log({ allData, deptData });
 
 	if (allData) {
 		array = [...allData];

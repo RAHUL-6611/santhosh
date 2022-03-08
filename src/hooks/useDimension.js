@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 
 function useDimension() {
 	const [dimension, setDimension] = useState({
-		width: window.innerWidth,
-		height: window.innerHeight,
+		width: document.documentElement.clientWidth,
+		height: document.documentElement.clientHeight,
 	});
 
 	useEffect(() => {
 		function setNewDimension() {
 			setDimension({
-				width: window.innerWidth,
-				height: window.innerHeight,
+				width: document.documentElement.clientWidth,
+				height: document.documentElement.clientHeight,
 			});
 		}
 
