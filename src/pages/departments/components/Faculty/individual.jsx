@@ -1,6 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { IoMdArrowBack } from "react-icons/io";
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 import { useNavigate } from "react-router";
 
 import {
@@ -76,25 +80,16 @@ export default function Individual({ id, dept }) {
 							</ul>
 							<ul className="social-media">
 								<a href={profile?.linkedin}>
-									<img
-										src="https://cms.pec.edu/img/linkedin-brands.svg "
-										alt=""
-									/>
+									<FaLinkedin />
 								</a>
 								<a href={profile?.facebook}>
-									<img
-										src="https://cms.pec.edu/img/facebook-square-brands.svg "
-										alt=""
-									/>
+									<FaFacebook />
 								</a>
 								<a href={profile?.twitter}>
-									<img
-										src="https://cms.pec.edu/img/twitter-brands.svg"
-										alt=""
-									/>
+									<FaTwitter />
 								</a>
 								<a href={profile?.twitter}>
-									<img src="https://cms.pec.edu/img/globe-solid.svg" alt="" />
+									<FaGlobe />
 								</a>
 							</ul>
 						</div>
@@ -176,6 +171,25 @@ export default function Individual({ id, dept }) {
 									<span>Conferences</span>
 									<ul>
 										{profile?.conference
+											?.replace("<br />", " ")
+											.split("\n")
+											.map((con, id) => {
+												// console.log(
+												// 	profile?.conference
+												// 		?.replace("<br />", " ")
+												// 		.replace("\r", " ")
+												// 		.split("\n")
+												// );
+												if (con !== null || con !== "  ") {
+													return <p key={id}>{con}</p>;
+												}
+											})}
+									</ul>
+								</div>
+								<div className="books">
+									<span>Books</span>
+									<ul>
+										{profile?.books
 											?.replace("<br />", " ")
 											.split("\n")
 											.map((con, id) => {

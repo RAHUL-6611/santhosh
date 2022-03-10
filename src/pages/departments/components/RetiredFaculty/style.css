@@ -47,11 +47,13 @@
 	margin-top: 0.4rem;
 }
 
-.single-faculty__profile .profile__right .social-media a img {
+.single-faculty__profile .profile__right .social-media a {
 	width: 24px;
 	height: 24px;
 	margin-top: 1rem;
 	margin-right: 0.4rem;
+	display: inline-block;
+	font-size: 1.4rem;
 }
 
 .single-faculty__container .single-faculty__intro {
@@ -142,7 +144,8 @@
 	.single-faculty__intro
 	.grid-container
 	.publication
-	.conference {
+	.conference,
+.books {
 	border: 1px solid black;
 	padding: 2rem;
 }
