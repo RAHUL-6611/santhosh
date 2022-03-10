@@ -25,6 +25,7 @@ function DesktopNav(props) {
 											? "desktop-nav__main-link--reset"
 											: ""
 									}`}
+									{...menu.linkProps}
 								>
 									{menu.text}
 								</a>
@@ -46,22 +47,27 @@ function DesktopNav(props) {
 								<div className="desktop-nav__sub-menu-container">
 									<div className="desktop-nav__go-to">
 										{menu.text}{" "}
-										{menu.isNormalLink && <a href={menu.href}>{">"}</a>}
+										{menu.isNormalLink && (
+											<a href={menu.href} {...menu.linkProps}>
+												{">"}
+											</a>
+										)}
 										{!menu.isNormalLink && <Link to={menu.href}>{">"}</Link>}
 									</div>
 									<div className="desktop-nav__sub-menu">
 										{menu.subMenus.map((subMenu, index) => {
 											return (
 												<div key={index} className="desktop-nav__seperator">
-													{menu.isNormalLink && (
+													{subMenu.isNormalLink && (
 														<a
 															href={subMenu.href}
 															className="desktop-nav__link desktop-nav__link--sub-menu-title"
+															{...subMenu.linkProps}
 														>
 															{subMenu.text}
 														</a>
 													)}
-													{!menu.isNormalLink && (
+													{!subMenu.isNormalLink && (
 														<Link
 															to={subMenu.href}
 															className="desktop-nav__link desktop-nav__link--sub-menu-title"
@@ -85,6 +91,7 @@ function DesktopNav(props) {
 																			<a
 																				href={subMenu.href}
 																				className="desktop-nav__link"
+																				{...subMenu.linkProps}
 																			>
 																				{subMenu.text}
 																			</a>

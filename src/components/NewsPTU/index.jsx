@@ -29,7 +29,8 @@ let newsObj = [
 	{
 		title: "News Heading",
 		given_by: "Registrar",
-		news_content: "Small news msg instead of long one",
+		news_content:
+			"Small <a href='www.google.com'>news</a> msg instead of long one",
 		start_date: "2022-02-05",
 		end_date: "2022-02-10",
 		file_name: "https://www.pec.edu/February2022/chartedBusCircular3222.pdf",
@@ -184,33 +185,43 @@ export function AutoScrollContainer(props) {
 		let containerTimeoutId = null;
 		let totalHeightScrolled = 0;
 
-		function handleOnScroll(e) {
+		function handleOnScroll() {
 			clearInterval(containerIntervalId);
 			clearTimeout(containerTimeoutId);
 
-			containerTimeoutId = setTimeout(() => {
-				clearInterval(containerIntervalId);
-				containerIntervalId = setInterval(() => {
-					if (totalHeightScrolled <= scrollHeight) {
-						totalHeightScrolled += 110;
-					} else {
-						totalHeightScrolled = 110;
-						element.scroll(0, 0);
-					}
-					element.scrollBy(0, 110);
-				}, 600);
-			}, 700);
+			// updating the element scrolling position
+			totalHeightScrolled = element.scrollTop;
+
+			if (animationStatus === "play") {
+				containerTimeoutId = setTimeout(() => {
+					clearInterval(containerIntervalId);
+					containerIntervalId = setInterval(() => {
+						if (totalHeightScrolled <= scrollHeight) {
+							totalHeightScrolled += 110;
+						} else {
+							totalHeightScrolled = 110;
+							element.scroll(0, 0);
+						}
+						element.scrollBy(0, 110);
+					}, 600);
+				}, 700);
+			}
 		}
 
-		containerIntervalId = setInterval(() => {
-			if (totalHeightScrolled <= scrollHeight) {
-				totalHeightScrolled += 110;
-			} else {
-				totalHeightScrolled = 110;
-				element.scroll(0, 0);
-			}
-			element.scrollBy(0, 110);
-		}, 600);
+		if (animationStatus === "play") {
+			containerIntervalId = setInterval(() => {
+				if (totalHeightScrolled <= scrollHeight) {
+					totalHeightScrolled += 110;
+				} else {
+					totalHeightScrolled = 110;
+					element.scroll(0, 0);
+				}
+				element.scrollBy(0, 110);
+			}, 600);
+		} else {
+			clearInterval(containerIntervalId);
+			clearTimeout(containerTimeoutId);
+		}
 
 		element.addEventListener("scroll", handleOnScroll);
 
@@ -219,7 +230,7 @@ export function AutoScrollContainer(props) {
 			clearTimeout(containerTimeoutId);
 			element.removeEventListener("scroll", handleOnScroll);
 		};
-	}, [updatesContainerRef, scrollHeight]);
+	}, [updatesContainerRef, scrollHeight, animationStatus]);
 
 	useEffect(() => {
 		const updatesContainer = updatesContainerRef.current;
@@ -227,13 +238,11 @@ export function AutoScrollContainer(props) {
 		function handleResize() {
 			// recalculating the scroll height without the styles
 			updateRef.current?.classList.remove("updates");
-			updatesContainer?.classList.remove("updates-container--animation");
 
 			setScrollHeight(
 				updatesContainer?.scrollHeight - updatesContainer?.clientHeight
 			);
 
-			updatesContainer?.classList.add("updates-container--animation");
 			updateRef.current?.classList.add("updates");
 		}
 
@@ -275,16 +284,7 @@ export function AutoScrollContainer(props) {
 				onMouseLeave={handleOnMouseLeave}
 				className={`updates-container hide-scrollbar`}
 			>
-				<div
-					ref={updateRef}
-					className={`${scrollHeight > 0 ? "updates" : ""} ${
-						animationStatus === "pause" ? "update-paused" : ""
-					}`}
-					style={{
-						"--to": `${scrollHeight}px`,
-						"--duration": `${data.length * 2}s`,
-					}}
-				>
+				<div ref={updateRef} className={`${scrollHeight > 0 ? "updates" : ""}`}>
 					{data.map((...rest) => children(...rest, setAnimationStatus))}
 				</div>
 			</div>
@@ -292,14 +292,30 @@ export function AutoScrollContainer(props) {
 	);
 }
 
-export function NoticesAndUpdates({ visiblity = "all" }) {
-	const response = useFetch(
-		"News_Event.php?visiblity=" + visiblity + "&content=notices"
+export function NoticesAndUpdates() {
+	const allResponse = useFetch("News_Event.php?visiblity=all&content=notices");
+
+	const mainResponse = useFetch(
+		"News_Event.php?visiblity=main&content=notices"
 	);
 
-	const { data, error } = response;
+	let { error: allError, data: allData } = allResponse;
+	let { error: mainError, data: mainData } = mainResponse;
 
-	if (error || !data || data.length === 0) {
+	const error = allError || mainError;
+	const isLoding = !allData && !mainData;
+
+	let data = [];
+	if (!isLoding) {
+		if (allData) {
+			data = data.concat(allData);
+		}
+		if (mainData) {
+			data = data.concat(mainData);
+		}
+	}
+
+	if (error || isLoding || data.length === 0) {
 		return (
 			<div className="news-ptu-part">
 				<div className="news-ptu-part__head">
@@ -310,7 +326,7 @@ export function NoticesAndUpdates({ visiblity = "all" }) {
 					<div className="updates-container hide-scrollbar updates-error-container">
 						<h2>Something went wrong</h2>
 					</div>
-				) : !data ? (
+				) : isLoding ? (
 					<div className="updates-container hide-scrollbar">
 						<div className="updates-placeholder-container">
 							<Placeholder className="updates-topic-placeholder" />
@@ -336,7 +352,7 @@ export function NoticesAndUpdates({ visiblity = "all" }) {
 	}
 
 	return (
-		<AutoScrollContainer title="Notices and Updates" data={newsObj}>
+		<AutoScrollContainer title="Notices and Updates" data={data}>
 			{(e, i) => {
 				return (
 					<Updated
@@ -349,37 +365,31 @@ export function NoticesAndUpdates({ visiblity = "all" }) {
 				);
 			}}
 		</AutoScrollContainer>
-
-		// <div className="news-ptu-part">
-		// 	<div className="news-ptu-part__head">
-		// 		<h2>Notices and Updates</h2>
-		// 	</div>
-
-		// 	<div className="updates-container">
-		// 		{data.map((e, i) => {
-		// 			return (
-		// 				<Updated
-		// 					key={i}
-		// 					topic={e.title}
-		// 					byWhom={e.given_by}
-		// 					message={e.news_content}
-		// 					file_name={e.file_name}
-		// 				/>
-		// 			);
-		// 		})}
-		// 	</div>
-		// </div>
 	);
 }
 
-export function Events({ visiblity = "all" }) {
-	const response = useFetch(
-		"News_Event.php?visiblity=" + visiblity + "&content=events"
-	);
+export function Events() {
+	const allResponse = useFetch("News_Event.php?visiblity=all&content=events");
 
-	const { data, error } = response;
+	const mainResponse = useFetch("News_Event.php?visiblity=main&content=events");
 
-	if (error || !data || data.length === 0) {
+	let { error: allError, data: allData } = allResponse;
+	let { error: mainError, data: mainData } = mainResponse;
+
+	const error = allError || mainError;
+	const isLoding = !allData && !mainData;
+
+	let data = [];
+	if (!isLoding) {
+		if (allData) {
+			data = data.concat(allData);
+		}
+		if (mainData) {
+			data = data.concat(mainData);
+		}
+	}
+
+	if (error || isLoding || data.length === 0) {
 		return (
 			<div className="news-ptu-part">
 				<div className="news-ptu-part__head">
@@ -390,7 +400,7 @@ export function Events({ visiblity = "all" }) {
 					<div className="updates-container hide-scrollbar updates-error-container">
 						<h2>Something went wrong</h2>
 					</div>
-				) : !data ? (
+				) : isLoding ? (
 					<div className="updates-container hide-scrollbar">
 						<div className="event__container event__container--placeholder">
 							<Placeholder className="event__box-card event__box-card-placeholder" />
@@ -433,40 +443,20 @@ export function Events({ visiblity = "all" }) {
 	}
 
 	return (
-		// <AutoScrollContainer title="Upcoming Events" data={data}>
-		// 	{(e, i) => {
-		// 		const date = new Date(e.start_date);
-		// 		return (
-		// 			<Event
-		// 				key={i}
-		// 				topic={e.title}
-		// 				message={e.news_content}
-		// 				date={date.getDate()}
-		// 				month={getMonthShortForm(date.getMonth())}
-		// 			/>
-		// 		);
-		// 	}}
-		// </AutoScrollContainer>
-
-		<div className="news-ptu-part">
-			<div className="news-ptu-part__head">
-				<h2>Upcoming Events</h2>
-			</div>
-			<div className="updates-container events-container">
-				{data.map((e, i) => {
-					const date = new Date(e.start_date);
-					return (
-						<Event
-							key={i}
-							topic={e.title}
-							message={e.news_content}
-							date={date.getDate()}
-							month={getMonthShortForm(date.getMonth())}
-						/>
-					);
-				})}
-			</div>
-		</div>
+		<AutoScrollContainer title="Upcoming Events" data={data}>
+			{(e, i) => {
+				const date = new Date(e.start_date);
+				return (
+					<Event
+						key={i}
+						topic={e.title}
+						message={e.news_content}
+						date={date.getDate()}
+						month={getMonthShortForm(date.getMonth())}
+					/>
+				);
+			}}
+		</AutoScrollContainer>
 	);
 }
 
@@ -483,11 +473,17 @@ export const Updated = ({ topic, byWhom, message, file_name }) => {
 	return (
 		<div className="update__container">
 			<div className="update__content">
-				<h2>{topic}</h2>
+				<h2
+					dangerouslySetInnerHTML={{ __html: topic }}
+					className="updates__description-text"
+				/>
 				<div className="update__newss">
 					<h3>{byWhom}</h3>
 					<br />
-					<p>{message}</p>
+					<p
+						dangerouslySetInnerHTML={{ __html: message }}
+						className="updates__description-text"
+					/>
 					<p>
 						{file_name && (
 							<a
@@ -519,8 +515,14 @@ const Event = ({ date, month, topic, message }) => {
 			</div>
 			<div className="event__description">
 				<div>
-					<p>{topic}</p>
-					<p>{message}</p>
+					<p
+						dangerouslySetInnerHTML={{ __html: topic }}
+						className="event__description-text"
+					/>
+					<p
+						dangerouslySetInnerHTML={{ __html: message }}
+						className="event__description-text"
+					/>
 				</div>
 			</div>
 		</div>

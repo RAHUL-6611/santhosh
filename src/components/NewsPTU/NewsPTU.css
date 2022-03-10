@@ -111,19 +111,9 @@
 	box-shadow: inset 0 -4px 14px rgba(0, 0, 0, 0.2);
 }
 
-.updates-container--animation {
-	/* overflow-y: hidden; */
-}
-
 .updates {
-	--to: 0px;
-	--duration: 5s;
-	/* position: absolute;
-	top: 0;
-	left: 0; */
 	width: 100%;
 	padding: 1em;
-	/* animation: scroll-updates var(--duration) ease-in-out infinite; */
 	z-index: -1;
 }
 
@@ -157,15 +147,6 @@
 .updates-container .updates-message-line2-placeholder {
 	height: 15px;
 	width: 80%;
-}
-
-@keyframes scroll-updates {
-	10% {
-		top: 0;
-	}
-	90% {
-		top: var(--to);
-	}
 }
 
 .news-ptu-part .events__title {
@@ -233,6 +214,12 @@
 
 .event__description--placeholder {
 	width: 100%;
+}
+
+.updates__description-text a,
+.event__description-text a {
+	color: revert;
+	text-decoration: revert;
 }
 
 @media screen and (min-width: 630px) {

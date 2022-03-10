@@ -9,11 +9,11 @@ import NewsFlash from "../../../../components/NewsFlash";
 const DeptLandingPage = ({ value }) => {
 	return (
 		<div>
-			<HodCard value={ value } />
+			<HodCard value={value} />
 			<NewsFlash />
-			<About value={ value } />
-			<Vision value={ value } />
-			<Notice />
+			<About value={value} />
+			<Vision value={value} />
+			<Notice value={value} />
 			{/* <Testimonial /> */}
 		</div>
 	);

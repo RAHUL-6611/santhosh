@@ -65,16 +65,12 @@ const links = [
 		href: "https://mail.google.com/a/ptuniv.edu.in",
 	},
 	{
-		text: "Examination Wing",
-		href: "https://ptucoe.info",
+		text: "IIS",
+		href: "https://pytuiis.org",
 	},
 	{
-		text: "Quick Links",
-		href: "#",
-	},
-	{
-		text: "Site Map",
-		href: "#",
+		text: "T&P",
+		href: "https://tnp.pec.edu",
 	},
 	{
 		text: "Alumni",

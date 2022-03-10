@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import "./carousel.css";
 import { Link } from "react-router-dom";
-// import img1 from '../../images/cse.jpg';
 import { getImageUrl } from "../../config";
 
 /************************************

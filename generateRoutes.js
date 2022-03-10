@@ -42,9 +42,9 @@ const dirs = [
 	"ece",
 	"it",
 	"maths",
-	"physics",
+	"phy",
 	"hss",
-	"chemistry",
+	"chem",
 ].map((name) => {
 	return { type: "dir", name, subDirs };
 });

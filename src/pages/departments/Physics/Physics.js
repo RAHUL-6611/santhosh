@@ -3,10 +3,10 @@ import { getImageUrl } from "../../../config";
 // import Image from "../../../../src/components/assets/CSE_HOD.png"
 
 export const Physics = {
-	basePath: "/physics",
+	basePath: "/phy",
 	About: {
 		DeptName: "PHYSICS",
-		ShortName: "PHYSICS",
+		ShortName: "PHY",
 		LongName: "DEPARTMENT OF PHYSICS",
 
 		DeptImg: "",

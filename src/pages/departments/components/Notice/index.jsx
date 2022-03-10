@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./Notice.css";
 import "../../../../components/NewsPTU/NewsPTU.css";
-import { NoticesAndUpdates, Updated } from "../../../../components/NewsPTU";
+import { AutoScrollContainer, Updated } from "../../../../components/NewsPTU";
 import useFetch from "../../../../hooks/useFetch";
 
 let newsObj = [
@@ -40,27 +40,13 @@ let newsObj = [
 	},
 ];
 export default function Notices({ value }) {
+	console.log(value);
 	return (
 		<div className="news-corner md:grid grid-cols-6 gap-4 my-20 mx-10">
-			{/* <div className="news-part col-span-4">
-				<div className="notice-head">
-					<div className="notice-head-heading">
-						<h2>Bulletin board</h2>
-					</div>
-					<div className="update-part">
-						{newsObj.map((e) => {
-							return (
-								<Updated
-									topic={e.topic}
-									byWhom={e.byWhom}
-									message={e.message}
-								/>
-							);
-						})}
-					</div>
-				</div>
-			</div> */}
-			<BulletinBoard visiblity="all" />
+			<BulletinBoard
+				visiblity="all"
+				dept={value.About.ShortName.toLowerCase()}
+			/>
 			<div className="news-part mr-5">
 				<div className="news-in-part px-10">
 					<div className="flex justify-center">
@@ -81,7 +67,7 @@ export default function Notices({ value }) {
 							<li className="not-li my-5">Placement Details</li>
 						</Link>
 						<Link to={`#`}>
-							<li className="not-li my-5">Medals & Awards</li>
+							<li className="not-li my-5">Medals {"&"} Awards</li>
 						</Link>
 						<Link to={`#`}>
 							<li className="not-li my-5">Retired Faculty</li>
@@ -153,24 +139,18 @@ export function BulletinBoard({ visiblity = "all", dept = "cse" }) {
 	}
 
 	return (
-		<div className="news-ptu-part">
-			<div className="news-ptu-part__head">
-				<h2>Notices and Updates</h2>
-			</div>
-
-			<div className="updates-container">
-				{array.map((e, i) => {
-					return (
-						<Updated
-							key={i}
-							topic={e.title}
-							byWhom={e.given_by}
-							message={e.news_content}
-							file_name={e.file_name}
-						/>
-					);
-				})}
-			</div>
-		</div>
+		<AutoScrollContainer title="Notices and Updates" data={array}>
+			{(e, i) => {
+				return (
+					<Updated
+						key={i}
+						topic={e.title}
+						byWhom={e.given_by}
+						message={e.news_content}
+						file_name={e.file_name}
+					/>
+				);
+			}}
+		</AutoScrollContainer>
 	);
 }

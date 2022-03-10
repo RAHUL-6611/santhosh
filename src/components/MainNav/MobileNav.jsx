@@ -11,7 +11,7 @@ function MenuItem({ menu, handleNavigate }) {
 	return (
 		<li className="mobile-nav__item">
 			{menu.isNormalLink && (
-				<a href={menu.href} className="mobile-nav__link">
+				<a href={menu.href} className="mobile-nav__link" {...menu.linkProps}>
 					{menu.text}
 				</a>
 			)}
