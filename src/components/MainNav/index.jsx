@@ -107,7 +107,7 @@ const menus = [
 					{ text: "Physics", href: "/phy", subMenus: null },
 					{ text: "HSS", href: "/hss", subMenus: null },
 					{ text: "Chemistry", href: "/chem", subMenus: null },
-					// { text: "", href: "/social-science-and-humanities", subMenus: null },
+					{ text: "MBA", href: "/master-business-administration", subMenus: null },
 				],
 			},
 			{
