@@ -18,32 +18,25 @@ export const Chemistry = {
 			},
 		],
 
-		about:
-			"The Department of Computer Science and Engineering was established in the year 1987 with the objective of imparting high quality education in the field of Computer Science. It provides a comprehensive program that emphasizes on Advanced Data Structures and Algorithms, Advanced Software Design, Artificial Intelligence, Parallel and Distributed Systems, Graphics and Image Processing, Machine Learning, Internet of Things, Information Security, Digital Forensics and Big Data Mining.The department has competent and committed faculty which encourages students' involvement in various academic and co-curricular activities. The department has well equipped computer laboratories with more than 400 computers and a Research Laboratory to carry out research and project activities.  The department has the latest infrastructure facilities with high speed Internet, advanced software labs, hardware labs, seminar halls and class rooms equipped with LCD projectors. Students of all programmes can take project internship with different organizations. This component has been included in the curriculum to provide exposure for the students to work in an organization environment, as well as a chance to apply the learning in solving real-world business problems. The department has a long tradition of producing technically competent engineers since 1987 and it has renowned alumni occupying prominent positions in the industry, academia and research all over the world. The students of the department have got placements in major companies like HP, ZOHO, HCL, NOKIA, INFOSYS, RELIANCE, CTS, L&T INFOTECH etc.The Department faculty are actively involved in various AICTE- RPS, UGC and SERB Sponsored Research Projects, Consultancy projects and Collaborative Projects with other government sectors.",
+		about: `The Department of Chemistry has been functioning right from the inception of the institution in 1985. The Department initially functioned as a supporting department catering to the demands of the under-graduate students. The Ph.D. research program was started from the year 1997 onwards. The Department is handling mainly B. Tech (Chemistry and Chemistry Laboratory). In addition to that it is also supporting B. Tech Chemical Engineering and PG courses, M. Tech and M.Sc., offered by Civil Engineering and Physics Department respectively. The department is equipped with Laboratory facility to conduct B. Tech laboratory courses.
+			Over the years, the department has developed intellectual capacity to carryout research activities in the fields of Polymer Chemistry and Chemiformatics. The department has a total of 74 publications so far in reputed journals of high impact factor. Also the department has secured sponsored research grants to the tune of Rs. 80 Lahks from the funding agencies such as DST, UGC-DAE CSR, MoEF, and CSIR
+			`,
 
 		vision: [
 			{
 				point:
-					"To explore innovative approaches to enhance and expand learning opportunities through the integration of various technologies.",
-			},
-			{
-				point:
-					"To build a strong research and teaching environment that responds to the real-time challenges of the industry.",
+					"To develop a suitable platform for enriching and creating the chemical knowledge needed for Technical Education.",
 			},
 		],
 
 		Mission: [
 			{
 				point:
-					"To inculcate the blend of competence, aptitude of knowledge and investigate flair through devising an ambient environment for sustainable learning.",
+					"To update infrastructural and intellectual capability of the Department for the changing needs of Technical Education.",
 			},
 			{
 				point:
-					"To transform attitude, values, priorities by changing mindset and instill positive outlook for socially conscious intellectual development.",
-			},
-			{
-				point:
-					"Incubate, apply and spread innovative ideas to evolve the department as a centre of excellence in thrust areas.",
+					"To impart quality teaching by adopting innovative Pedagogical approaches.",
 			},
 		],
 
