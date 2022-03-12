@@ -78,7 +78,13 @@ const ChancellorCard = ({ img, name, title, desig, path }) => {
 				<p className="chancellor-card__name">{name}</p>
 				<p className="chancellor-card__desig">{desig}</p>
 				<p className="chancellor-card__title">{title}</p>
-				<p>{path && <Link to={path}>Read message</Link>}</p>
+				<p>
+					{path && (
+						<Link to={path} className="chancellor-card__parts-message-btn">
+							Read message
+						</Link>
+					)}
+				</p>
 			</div>
 		</div>
 	);

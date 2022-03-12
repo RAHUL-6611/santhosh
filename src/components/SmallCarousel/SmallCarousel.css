@@ -45,7 +45,7 @@
 	margin-top: auto;
 	text-align: right;
 }
-.chancellor-card__parts a {
+.chancellor-card__parts-message-btn {
 	text-decoration: none;
 	border: 5px;
 	background-color: rgb(33 72 153);

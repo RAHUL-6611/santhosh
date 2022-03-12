@@ -40,7 +40,24 @@ export const EEE = {
 		Mission: [
 			{
 				point:
-					"The Department of Electrical and Electronics Engineering provides a progressive environment for learning through systematic teaching methodologies, rigorous practical training and contemporary curriculum; research through creative activities in conventional and thrust areas of Electrical and Electronics Engineering. Actively engage and mentor students in scholarly and creative endeavors to develop the ability to navigate through a rapidly changing technology and society. Faculty dedicate through excellence in teaching, exemplified by a free exchange of ideas, fostering new understandings through research and creativity.",
+					"To achieve academic excellence at national and international level ",
+			},
+			{
+				point:
+					"To focus more on practical aspects with a strong fundamental theoretical knowledge",
+			},
+			{
+				point:
+					"To imbibe in its students, the ability to think critically, creatively for developing innovative ideas in - order to meet out the social demand in perspective to Electrical and Electronics Engineering",
+			},
+			{
+				point:
+					"To collaborate with other academic and research institutes in - order to strengthen the academic and research activities",
+			},
+			{ point: "To train the students in achieving their educational goals" },
+			{
+				point:
+					"To impart emerging technical skills among the students so as to make them competent technocrats",
 			},
 		],
 		Hod: {

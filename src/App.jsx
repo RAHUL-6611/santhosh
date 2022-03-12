@@ -16,6 +16,7 @@ import { Chemistry } from "./pages/departments/Chemistry/Chemistry";
 import { Physics } from "./pages/departments/Physics/Physics";
 import { Maths } from "./pages/departments/Maths/Maths";
 import { HSS } from "./pages/departments/HSS/Hss";
+import { MBA } from "./pages/departments/MBA/MBA";
 
 import Department from "./pages/departments/Department";
 import ChancellorMessage from "./pages/ChancellorMessage";
@@ -33,6 +34,7 @@ const departmentProps = [
 	Physics,
 	Maths,
 	HSS,
+	MBA,
 ];
 
 function App() {

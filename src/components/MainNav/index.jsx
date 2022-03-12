@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BASE_URL } from "../../config";
+import { FILE_BASE_URL } from "../../config";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 
@@ -106,6 +106,7 @@ const menus = [
 					{ text: "Maths", href: "/maths", subMenus: null },
 					{ text: "Physics", href: "/phy", subMenus: null },
 					{ text: "HSS", href: "/hss", subMenus: null },
+					{ text: "MBA", href: "/mba", subMenus: null },
 					{ text: "Chemistry", href: "/chem", subMenus: null },
 					// { text: "", href: "/social-science-and-humanities", subMenus: null },
 				],
@@ -231,7 +232,7 @@ const menus = [
 			},
 			{
 				text: "NIRF 2022 Data",
-				href: BASE_URL + "/cms/file_contents/NIRF_2022.pdf",
+				href: FILE_BASE_URL + "NIRF_2022.pdf",
 				isNormalLink: true,
 				linkProps: {
 					target: "_blank",
@@ -240,7 +241,7 @@ const menus = [
 			},
 			{
 				text: "Anti-Raging Committee",
-				href: BASE_URL + "/cms/file_contents/anti_ragging_2022.pdf",
+				href: FILE_BASE_URL + "anti_ragging_2022.pdf",
 				isNormalLink: true,
 				linkProps: {
 					target: "_blank",

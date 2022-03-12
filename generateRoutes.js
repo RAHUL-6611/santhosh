@@ -44,6 +44,7 @@ const dirs = [
 	"maths",
 	"phy",
 	"hss",
+	"mba",
 	"chem",
 ].map((name) => {
 	return { type: "dir", name, subDirs };

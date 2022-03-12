@@ -65,9 +65,9 @@ function AboutPTU() {
 						student population from across the country, best-of-breed
 						infrastructure and an expansive campus sprawling over 185.8 acres of
 						luscious green landscape on the shores of tantalizing Bay of Bengal
-						present an amiable ambience for the pursuit of intellectual
+						present a vibrant ecosystem for the pursuit of intellectual
 						excellence. Thirty-six years on since its original inception, PTU
-						has a built legacy for itself and stands in good stead in terms of
+						has built a legacy for itself and stands in good stead in terms of
 						discernible academic parameters. NIRF, MHRD, Govt. of India has
 						ranked us at 144 under the category of engineering education. PTU
 						alumni are spread far and wide across the globe holding eminent

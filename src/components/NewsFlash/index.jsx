@@ -21,6 +21,8 @@ function NewsFlash({ visiblity = "all" }) {
 		}
 	};
 
+	if (data?.length === 0) return null;
+
 	return (
 		<div className="news-flash">
 			<p>
@@ -36,8 +38,6 @@ function NewsFlash({ visiblity = "all" }) {
 					<div>
 						<div />
 					</div>
-				) : data.length === 0 ? (
-					<h2 />
 				) : (
 					<ul className="news-flash__list">
 						{data.map((news) => {

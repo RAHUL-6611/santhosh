@@ -39,7 +39,7 @@ export default function DeptHeader({ value }) {
 					</div>
 				</div>
 				<div className="imgsec">
-					<img src={value.About.DeptImg} alt="cse" />
+					<img src={value.About.DeptImg} alt="" />
 				</div>
 			</div>
 

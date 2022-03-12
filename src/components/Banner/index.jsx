@@ -16,19 +16,17 @@ const images = [
 
 function Banner() {
 	const {
-		dimension: { width, height },
+		dimension: { width },
 	} = useDimention();
 
-	let sliderHeight = height;
+	let sliderHeight = 550;
 
 	if (width < 430) {
-		sliderHeight *= 0.4;
+		sliderHeight = 300;
 	} else if (width < 600) {
-		sliderHeight *= 0.5;
+		sliderHeight = 400;
 	} else if (width < 900) {
-		sliderHeight *= 0.6;
-	} else {
-		sliderHeight *= 0.8;
+		sliderHeight = 500;
 	}
 
 	return (
@@ -43,6 +41,7 @@ function Banner() {
 					showNavs={true}
 					autoPlay={true}
 					navStyle={2}
+					bgColor="#ebebeb"
 				/>
 			</div>
 		</div>

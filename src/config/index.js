@@ -3,6 +3,10 @@ export const BASE_URL =
 
 console.log(BASE_URL);
 
+export const CMS_BASE_URL = BASE_URL + "cms/";
+
+export const FILE_BASE_URL = CMS_BASE_URL + "file_contents/";
+
 export const API_BASE_URL = BASE_URL + "cms/API/";
 
 export const IMG_BASE_URL = BASE_URL + "images/";

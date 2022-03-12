@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Header from "../../components/Header";
-import { getImageUrl } from "../../config";
+import { getImageUrl, FILE_BASE_URL } from "../../config";
 
 import "./ChancellorMessage.css";
 
@@ -15,19 +15,33 @@ function ChancellorMessage() {
 			<div className="chancellor-message">
 				<h1 className="chancellor-message__title">VC's Message</h1>
 				<div className="chancellor-message__content">
-					<div className="chancellor-message__head mr-2">
-						<img
-							className="chancellor-message__img"
-							src={getImageUrl("vc dr s mohan.jpg")}
-							alt=""
-						/>
-						<p className="chancellor-message__name">
-							<b>Dr.S Mohan</b>
-						</p>
-						<p>B.E., M.E., Ph.D., FNAE., FIE., FIPHE., FIWWA., FIASE.</p>
-						<p>Vice-Chancellor</p>
+					<div style={{ backgroundColor: "brown" }}>
+						<div className="chancellor-message__head">
+							<img
+								className="chancellor-message__img"
+								src={getImageUrl("vc dr s mohan.jpg")}
+								alt=""
+							/>
+							<p className="chancellor-message__name">
+								<b>Dr.S Mohan</b>
+							</p>
+							<p className="chancellor-message__qualification">
+								B.E., M.E., Ph.D., FNAE., FIE., FIPHE., FIWWA., FIASE.
+							</p>
+							<p className="chancellor-message__chancellor-title">
+								Vice-Chancellor
+							</p>
+							<p>
+								<a
+									href={`${FILE_BASE_URL}VC_Full_Profile.pdf`}
+									className="chancellor-card__parts-message-btn"
+								>
+									View Profile
+								</a>
+							</p>
+						</div>
 					</div>
-					<div className="chancellor-message__body">
+					<div className="chancellor-message__body  ml-3">
 						<p>
 							Warm and Affectionate Greetings to all the Students, Faculty
 							members, Research Scholars, Supporting staff, and all stakeholders
