@@ -108,7 +108,7 @@ const menus = [
 					{ text: "HSS", href: "/hss", subMenus: null },
 					{ text: "MBA", href: "/mba", subMenus: null },
 					{ text: "Chemistry", href: "/chem", subMenus: null },
-					// { text: "", href: "/social-science-and-humanities", subMenus: null },
+					{ text: "MBA", href: "/master-business-administration", subMenus: null },
 				],
 			},
 			{
