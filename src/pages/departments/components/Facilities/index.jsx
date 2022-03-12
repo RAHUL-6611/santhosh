@@ -37,7 +37,7 @@ export default Facilities;
 let FacilityIndividual = ({ value }) => {
 	return (
 		<>
-		 <img src={""} className="p-10 Facility-img" alt="" />
+		 <img src={value.img} className="p-10 Facility-img" alt="" />
 		 {console.log(typeof value.img)}
 		 <div className="details flex flex-col md:md:w-1/2 mx-5 ">
 		 	<div className="title_of_fac border-red-900 border-b-4 font-bold text-3xl text-slate-500 text-left">
