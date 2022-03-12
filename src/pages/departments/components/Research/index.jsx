@@ -10,21 +10,38 @@ export default function Research({ value }) {
 				return (
 					<div className="">
 						<div class="boxx flex">
-							<div className="flex">
-								<div className="px-10 py-5 research-boxxx">
-									<h2>{index + 1}</h2>
-									<h3>{e.name}</h3>
-									<br />
-									<p className="R-para p-10">{e.longContent}</p>
-								</div>
-								<div>
-									<img className="imgg" src={e.img} alt="" />
-								</div>
-							</div>
+							<>
+							  {
+								  (index %2 === 0) ?
+								         <div className="flex flex-row-reverse">
+								            <ResearchInner value={e} index={index} />
+							             </div>
+										 :
+										 <div className="flex">
+							            	<ResearchInner value={e} index={index} />
+							             </div>
+							  }
+							</>
 						</div>
 					</div>
 				);
 			})}
 		</div>
 	);
+}
+
+let ResearchInner = ({ value, index }) => {
+	return(
+		<>
+		<div className="px-10 py-5 research-boxxx ">
+			<h2>{index + 1}</h2>
+			<h3>{value.name}</h3>
+			<br />
+			<p className="R-para p-1">{value.longContent}</p>
+		</div>
+		<div style={{"width" : "200px"}}>
+			<img className="imgg" src={value.img} alt="" />
+		</div>
+		</>
+	)
 }

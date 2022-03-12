@@ -119,6 +119,7 @@ const menus = [
 					{ text: "M.Tech", href: "#", subMenus: null },
 					{ text: "MCA", href: "#", subMenus: null },
 					{ text: "MSc", href: "#", subMenus: null },
+					{ text: "MBA", href: "#", subMenus: null },
 				],
 			},
 			{
