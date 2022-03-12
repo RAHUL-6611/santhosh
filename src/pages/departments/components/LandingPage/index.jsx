@@ -1,5 +1,5 @@
 import React from "react";
-import Testimonial from "../testimonial";
+// import Testimonial from "../testimonial";
 import About from "../About";
 import Notice from "../Notice";
 import Vision from "../Vision";

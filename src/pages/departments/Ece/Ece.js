@@ -328,8 +328,77 @@ export const ECE = {
 			],
 		},
 	},
-	Research: [],
-	curriculum: [],
+	Research: [
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+	],
+	curriculum: [
+		{
+			name: "B.Tech",
+			desc: "A Bachelor of Technology is an undergraduate academic degree conferred after the completion of a three-year, a four-year or a five-year program of studies at an accredited university or accredited university-level institution.",
+			regulations: {},
+			syllabusPdfLink: [
+				{
+					name: "Regulations",
+					link:"",
+				},
+				{
+					name: "Curriculum ",
+					link:"",
+				}
+			],
+		},
+		{
+			name: "B.Tech",
+			desc: "A degree conferred after the completion of a three-year, a four-year or a five-year program of studies at an accredited university or accredited university-level institution.",
+			regulations: {},
+			syllabusPdfLink: [
+				{
+					name: "Regulations",
+					link:"",
+				},
+				{
+					name: "Curriculum ",
+					link:"",
+				}
+			],
+		},
+		
+	],
 	facilities: [
 		{
 			name: "COMMUNICATION LAB-III",

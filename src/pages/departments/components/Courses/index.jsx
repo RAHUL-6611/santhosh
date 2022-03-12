@@ -8,13 +8,23 @@ export default function Courses({ value }) {
 			<div className="ccParent">
 				{value.curriculum.map((c) => {
 					return (
-						<div className="ccCard">
-							<h2 className="cctitle">{c.name}</h2>
+						<div className="ccCard shadow-xl">
+							<h2 className="cctitle text-2xl font-bold text-red-800">{c.name}</h2>
 							<p>{c.desc}</p>
-							<div className="text-center pt-5" style={{ marginTop: "auto" }}>
-								<a href={`${c.syllabusPdfLink}`} className="cc-see-more">
-									Download Syllabus
-								</a>
+							<div className="text-center pt-5 block" style={{ marginTop: "auto" }}>
+								{
+									c.syllabusPdfLink.map((e)=>{
+										return(
+											<>
+											<div  className="download text-center my-3">
+											   <a href={`${e.link}`} className="bg-red-700 text-white py-1 px-2">
+									             Download {e.name} 
+								               </a>
+											</div>
+											</>
+										)
+									})
+								}
 							</div>
 						</div>
 					);

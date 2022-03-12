@@ -19,28 +19,25 @@
 	flex-direction: column;
 	width: 400px;
 	max-width: 86%;
-	/* min-height: 500px; */
-	padding: 1rem;
+	padding: 4rem 2rem;
 	position: relative;
-	border-radius: 4px;
-	box-shadow: -6px 2px 26px #8f202000, inset 0px 0px 5px 8px #fdfdfd,
-		inset 8px -9px 6px -5px #e0d3d31f, inset -7px 10px 6px -5px #13131336,
-		5px -5px 26px #5e5e5e1f;
+	border-radius: 6px;
+	border: 1px solid rgba(169, 169, 169, 0.788);
 	background: var(--bodyB);
 	margin: 10vh auto;
 	overflow: hidden;
 }
 .ccCard p {
 	text-align: left;
-	margin: 20px;
+	margin: 10px;
 }
 div.ccCard > .cctitle {
 	text-align: center;
-	margin: 20px auto 10px auto;
+	margin: 10px auto 10px auto;
 }
 .ccyear {
 	text-align: center;
-	margin: 20px auto 30px auto;
+	margin: 0px auto 30px auto;
 }
 div.ccCard > form {
 	display: block;
@@ -75,17 +72,12 @@ div.ccCard > form > input:focus {
 
 .cc-see-more {
 	cursor: pointer;
-	padding: 5px 14px;
-	width: 50%;
-	font-size: large;
-	left: 50%;
-	text-align: center;
-	border-radius: 3px;
-	color: white;
-	background: var(--themeC);
-	box-shadow: -7px -7px 20px 0px #fff9, 0px 0px 16px 0px #808080,
-		7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
-	margin-bottom: 20px;
+    padding: 5px 13px;
+    width: 50%;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    background: var(--themeC)
 }
 div.formC > form > button:hover {
 	opacity: 90%;
@@ -100,10 +92,27 @@ div.ccbottom > a {
 	color: var(--font-color);
 	text-decoration: underline;
 }
+
+.download{
+	display: flex;
+    justify-content: center;
+}
+
+.download a{
+	background-color: #f0f8ff3b;
+    border: 2px solid;
+    color: #a90909;
+}
+
+.download a:hover{
+	background-color: #910101;
+	color: white;
+}
+
 @media only screen and (min-width: 768px) {
-	div.ccCard {
+	/* div.ccCard {
 		padding: 4rem 2rem;
-	}
+	} */
 	div.ccCard > form > button {
 		margin: 2rem 0;
 	}

@@ -4,6 +4,13 @@ import Image from "../../../../src/components/assets/IT_HOD.png";
 
 import Dimg from "../../../../src/components/assets/IT.jpg";
 
+import img1 from "./facility/DSC_0003.jpg"
+import img2 from "./facility/DSC_0971.jpg"
+import img3 from "./facility/DSC_0975.jpg"
+import img4 from "./facility/DSC_0987.jpg"
+import img5 from "./facility/DSC_0992.jpg"
+
+
 export const IT = {
 	basePath: "/it",
 	About: {
@@ -331,7 +338,103 @@ export const IT = {
 			],
 		},
 	},
-	Research: [],
-	curriculum: [],
-	facilities: [],
+	Research: [
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+		{
+			name: "",
+			img: "",
+			shortContent: "",
+			longContent: "",
+		},
+	],
+	curriculum: [
+		{
+			name: "B.Tech",
+			desc: "A Bachelor of Technology is an undergraduate academic degree conferred after the completion of a three-year, a four-year or a five-year program of studies at an accredited university or accredited university-level institution.",
+			regulations: {},
+			syllabusPdfLink: [
+				{
+					name: "Regulations",
+					link:"",
+				},
+				{
+					name: "Curriculum ",
+					link:"",
+				}
+			],
+		},
+		{
+			name: "B.Tech",
+			desc: "A degree conferred after the completion of a three-year, a four-year or a five-year program of studies at an accredited university or accredited university-level institution.",
+			regulations: {},
+			syllabusPdfLink: [
+				{
+					name: "Regulations",
+					link:"",
+				},
+				{
+					name: "Curriculum ",
+					link:"",
+				}
+			],
+		},
+		
+	],
+	facilities: [
+		 {
+			name: "CASIT Laboratory ",
+			img: img5,
+			content: "Equipped with 35 Desktop computers with the configuration of Core 2 Duo, Core i3 and Core i5 processors",
+		},
+		 {
+			name: "Software Lab I ",
+			img: img4,
+			content: "Equipped with 35 Desktop computers with the configuration of Core i3 and Core i5 processors",
+		},
+		{
+			name: "Software Lab II ",
+			img: img1,
+			content: "Equipped with 35 systems with Core i5 processors ",
+		},
+		{
+			name: "IoT Lab ",
+			img: img2,
+			content: "Equipped with 20 numbers of Intel Core i5 systems,  Rasperry Pi and Arduino Uno Boards",
+		},
+		{
+			name: "Hardware Lab ",
+			img: img1,
+			content: "Equipped with Digital Trainer kits, FPGA kits, 8085 and 8086 Microprocessor and 8051 Microcontroller kits",
+		},
+		
+	],
 };

@@ -1,6 +1,5 @@
 import React from "react";
 
-import s from "../../Cse/facility/DC1.jpg"
 
 const Facilities = ({ value }) => {
 	let facility = value.facilities;

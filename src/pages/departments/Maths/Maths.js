@@ -1,5 +1,3 @@
-import { getImageUrl } from "../../../config";
-
 import Image from "../../../../src/components/assets/MATHS_HOD.jpeg";
 
 export const Maths = {
@@ -60,6 +58,38 @@ export const Maths = {
 	},
 
 	Research: [],
-	curriculum: [],
+	curriculum: [
+		{
+			name: "B.Tech",
+			desc: "A Bachelor of Technology is an undergraduate academic degree conferred after the completion of a three-year, a four-year or a five-year program of studies at an accredited university or accredited university-level institution.",
+			regulations: {},
+			syllabusPdfLink: [
+				{
+					name: "Regulations",
+					link:"",
+				},
+				{
+					name: "Curriculum ",
+					link:"",
+				}
+			],
+		},
+		{
+			name: "B.Tech",
+			desc: "A degree conferred after the completion of a three-year, a four-year or a five-year program of studies at an accredited university or accredited university-level institution.",
+			regulations: {},
+			syllabusPdfLink: [
+				{
+					name: "Regulations",
+					link:"",
+				},
+				{
+					name: "Curriculum ",
+					link:"",
+				}
+			],
+		},
+		
+	],
 	facilities: [],
 };

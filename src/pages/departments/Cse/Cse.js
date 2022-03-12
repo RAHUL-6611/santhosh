@@ -7,7 +7,7 @@ import dc from "./facility/DC1.jpg"
 import esl from "./facility/ESL1.jpg"
 import hdd from "./facility/HDD3.jpg"
 import isl from "./facility/ISL3.jpg"
-import mll from "./facility/MLL1.jpg"
+// import mll from "./facility/MLL1.jpg"
 import mp from "./facility/MP1.jpg"
 import psl from "./facility/PSL2.jpg"
 import rl from "./facility/RL1.jpg"
@@ -15,12 +15,6 @@ import sh from "./facility/SH1.jpg"
 import wL from "./facility/WL2.jpg"
 import wt from "./facility/WT1.jpg"
 
-
-function importAll(r) {
-	return r.keys().map(r);
-  }
-
-const images = importAll(require.context('./facility', false, /\.(png|jpe?g|svg)$/));
 
 export const CSE = {
 	basePath: "/cse",
@@ -442,25 +436,61 @@ the work culture of the Department.`,
 			name: "B.Tech",
 			desc: "A Bachelor of Technology is an undergraduate academic degree conferred after the completion of a three-year, a four-year or a five-year program of studies at an accredited university or accredited university-level institution.",
 			regulations: {},
-			syllabusPdfLink: "#",
+			syllabusPdfLink: [
+				{
+					name: "Regulations",
+					link:"",
+				},
+				{
+					name: "Curriculum ",
+					link:"",
+				}
+			],
 		},
 		{
 			name: "M.Tech",
 			desc: "MTech Computer Science is a two-year duration postgraduate level programme pursued in different specializations. Computer Science is a knowledge and practical skills based programme that imparts students with job ready computer science knowledge.",
 			regulations: {},
-			syllabusPdfLink: "#",
+			syllabusPdfLink: [
+				{
+					name: "Regulations",
+					link:"",
+				},
+				{
+					name: "Curriculum ",
+					link:"",
+				}
+			],
 		},
 		{
 			name: "MCA",
 			desc: "MCA full form Master of Computer Application is a postgraduate course that trains the students about the various aspects of computer programs, application software, computer architecture, operating systems and many more. The duration of the course is for a period of 2 years See Also: Full Form of Computer Application Courses.",
 			regulations: {},
-			syllabusPdfLink: "#",
+			syllabusPdfLink: [
+				{
+					name: "Regulations",
+					link:"",
+				},
+				{
+					name: "Curriculum ",
+					link:"",
+				}
+			],
 		},
 		{
 			name: "Ph.D",
 			desc: "The PhD in CSE The doctoral degree, i.e. the Ph.D., is primarily intended for students desiring a career in research and/or collegiate teaching. The focus is on advanced EECS topics, on learning to perform research and to write research papers, and on making fundamental new contributions to an EECS topic.",
 			regulations: {},
-			syllabusPdfLink: "#",
+			syllabusPdfLink: [
+				{
+					name: "Regulations",
+					link:"",
+				},
+				{
+					name: "Curriculum ",
+					link:"",
+				}
+			],
 		},
 	],
 	facilities: [
