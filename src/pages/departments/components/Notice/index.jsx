@@ -60,7 +60,7 @@ export default function Notices({ value }) {
 						<Link to={`#`}>
 							<li className="not-li my-5">Departmental Committies</li>
 						</Link>
-						<Link to={`#`}>
+						<Link to={`/alumini`}>
 							<li className="not-li my-5">Notable Alumni</li>
 						</Link>
 						<Link to={`#`}>
@@ -85,21 +85,12 @@ export default function Notices({ value }) {
 	);
 }
 
-export function BulletinBoard({ visiblity = "all", dept = "cse" }) {
-	const allResponse = useFetch(
-		"News_Event.php?visiblity=" + visiblity + "&content=notices"
-	);
-
-	const deptResponse = useFetch(
+export function BulletinBoard({ dept = "cse" }) {
+	const response = useFetch(
 		"News_Event.php?visiblity=" + dept + "&content=notices"
 	);
 
-	let { error: allError, data: allData } = allResponse;
-	let { error: deptError, data: deptData } = deptResponse;
-
-	const error = allError || deptError;
-
-	// console.log(response);
+	const { data, error } = response;
 
 	if (error) {
 		return (
@@ -115,31 +106,22 @@ export function BulletinBoard({ visiblity = "all", dept = "cse" }) {
 		);
 	}
 
-	let array = [];
-
-	if (allData) {
-		array = [...allData];
-	}
-	if (deptData) {
-		array = [...array, ...deptData];
-	}
-
-	if (array.length === 0) {
+	if (!data || data.length === 0) {
 		return (
 			<div className="news-ptu-part">
 				<div className="news-ptu-part__head">
 					<h2>Bulletin board</h2>
 				</div>
 
-				<div className="updates-container">
-					<h2>No Bulletin board</h2>
+				<div className="updates-container flex justify-center items-center">
+					<h2>{!data ? "Loading" : "No Notices and Updates"}</h2>
 				</div>
 			</div>
 		);
 	}
 
 	return (
-		<AutoScrollContainer title="Notices and Updates" data={array}>
+		<AutoScrollContainer title="Notices and Updates" data={data}>
 			{(e, i) => {
 				return (
 					<Updated

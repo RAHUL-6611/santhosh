@@ -4,7 +4,7 @@ import { IoMdPlay, IoMdPause } from "react-icons/io";
 import "./NewsFlash.css";
 import useFetch from "../../hooks/useFetch";
 
-function NewsFlash({ visiblity = "all" }) {
+function NewsFlash({ visiblity = "main" }) {
 	const marqueeRef = useRef();
 	const [marqueeStatus, setMarqueeStatus] = useState("play");
 	const { data, error } = useFetch(
@@ -21,7 +21,13 @@ function NewsFlash({ visiblity = "all" }) {
 		}
 	};
 
-	if (data?.length === 0) return null;
+	if (error) {
+		console.error(error);
+		return null;
+	}
+	if (!data || data.length === 0) {
+		return null;
+	}
 
 	return (
 		<div className="news-flash">
@@ -32,24 +38,16 @@ function NewsFlash({ visiblity = "all" }) {
 				</button>
 			</p>
 			<marquee ref={marqueeRef}>
-				{error ? (
-					<h2>Something went wrong in server</h2>
-				) : !data ? (
-					<div>
-						<div />
-					</div>
-				) : (
-					<ul className="news-flash__list">
-						{data.map((news) => {
-							return (
-								<li key={news.news_id} className="news-flash__item">
-									<b>{news.given_by} : </b>
-									{news.news_content}
-								</li>
-							);
-						})}
-					</ul>
-				)}
+				<ul className="news-flash__list">
+					{data.map((news) => {
+						return (
+							<li key={news.news_id} className="news-flash__item">
+								<b>{news.given_by} : </b>
+								{news.news_content}
+							</li>
+						);
+					})}
+				</ul>
 			</marquee>
 		</div>
 	);

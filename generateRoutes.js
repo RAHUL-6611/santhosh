@@ -50,6 +50,8 @@ const dirs = [
 	return { type: "dir", name, subDirs };
 });
 
+dirs.push({ type: "dir", name: "vc-message", subDirs: [indexFile] });
+
 indexFile.content = fs.readFileSync(
 	path.join(__dirname, "build", "index.html")
 );

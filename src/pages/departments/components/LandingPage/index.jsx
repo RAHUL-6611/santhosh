@@ -10,7 +10,7 @@ const DeptLandingPage = ({ value }) => {
 	return (
 		<div>
 			<HodCard value={value} />
-			<NewsFlash />
+			<NewsFlash visiblity={value.About.ShortName.toLowerCase()} />
 			<About value={value} />
 			<Vision value={value} />
 			<Notice value={value} />

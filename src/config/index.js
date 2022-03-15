@@ -1,8 +1,6 @@
 export const BASE_URL =
 	process.env.REACT_APP_BASE_URL ?? "https://beta.ptuniv.edu.in/";
 
-console.log(BASE_URL);
-
 export const CMS_BASE_URL = BASE_URL + "cms/";
 
 export const FILE_BASE_URL = CMS_BASE_URL + "file_contents/";

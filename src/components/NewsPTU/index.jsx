@@ -1,30 +1,32 @@
 import React, { useEffect, useRef, useState } from "react";
 import { IoMdPause, IoMdPlay } from "react-icons/io";
-import { API_BASE_URL } from "../../config";
+import { FILE_BASE_URL } from "../../config";
 import "./NewsPTU.css";
 import Placeholder from "../Placeholder";
 import useFetch from "../../hooks/useFetch";
 import { getMonthShortForm } from "../../utils/common";
 
-// let eventObj = [
-// 	{
-// 		news_id: "26",
-// 		title: "Event Heading",
-// 		given_by: null,
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-14",
-// 	},
-// 	{
-// 		news_id: "27",
-// 		title: "Event Heading",
-// 		given_by: null,
-// 		news_content: "Small news msg instead of long one",
-// 		start_date: "2022-02-05",
-// 		end_date: "2022-02-14",
-// 	},
-// ];
+// eslint-disable-next-line no-unused-vars
+let eventObj = [
+	{
+		news_id: "26",
+		title: "Event Heading",
+		given_by: null,
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-14",
+	},
+	{
+		news_id: "27",
+		title: "Event Heading",
+		given_by: null,
+		news_content: "Small news msg instead of long one",
+		start_date: "2022-02-05",
+		end_date: "2022-02-14",
+	},
+];
 
+// eslint-disable-next-line no-unused-vars
 let newsObj = [
 	{
 		title: "News Heading",
@@ -256,14 +258,6 @@ export function AutoScrollContainer(props) {
 		setAnimationStatus(animationStatus === "play" ? "pause" : "play");
 	};
 
-	const handleOnMouseEnter = () => {
-		// setAnimationStatus("pause");
-	};
-
-	const handleOnMouseLeave = () => {
-		// setAnimationStatus("play");
-	};
-
 	return (
 		<div className="news-ptu-part">
 			<div className="news-ptu-part__head">
@@ -280,8 +274,6 @@ export function AutoScrollContainer(props) {
 
 			<div
 				ref={updatesContainerRef}
-				onMouseEnter={handleOnMouseEnter}
-				onMouseLeave={handleOnMouseLeave}
 				className={`updates-container hide-scrollbar`}
 			>
 				<div ref={updateRef} className={`${scrollHeight > 0 ? "updates" : ""}`}>
@@ -293,29 +285,11 @@ export function AutoScrollContainer(props) {
 }
 
 export function NoticesAndUpdates() {
-	const allResponse = useFetch("News_Event.php?visiblity=all&content=notices");
+	const response = useFetch("News_Event.php?visiblity=main&content=notices");
 
-	const mainResponse = useFetch(
-		"News_Event.php?visiblity=main&content=notices"
-	);
+	const { data, error } = response;
 
-	let { error: allError, data: allData } = allResponse;
-	let { error: mainError, data: mainData } = mainResponse;
-
-	const error = allError || mainError;
-	const isLoding = !allData && !mainData;
-
-	let data = [];
-	if (!isLoding) {
-		if (allData) {
-			data = data.concat(allData);
-		}
-		if (mainData) {
-			data = data.concat(mainData);
-		}
-	}
-
-	if (error || isLoding || data.length === 0) {
+	if (error || !data || data.length === 0) {
 		return (
 			<div className="news-ptu-part">
 				<div className="news-ptu-part__head">
@@ -324,9 +298,10 @@ export function NoticesAndUpdates() {
 
 				{error ? (
 					<div className="updates-container hide-scrollbar updates-error-container">
-						<h2>Something went wrong</h2>
+						{console.error(error)}
+						<p />
 					</div>
-				) : isLoding ? (
+				) : !data ? (
 					<div className="updates-container hide-scrollbar">
 						<div className="updates-placeholder-container">
 							<Placeholder className="updates-topic-placeholder" />
@@ -344,7 +319,7 @@ export function NoticesAndUpdates() {
 					</div>
 				) : data.length === 0 ? (
 					<div className="updates-container hide-scrollbar updates-empty-container">
-						<h2>No Notices and Updates</h2>
+						<p />
 					</div>
 				) : null}
 			</div>
@@ -369,27 +344,11 @@ export function NoticesAndUpdates() {
 }
 
 export function Events() {
-	const allResponse = useFetch("News_Event.php?visiblity=all&content=events");
+	const response = useFetch("News_Event.php?visiblity=main&content=events");
 
-	const mainResponse = useFetch("News_Event.php?visiblity=main&content=events");
+	const { data, error } = response;
 
-	let { error: allError, data: allData } = allResponse;
-	let { error: mainError, data: mainData } = mainResponse;
-
-	const error = allError || mainError;
-	const isLoding = !allData && !mainData;
-
-	let data = [];
-	if (!isLoding) {
-		if (allData) {
-			data = data.concat(allData);
-		}
-		if (mainData) {
-			data = data.concat(mainData);
-		}
-	}
-
-	if (error || isLoding || data.length === 0) {
+	if (error || !data || data.length === 0) {
 		return (
 			<div className="news-ptu-part">
 				<div className="news-ptu-part__head">
@@ -398,9 +357,10 @@ export function Events() {
 
 				{error ? (
 					<div className="updates-container hide-scrollbar updates-error-container">
-						<h2>Something went wrong</h2>
+						{console.error(error)}
+						<p />
 					</div>
-				) : isLoding ? (
+				) : !data ? (
 					<div className="updates-container hide-scrollbar">
 						<div className="event__container event__container--placeholder">
 							<Placeholder className="event__box-card event__box-card-placeholder" />
@@ -435,7 +395,7 @@ export function Events() {
 					</div>
 				) : data.length === 0 ? (
 					<div className="updates-container hide-scrollbar updates-empty-container">
-						<h2>No Events</h2>
+						<p />
 					</div>
 				) : null}
 			</div>
@@ -488,7 +448,7 @@ export const Updated = ({ topic, byWhom, message, file_name }) => {
 						{file_name && (
 							<a
 								className="update__view-more-btn"
-								href={API_BASE_URL + file_name}
+								href={FILE_BASE_URL + "news_attachments/notices/" + file_name}
 								target="_blank"
 								rel="noreferrer"
 							>
