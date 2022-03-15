@@ -15,30 +15,34 @@ function ChancellorMessage() {
 			<div className="chancellor-message">
 				<h1 className="chancellor-message__title">VC's Message</h1>
 				<div className="chancellor-message__content">
-					<div style={{ backgroundColor: "brown" }}>
-						<div className="chancellor-message__head">
+					<div className="md:pr-5">
+						<div className="chancellor-message__head py-5 shadow-2xl">
 							<img
 								className="chancellor-message__img"
 								src={getImageUrl("vc dr s mohan.jpg")}
 								alt=""
 							/>
-							<p className="chancellor-message__name">
-								<b>Dr.S Mohan</b>
-							</p>
-							<p className="chancellor-message__qualification">
-								B.E., M.E., Ph.D., FNAE., FIE., FIPHE., FIWWA., FIASE.
-							</p>
-							<p className="chancellor-message__chancellor-title">
-								Vice-Chancellor
-							</p>
-							<p>
-								<a
-									href={`${FILE_BASE_URL}VC_Full_Profile.pdf`}
-									className="chancellor-card__parts-message-btn"
-								>
-									View Profile
-								</a>
-							</p>
+							<div>
+							    <p className="chancellor-message__name mt-9">
+							    	<b>Dr.S Mohan</b>
+							    </p>
+							    <div>
+								<p className="chancellor-message__qualification">
+							    	B.E., M.E., Ph.D., FNAE., FIE., FIPHE., FIWWA., FIASE.
+							    </p>
+							    <p className="chancellor-message__chancellor-title">
+							    	Vice-Chancellor
+							    </p>
+							    <p>
+							    	<a
+							    		href={`${FILE_BASE_URL}VC_Full_Profile.pdf`}
+							    		className="chancellor-card__parts-message-btn"
+							    	>
+							    		View Profile
+							    	</a>
+							    </p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div className="chancellor-message__body  ml-3">
