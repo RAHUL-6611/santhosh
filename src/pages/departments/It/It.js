@@ -26,13 +26,17 @@ export const IT = {
 				count: 185,
 			},
 			{
-				name: "M.Tech IOT Students",
+				name: "M.Tech IoT Students",
 				count: 12,
+			},
+			{
+				name: "P.Hd Scholars",
+				count: 8,
 			},
 		],
 
 		about:
-			"The Department of Information Technology has well experienced faculty, skilled technical staff and well equipped laboratories. It offers one undergraduate program B.Tech. (Information Technology). It aims at providing high quality training to students through the latest in Information Technology. In order to maintain the standard of education, it constantly upgrades the academic syllabi so as to keep the students well to deal with changing trends in the field of Information Technology. It also emphasizes on Information Security, Image Processing, Software Engineering, Optical and Mobile Networks, Soft Computing, Complex Event Processing, Data Mining, Web Technology and several other recent topics. The Department of Information Technology is accredited by NBA (National Board of Accreditation). So far, eight batches of students have successfully completed the degree course with flying colours.",
+			"The Department of Information Technology offers Under Graduate programme B.Tech Information Technology, Post Graduate programme M.Tech Internet of Thing (IoT) and Doctoral programme Ph.D. The department is committed to the preparation of graduates to address the great challenges in the field of Information Technology and to contribute for research and innovation that ensure the sustained growth in Computing. The department provides state-of-the-art computing facilities to the students enabling them to stay a step ahead. The courses are designed to combine rigorous academic study and exhaustive practical exposure for students with in-depth lab oriented courses, projects, and internships. The department hosts a number of workshops and student managed symposiums. Neura is the official symposium of the department which attracts the participants all over India. The department has well experienced faculty, skilled technical staff and well equipped laboratories. The department also encourages innovative projects and quality research in various interrelated domains. The department is involved in major research on which faculty members and students work on several areas such as Software Engineering, Image processing, Natural Language processing, Real time systems, Distributed computing, Mobile Networks, Data Mining, Big Data, Machine Learning and Internet of Things.",
 
 		vision: [
 			{
@@ -393,7 +397,7 @@ export const IT = {
 			],
 		},
 		{
-			name: "B.Tech",
+			name: "M.Tech IOT",
 			desc: "A degree conferred after the completion of a three-year, a four-year or a five-year program of studies at an accredited university or accredited university-level institution.",
 			regulations: {},
 			syllabusPdfLink: [

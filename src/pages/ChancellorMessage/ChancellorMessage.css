@@ -11,7 +11,8 @@
 	background-color: brown;
 	padding: 1em;
 	color: white;
-	position: sticky;
+	/* position: sticky; */
+    height: fit-content;
 	top: 0;
 }
 .chancellor-message__head .chancellor-card__parts-message-btn {
