@@ -28,7 +28,7 @@ export function CustomCountUp(props) {
 export default function StudentCount() {
 	return (
 		<div className="student-count__container">
-			<h1 className="title">PTU by Numbers</h1>
+			<h1 className="title uppercase">PTU by Numbers</h1>
 			<div className="student-count__box">
 				{[
 					{ title: "UG Students", count: 2489, suffix: "" },
@@ -40,7 +40,7 @@ export default function StudentCount() {
 					{ title: "Ongoing Projects", count: 22, suffix: "+" },
 				].map((e) => {
 					return (
-						<Fragment key={e}>
+						<Fragment key={e.title}>
 							<div className="student-count__items" id="">
 								<div className="student-count__para">
 									<span className="student-count__count">

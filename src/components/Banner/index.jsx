@@ -1,11 +1,15 @@
-import React from "react";
-import { getImageUrl } from "../../config";
+import React, { useState, useEffect } from "react";
+import { FILE_BASE_URL, getImageUrl } from "../../config";
+
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+
+import useFetch from "../../hooks/useFetch";
+
 import "./Banner.css";
-import SimpleImageSlider from "react-simple-image-slider";
 
-import useDimention from "../../hooks/useDimension";
-
-const images = [
+// eslint-disable-next-line no-unused-vars
+const localImages = [
 	{ url: getImageUrl("PEC_admin_block.gif") },
 	{ url: getImageUrl("ptuInauguration_screen1.jpg") },
 	{ url: getImageUrl("ptuInauguration_screen4.jpg") },
@@ -14,36 +18,63 @@ const images = [
 	{ url: getImageUrl("ptuInauguration_vicePresSpeech.jpg") },
 ];
 
+const firstImageSlide = [
+	<div
+		className="banner__first-slide"
+		style={{ backgroundImage: `url(${getImageUrl("opt-landing-page2.jpg")})` }}
+	>
+		<div>
+			<div className="banner__text-box">
+				<h6>Welcome to</h6>
+				<h1>
+					PUDUCHERRY
+					<br />
+					TECHNOLOGICAL
+					<br />
+					UNIVERSITY
+				</h1>
+			</div>
+		</div>
+	</div>,
+];
+
 function Banner() {
-	const {
-		dimension: { width },
-	} = useDimention();
+	const { data } = useFetch("Images.php?category=home_page_slider");
 
-	let sliderHeight = 550;
+	let [slides, setSlides] = useState(firstImageSlide);
 
-	if (width < 430) {
-		sliderHeight = 300;
-	} else if (width < 600) {
-		sliderHeight = 400;
-	} else if (width < 900) {
-		sliderHeight = 500;
-	}
+	useEffect(() => {
+		if (data) {
+			const newSlides = firstImageSlide.concat(
+				data.map((d) => (
+					<div className="image-gallery__img-container">
+						<img
+							src={`${FILE_BASE_URL}img_gallery/${d.img_name}`}
+							className="image-gallery__img"
+							alt=""
+						/>
+					</div>
+				))
+			);
+			setSlides(newSlides);
+		}
+	}, [data]);
+
+	console.log(slides);
 
 	return (
-		<div>
-			<div className="image_gallery">
-				<SimpleImageSlider
-					className="my-slider"
-					width={width}
-					height={sliderHeight}
-					images={images}
-					showBullets={true}
-					showNavs={true}
-					autoPlay={true}
-					navStyle={2}
-					bgColor="#ebebeb"
+		<div className="image-gallery">
+			{slides.length === 1 ? (
+				slides[0]
+			) : (
+				<AliceCarousel
+					autoPlay
+					autoPlayInterval={500}
+					infinite
+					animationDuration={2000}
+					items={slides}
 				/>
-			</div>
+			)}
 		</div>
 	);
 }
