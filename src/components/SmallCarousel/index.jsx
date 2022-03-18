@@ -38,6 +38,7 @@ export default function SmallCarousel() {
 						desig="Hon'ble Lt. Governor of Puducherry"
 						name="Dr. Tamilisai Soundararajan"
 						title="Chancellor"
+						path="chancellor-message"
 					/>
 					<ChancellorCard
 						img={getImageUrl("pro chancellor.jpg")}

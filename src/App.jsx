@@ -5,6 +5,7 @@ import HomeScreen from "./pages/Home";
 import "./App.css";
 
 import { IT } from "./pages/departments/It/It";
+import { MBA } from "./pages/departments/MBA";
 import { CSE } from "./pages/departments/Cse/Cse";
 import { EEE } from "./pages/departments/EEE/Eee";
 import { EIE } from "./pages/departments/EIE/Eie";
@@ -16,9 +17,9 @@ import { Chemistry } from "./pages/departments/Chemistry/Chemistry";
 import { Physics } from "./pages/departments/Physics/Physics";
 import { Maths } from "./pages/departments/Maths/Maths";
 import { HSS } from "./pages/departments/HSS/Hss";
-
 import Department from "./pages/departments/Department";
-import ChancellorMessage from "./pages/ChancellorMessage";
+import ChancellorMessage from "./pages/Chancellor";
+import ViceChancellorMessage from "./pages/ViceChancellorMessage";
 
 const departmentProps = [
 	IT,
@@ -33,6 +34,7 @@ const departmentProps = [
 	Physics,
 	Maths,
 	HSS,
+	MBA,
 ];
 
 function App() {
@@ -49,7 +51,8 @@ function App() {
 						/>
 					);
 				})}
-				<Route path="/vc-message" element={<ChancellorMessage />} />
+				<Route path="/vc-message" element={<ViceChancellorMessage />} />
+				<Route path="/chancellor-message" element={<ChancellorMessage />} />
 				<Route path="/*" element={<HomeScreen />} />
 			</Routes>
 		</BrowserRouter>

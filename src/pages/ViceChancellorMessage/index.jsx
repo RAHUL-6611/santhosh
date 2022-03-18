@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Header from "../../components/Header";
 import { getImageUrl } from "../../config";
 
-import "./ChancellorMessage.css";
+import "./ViceChancellorMessage.css";
 
 function ChancellorMessage() {
 	useEffect(() => {
@@ -24,8 +24,8 @@ function ChancellorMessage() {
 						<p className="chancellor-message__name">
 							<b>Dr.S Mohan</b>
 						</p>
-						<p>B.E., M.E., Ph.D., FNAE., FIE., FIPHE., FIWWA., FIASE.</p>
-						<p>Vice-Chancellor</p>
+						<p>Hon'ble Lt. Governor of Puducherry</p>
+						<p>Chancellor</p>
 					</div>
 					<div className="chancellor-message__body">
 						<p>

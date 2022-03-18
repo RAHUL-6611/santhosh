@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 function useDimension() {
-	const [dimension, setDimension] = useState({
-		width: document.documentElement.clientWidth,
-		height: document.documentElement.clientHeight,
-	});
+		const [dimension, setDimension] = useState({
+			width: document.documentElement.clientWidth,
+			height: document.documentElement.clientHeight,
+		});
 
 	useEffect(() => {
 		function setNewDimension() {
