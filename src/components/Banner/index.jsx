@@ -69,9 +69,9 @@ function Banner() {
 			) : (
 				<AliceCarousel
 					autoPlay
-					autoPlayInterval={500}
+					autoPlayInterval={2500}
 					infinite
-					animationDuration={2000}
+					animationDuration={3000}
 					items={slides}
 				/>
 			)}

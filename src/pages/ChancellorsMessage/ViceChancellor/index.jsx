@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import Header from "../../components/Header";
-import { getImageUrl, FILE_BASE_URL } from "../../config";
+import Header from "../../../components/Header";
+import { getImageUrl, FILE_BASE_URL } from "../../../config";
 
-import "./ChancellorMessage.css";
+import "../ChancellorMessage.css";
 
 function ChancellorMessage() {
 	useEffect(() => {
@@ -23,24 +23,24 @@ function ChancellorMessage() {
 								alt=""
 							/>
 							<div>
-							    <p className="chancellor-message__name mt-9">
-							    	<b>Dr.S Mohan</b>
-							    </p>
-							    <div>
-								<p className="chancellor-message__qualification">
-							    	B.E., M.E., Ph.D., FNAE., FIE., FIPHE., FIWWA., FIASE.
-							    </p>
-							    <p className="chancellor-message__chancellor-title">
-							    	Vice-Chancellor
-							    </p>
-							    <p>
-							    	<a
-							    		href={`${FILE_BASE_URL}VC_Full_Profile.pdf`}
-							    		className="chancellor-card__parts-message-btn"
-							    	>
-							    		View Profile
-							    	</a>
-							    </p>
+								<p className="chancellor-message__name mt-9">
+									<b>Dr.S Mohan</b>
+								</p>
+								<div>
+									<p className="chancellor-message__qualification">
+										B.E., M.E., Ph.D., FNAE., FIE., FIPHE., FIWWA., FIASE.
+									</p>
+									<p className="chancellor-message__chancellor-title">
+										Vice-Chancellor
+									</p>
+									<p>
+										<a
+											href={`${FILE_BASE_URL}VC_Full_Profile.pdf`}
+											className="chancellor-card__parts-message-btn"
+										>
+											View Profile
+										</a>
+									</p>
 								</div>
 							</div>
 						</div>

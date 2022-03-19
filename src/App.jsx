@@ -19,7 +19,8 @@ import { HSS } from "./pages/departments/HSS/Hss";
 import { MBA } from "./pages/departments/MBA/MBA";
 
 import Department from "./pages/departments/Department";
-import ChancellorMessage from "./pages/ChancellorMessage";
+import ChancellorMessage from "./pages/ChancellorsMessage/Chancellor";
+import ViceChancellorMessage from "./pages/ChancellorsMessage/ViceChancellor";
 
 const departmentProps = [
 	IT,
@@ -51,7 +52,8 @@ function App() {
 						/>
 					);
 				})}
-				<Route path="/vc-message" element={<ChancellorMessage />} />
+				<Route path="/vc-message" element={<ViceChancellorMessage />} />
+				<Route path="/chancellor-message" element={<ChancellorMessage />} />
 				<Route path="/*" element={<HomeScreen />} />
 			</Routes>
 		</BrowserRouter>

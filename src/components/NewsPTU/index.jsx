@@ -402,6 +402,10 @@ export function Events() {
 		);
 	}
 
+	data.sort((a, b) => {
+		return new Date(a.start_date) - new Date(b.start_date);
+	});
+
 	return (
 		<AutoScrollContainer title="Upcoming Events" data={data}>
 			{(e, i) => {
@@ -438,8 +442,6 @@ export const Updated = ({ topic, byWhom, message, file_name }) => {
 					className="updates__description-text"
 				/>
 				<div className="update__newss">
-					<h3>{byWhom}</h3>
-					<br />
 					<p
 						dangerouslySetInnerHTML={{ __html: message }}
 						className="updates__description-text"

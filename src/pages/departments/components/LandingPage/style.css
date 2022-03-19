@@ -443,7 +443,7 @@ image_for_dept {
 
 @media (max-width: 650px) {
 	.hod-card__container {
-		top: -17rem;
+		top: -19rem;
 		left: 47%;
 		transform: translateX(-50%);
 		align-items: center;
