@@ -11,6 +11,13 @@
 	background-color: brown;
 	padding: 1em;
 	color: white;
+	/* position: sticky; */
+    height: fit-content;
+	top: 0;
+}
+.chancellor-message__head .chancellor-card__parts-message-btn {
+	margin-top: 1em;
+	display: inline-block;
 }
 
 .chancellor-message__title {
@@ -18,7 +25,13 @@
 }
 
 .chancellor-message__name {
-	font-size: 1.4rem;
+	font-size: 1.6rem;
+	margin-top: 0.8em;
+}
+
+.chancellor-message__qualification,
+.chancellor-message__chancellor-title {
+	font-size: 1.2rem;
 }
 
 .chancellor-message__img {
@@ -39,6 +52,15 @@
 	list-style-type: disc;
 	margin: revert;
 	padding: revert;
+}
+
+.chancellor-card__parts-message-btn{
+	background-color: #214899;
+    border: 5px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.2em 0.5em;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 400px) {

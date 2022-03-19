@@ -22,7 +22,7 @@ export default function SmallCarousel() {
 			className="chancellor-card-cont hide-scrollbar"
 			ref={scrollContainerRef}
 		>
-			<div className="btn btn--left">
+			<div className="btn btn-left">
 				<button
 					onClick={() => {
 						moveLeft();
@@ -56,7 +56,7 @@ export default function SmallCarousel() {
 					/>
 				</div>
 			</div>
-			<div className="btn btn--right">
+			<div className="btn btn-right">
 				<button
 					onClick={() => {
 						moveRight();

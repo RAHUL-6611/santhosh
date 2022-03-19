@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Header from "../../components/Header";
-import { getImageUrl } from "../../config";
+import { getImageUrl,  FILE_BASE_URL } from "../../config";
 
 import "./ViceChancellorMessage.css";
 
@@ -26,6 +26,14 @@ function ChancellorMessage() {
 						</p>
 						<p>Hon'ble Lt. Governor of Puducherry</p>
 						<p>Chancellor</p>
+						<p>
+							    	<a
+							    		href={`${FILE_BASE_URL}VC_Full_Profile.pdf`}
+							    		className="chancellor-card__parts-message-btn"
+							    	>
+							    		View Profile
+							    	</a>
+							    </p>
 					</div>
 					<div className="chancellor-message__body">
 						<p>
